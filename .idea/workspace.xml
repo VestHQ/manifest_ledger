@@ -2,44 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eeebbb5-da14-4fef-b085-c00bf424ebc8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/AvenirLTStd-Book/font.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.otf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/BerlingLTStd-Roman/styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.otf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/HelveticaLTStd-Roman/styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Regular/Montserrat-Regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Regular/Montserrat-Regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Regular/Montserrat-Regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Regular/Montserrat-Regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Regular/preview.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/Montserrat-Regular/styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.otf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/MyriadPro-Regular/preview.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/MyriadPro-Regular/styles.css" />
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/_includes/main.html" afterPath="$PROJECT_DIR$/_includes/main.html" />
-      <change beforePath="$PROJECT_DIR$/_includes/meta.html" afterPath="$PROJECT_DIR$/_includes/meta.html" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change beforePath="$PROJECT_DIR$/_sass/1-base/base.scss" afterPath="$PROJECT_DIR$/_sass/1-base/base.scss" />
-      <change beforePath="$PROJECT_DIR$/_sass/1-base/mixins.scss" afterPath="$PROJECT_DIR$/_sass/1-base/mixins.scss" />
-      <change beforePath="$PROJECT_DIR$/_sass/1-base/variables.scss" afterPath="$PROJECT_DIR$/_sass/1-base/variables.scss" />
       <change beforePath="$PROJECT_DIR$/_sass/3-layout/main.scss" afterPath="$PROJECT_DIR$/_sass/3-layout/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -58,17 +23,17 @@
         <entry file="file://$PROJECT_DIR$/_sass/1-base/base.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="522">
-              <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_includes/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+            <state relative-caret-position="216">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -77,48 +42,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/3-layout/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mixins.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/1-base/mixins.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="font.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/fonts/AvenirLTStd-Book/font.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/1-base/variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="252">
+              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -137,9 +62,9 @@
         <option value="$PROJECT_DIR$/_sass/1-base/variables.scss" />
         <option value="$PROJECT_DIR$/_sass/1-base/mixins.scss" />
         <option value="$PROJECT_DIR$/_sass/1-base/base.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_includes/main.html" />
         <option value="$PROJECT_DIR$/_sass/3-layout/main.scss" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -157,9 +82,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1416" />
+    <option name="x" value="1109" />
     <option name="y" value="23" />
-    <option name="width" value="1126" />
+    <option name="width" value="1447" />
     <option name="height" value="1370" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -361,15 +286,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526335027760</updated>
-      <workItem from="1526335029504" duration="6150000" />
+      <workItem from="1526335029504" duration="12178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6150000" />
+    <option name="totallyTimeSpent" value="12178000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1416" y="23" width="1126" height="1370" extended-state="0" />
+    <frame x="1109" y="23" width="1447" height="1370" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -380,7 +305,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20692718" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16102281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -459,39 +384,7 @@
     <entry file="file://$PROJECT_DIR$/assets/fonts/AvenirLTStd-Book/font.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/1-base/mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/1-base/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/3-layout/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -499,7 +392,47 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/1-base/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/1-base/mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/1-base/1-base-dir.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/3-layout/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding />
         </state>
       </provider>
