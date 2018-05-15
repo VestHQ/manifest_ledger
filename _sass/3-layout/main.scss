@@ -1,15 +1,80 @@
 .main-grid {
+  font-family: $avenir;
+  margin: 0 auto;
+  width: 100vw;
   display: grid;
+  grid-template-areas: "title ."
+                        "header img"
+                        "footer footer";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 12rem;
+}
 
-  align-content: center;
+.main-grid > * {
+
 }
 
 .left {
+  grid-area: header;
+}
+
+.right {
+  grid-area: img;
+  width: 50rem;
+  height: 50rem;
+
 
 }
 
-img .right {
+.heading {
 
+  font-size: 6rem;
+
+  &--sub {
+    font-size: 4rem;
+  }
+}
+
+
+.btn-double-border {
+  position: relative;
+  display: inline-block;
+  margin-top: 5rem;
+  line-height: 1.42857;
+  margin-bottom: 0;
+  border: 2px solid $light-blue;
+  color: black;
+
+  font-size: 2rem;
+  padding: 2.5rem 4rem;
+  text-decoration: none;
+}
+
+.btn-double-border::before {
+  border: 2px solid $mid-blue;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  transition: all 0.3s ease 0s;
+}
+
+
+.btn-double-border:active:focus{
+  outline-offset: -2px;
+  top: 5px;
+
+}
+.btn-double-border:hover {
+  background: #fff none repeat scroll 0 0;
+}
+
+.btn-double-border:hover::before {
+  right: 0;
+  top: 0;
 }
