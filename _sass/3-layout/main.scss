@@ -44,31 +44,30 @@
   font-size: 2rem;
   padding: 2rem 3.5rem;
   text-decoration: none;
-}
 
-.btn-double-border::before {
-  border: 2px solid $light-blue;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  right: 10px;
-  top: -10px;
-  transition: all 0.3s ease 0s;
-}
+  &::before {
+    border: 2px solid $light-blue;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    transition: all 0.3s ease 0s;
+  }
 
+  &:active:focus {
+    outline-offset: 2px;
+    top: 5px;
+  }
 
-.btn-double-border:active:focus{
-  outline-offset: 2px;
-  top: 5px;
+  &:hover {
+    background: #fff none repeat scroll 0 0;
+  }
 
-}
-.btn-double-border:hover {
-  background: #fff none repeat scroll 0 0;
-}
-
-.btn-double-border:hover::before {
-  right: 0;
-  top: 0;
+  &:hover::before {
+    right: 0;
+    top: 0;
+  }
 }
