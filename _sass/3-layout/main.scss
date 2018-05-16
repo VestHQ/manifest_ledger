@@ -9,17 +9,32 @@
 
   justify-content: center;
   align-items: center;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }
 
 
 .text-box {
   padding: 2rem;
-  width: 50%;
+  width: 40vw;
+  height: auto;
+
+  @include respond(phone) {
+    width: 80vw;
+  }
 }
 
 .img {
   box-shadow: 0 1rem 2rem rgba(black, .15);
   border-radius: 5px;
+  width: 40vw;
+  height: auto;
+
+  @include respond(phone) {
+    width: 80vw;
+  }
 }
 
 .heading {
