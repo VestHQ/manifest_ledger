@@ -1,7 +1,7 @@
 .container {
   font-family: $avenir;
   width: 100vw;
-
+  min-height: calc(75vh - #{$footer-height});
   padding: 0;
   margin: 0 auto;
   display: flex;
@@ -17,8 +17,10 @@
 
 
 .text-box {
-  padding: 2rem;
-  width: 40vw;
+  padding: 1.5rem;
+  margin-right: 3rem;
+  text-align: center;
+  width: 45vw;
   height: auto;
 
   @include respond(phone) {
@@ -30,19 +32,37 @@
   box-shadow: 0 1rem 2rem rgba(black, .15);
   border-radius: 5px;
   width: 40vw;
+  max-width: 830px;
   height: auto;
 
   @include respond(phone) {
-    width: 80vw;
+    width: 70vw;
   }
 }
 
 .heading {
-  font-size: 3rem;
+  font-size: 3.7rem;
+  letter-spacing: .7rem;
+  //text-transform: uppercase;
   margin-bottom: 1rem;
 
   &--sub {
+    font-size: 3rem;
+  }
+
+  @include respond(tab-land) {
+    font-size: 3rem;
+    letter-spacing: .4rem;
+    &--sub {
+      font-size: 2rem;
+    }
+  }
+  @include respond(small-phone) {
+    letter-spacing: 0;
     font-size: 2rem;
+    &--sub {
+      font-size: 1.25rem;
+    }
   }
 }
 
@@ -50,11 +70,11 @@
 .btn-double-border {
   position: relative;
   display: inline-block;
-  margin-top: 4.5rem;
+  margin-top: 3rem;
   line-height: 1.4;
-  margin-bottom: 0;
-  border: 2px solid $mid-blue;
-  border-radius: 3px;
+  margin-bottom: 2rem;
+  border: 2px solid $dark-blue;
+  //border-radius: 3px;
   color: black;
 
   font-size: 1.5rem;
@@ -62,13 +82,13 @@
   text-decoration: none;
 
   &::before {
-    border: 2px solid $light-blue;
+    border: 2px solid $dark-blue;
     content: "";
     display: block;
     height: 100%;
     width: 100%;
     position: absolute;
-    right: 10px;
+    right: -10px;
     top: -10px;
     transition: all 0.3s ease 0s;
   }
@@ -86,5 +106,14 @@
   &:hover::before {
     right: 0;
     top: 0;
+  }
+
+  @include respond(phone) {
+    font-size: .5rem;
+  }
+
+  @include respond(small-phone) {
+    padding: .75rem 1.1rem 1.7rem 2rem;
+    line-height: 1.2;
   }
 }
