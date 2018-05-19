@@ -30,7 +30,9 @@ repository: https://github.com/VestHQ/manifest_ledger
 markdown: kramdown
 theme: minima
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
