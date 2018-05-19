@@ -45,7 +45,7 @@
   margin-bottom: 1rem;
 
   &--sub {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 
   @include respond(tab-land) {
@@ -55,9 +55,9 @@
     }
   }
   @include respond(small-phone) {
-    font-size: 2rem;
+    font-size: 2.2rem;
     &--sub {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -69,7 +69,7 @@
   margin-top: 3rem;
   line-height: 1.4;
   margin-bottom: 2rem;
-  border: 2px solid $dark-blue;
+  border: 1.5px solid $dark-blue;
   //border-radius: 3px;
   color: black;
 
@@ -78,7 +78,7 @@
   text-decoration: none;
 
   &::before {
-    border: 2px solid $dark-blue;
+    border: 1.5px solid $dark-blue;
     content: "";
     display: block;
     height: 100%;
@@ -87,11 +87,6 @@
     right: -10px;
     top: -10px;
     transition: all 0.3s ease 0s;
-  }
-
-  &:active:focus {
-    outline-offset: 2px;
-    top: 5px;
   }
 
   &:hover {
@@ -106,11 +101,14 @@
   }
 
   @include respond(phone) {
-    font-size: .5rem;
-  }
+    font-size: .6rem;
+    border: 1px solid $dark-blue;
+    padding: .5rem 1rem 1.5rem 1.5rem;
 
-  @include respond(small-phone) {
-    padding: .75rem 1.1rem 1.7rem 2rem;
-    line-height: 1.2;
+    &:before {
+      border: 1px solid $dark-blue;
+      right: -5px;
+      top: -8px;
+    }
   }
 }
