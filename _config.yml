@@ -32,6 +32,11 @@ theme: minima
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-autoprefixer
+
+autoprefixer:
+  browsers:
+    - last 10 versions
 
 
 # Exclude from processing.
