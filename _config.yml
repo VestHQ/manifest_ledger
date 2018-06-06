@@ -12,6 +12,7 @@ sass:
   sass_dir: _sass
   style: compressed
 
+exclude: [".idea/"]
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
