@@ -1,52 +1,68 @@
-.loader {
-  body, html {
-    margin: 0;
-    background: #fff;
-  }
-  //height: 100vh;
+body, html {
+
+}
+.overlay {
+  //position: fixed;
+  //top: 0;
+  //height: 100%;
   //width: 100vw;
-  //position: relative;
-  overflow: hidden;
-
-  canvas {
-    //position: fixed;
-    touch-action: none;
-    //position: absolute;
-    //top: 50%;
-    //left: 50%;
-  }
-
-  .manifest {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    width: 16rem;
-  }
+  //z-index: 1;
+  //background: #d4dcea;
+  //animation: blobExpand 1s forwards 2.7s ease;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 9998;
+  background: #d4dcea;
+  animation: blobExpand 1s forwards 2.7s ease;
+}
+.manifest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 16rem;
+  animation: moveToTop 2s ease-in .5s forwards;
 }
 
 
 
 
+@keyframes blobExpand{
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(40);
+    opacity: 0;
+  }
+}
 
 
-
-
-
-
-
-
-
-
+@keyframes moveToTop{
+  0%{
+    transform: translateX(0) translateY(0);
+  }
+  100%{
+    transform: translateX(-420%) translateY(-1150%);
+  }
+}
 
 @keyframes loading {
   0% {
+    visibility: hidden;
     transform: translateY(-95%);
     opacity: 1;
   }
   100% {
+    visibility: visible;
     transform: translateY(0);
     opacity: 0;
   }
 }
+

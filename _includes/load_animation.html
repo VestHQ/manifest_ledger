@@ -1,7 +1,15 @@
 <script>
+    let overlay = document.getElementById('overlay');
+
+    window.addEventListener('load', function(){
+        // when rest of page is done loading hide this
+        overlay.style.display = 'none';
+    });
+
     let canvas, ctx;
     let render, init;
     let blob;
+    const blobColor = '#fff';
 
     class Blob {
         constructor() {
@@ -45,11 +53,7 @@
                 var xc = (p1.x + p2.x) / 2;
                 var yc = (p1.y + p2.y) / 2;
                 ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
-                // ctx.lineTo(p2.x, p2.y);
-
-                ctx.fillStyle = '#d4dcea';
-                // ctx.fillRect(p1.x-2.5, p1.y-2.5, 5, 5);
-
+                ctx.fillStyle = blobColor;
                 p1 = p2;
             }
 
@@ -58,7 +62,7 @@
             ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
             ctx.fillStyle = this.color;
             ctx.fill();
-            ctx.strokeStyle = '#d4dcea';
+            ctx.strokeStyle = blobColor;
             requestAnimationFrame(this.render.bind(this));
         }
 
@@ -72,7 +76,7 @@
             this._color = value;
         }
         get color() {
-            return this._color || '#d4dcea';
+            return this._color || blobColor;
         }
 
         set canvas(value) {
@@ -232,7 +236,6 @@
                 let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
                 angle = Math.atan2(vector.y, vector.x);
                 hover = true;
-                // blob.color = '#77FF00';
             } else if(dist > blob.radius && hover === true){
                 let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
                 angle = Math.atan2(vector.y, vector.x);
@@ -264,7 +267,7 @@
             oldMousePoint.x = e.clientX;
             oldMousePoint.y = e.clientY;
         };
-        // window.addEventListener('mousemove', mouseMove);
+        // 'mousemove'
         window.addEventListener('pointermove', mouseMove);
 
         blob.canvas = canvas;
