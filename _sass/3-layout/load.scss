@@ -1,0 +1,60 @@
+.overlay {
+
+}
+canvas {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 9998;
+  background: #d4dcea;
+  animation: blobExpand .5s forwards 2s ease;
+}
+.manifest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 16rem;
+  animation: moveToTop .4s ease-in 1.4s forwards;
+}
+
+@keyframes blobExpand{
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(40);
+    opacity: 0;
+  }
+}
+
+@keyframes moveToTop{
+  0%{
+    transform: translateX(0) translateY(0);
+  }
+  99%{
+    transform: translateX(-420%) translateY(-1150%);
+  }
+  100%{
+    transform: translateX(-420%) translateY(-1150%);
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@keyframes loading {
+  0% {
+    visibility: hidden;
+    transform: translateY(-95%);
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
