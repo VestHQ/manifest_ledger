@@ -1,14 +1,5 @@
-body, html {
-
-}
 .overlay {
-  //position: fixed;
-  //top: 0;
-  //height: 100%;
-  //width: 100vw;
-  //z-index: 1;
-  //background: #d4dcea;
-  //animation: blobExpand 1s forwards 2.7s ease;
+
 }
 canvas {
   position: fixed;
@@ -17,7 +8,7 @@ canvas {
   width: 100vw;
   z-index: 9998;
   background: #d4dcea;
-  animation: blobExpand 1s forwards 2.7s ease;
+  animation: blobExpand .5s forwards 2s ease;
 }
 .manifest {
   position: absolute;
@@ -26,11 +17,8 @@ canvas {
   transform: translate(-50%, -50%);
   z-index: 9999;
   width: 16rem;
-  animation: moveToTop 2s ease-in .5s forwards;
+  animation: moveToTop .4s ease-in 1.4s forwards;
 }
-
-
-
 
 @keyframes blobExpand{
   0%{
@@ -43,13 +31,17 @@ canvas {
   }
 }
 
-
 @keyframes moveToTop{
   0%{
     transform: translateX(0) translateY(0);
   }
+  99%{
+    transform: translateX(-420%) translateY(-1150%);
+  }
   100%{
     transform: translateX(-420%) translateY(-1150%);
+    display: none;
+    visibility: hidden;
   }
 }
 
