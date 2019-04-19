@@ -1,0 +1,28 @@
+<div class="chat welcome">
+    <div class="top">
+        <h3 class="manifest"><a class="backArrow" onclick="goBack()"></a>Manifest</h3>
+        <div class="line line--25"></div>
+    </div>
+
+    <h1 class="heading heading--top mg-btm-mid">Do you have an <span class="heading--blue">active 401(k)</span> within the next <span class="heading--blue">6 months</span>?</h1>
+
+    <ul class="col" id="list">
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> Yes, I do
+                <input type="radio" name="selection" value="{{ site.baseurl }}/link_other" onclick="onCheck(this)" class="radio-input">
+
+                <span class="radio-img"></span>
+            </label>
+        </li>
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> No, I don't
+                <input type="radio" name="selection" value="{{ site.baseurl }}/know_yes" onclick="onCheck(this)" class="radio-input">
+
+                <span class="radio-img"></span>
+            </label>
+        </li>
+    </ul>
+
+    <a id="addLink" class="btn--disabled btm-fixed">Continue</a>
+
+</div>

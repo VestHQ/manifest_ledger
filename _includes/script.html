@@ -1,0 +1,232 @@
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous">
+</script>
+
+<script>
+    const debugAccelerator = 1; // switch to 1
+    const chatMessages = [
+        {
+            type: "text",
+            align: "left",
+            msg: "Hi! I'm Henry, and I'm your transfer specialist.",
+            delay: 800,
+        },
+        {
+            type: "text",
+            align: "left",
+            msg: "Nice work on choosing to consolidate your retirement accounts. Choosing the right account can be hard, but I'm here to help!",
+            delay: 1200,
+        },
+        {
+            type: "text",
+            align: "left",
+            msg: "Do you have any open loans in your TIAA 401(k)?",
+            delay: 1500,
+        },
+        {
+            type: "input",
+            align: "left",
+            input: {type: "buttons", buttons: ["Yes", "No"]},
+        },
+        {
+            type: "text",
+            align: "left",
+            msg: "Do you have at least 6 months of personal savings?"
+        },
+        {
+            type: "input",
+            align: "left",
+            input: {type: "buttons", buttons: ["Yes", "No"]},
+            delay: 1900
+        },
+        {
+            type: "text",
+            align: "left",
+            msg: "Would you need the option to take out a loan from your retirement savings in the future?",
+            delay: 1800,
+        },
+        {
+            type: "input",
+            align: "left",
+            input: {type: "buttons", buttons: ["Yes", "No"]},
+            delay: 1900
+        },
+        {
+            type: "text",
+            align: "left",
+            msg: "Would you like to manage your retirement accounts actively or passively?",
+            delay: 1800,
+        },
+        {
+            type: "input",
+            align: "left",
+            input: {type: "buttons", buttons: ["Actively", "Passively"]},
+            delay: 1900
+        },
+        {
+            type: "text",
+            align: "left",
+            msg: "Would you like to invest in individual equities?",
+            delay: 1800,
+        },
+        {
+            type: "input",
+            align: "left",
+            input: {type: "buttons", buttons: ["Yes", "No"]},
+            delay: 1900
+        },
+        {
+            type: "text",
+            align: "left",
+            msg: "How many trades have you done in the last 6 months?",
+            delay: 1800,
+        },
+        {
+            type: "input",
+            align: "left",
+            input: {type: "buttons", buttons: ["None", "Less than 10", "1/Week", "1/Day"]},
+            delay: 1900
+        },
+        {
+            type: "text",
+            align: "left",
+            msg: "How important is it for you to have a single account to manage in your retirement?",
+            delay: 1800,
+        },
+        {
+            type: "input",
+            align: "left",
+            input: {type: "buttons", buttons: ["1", "2", "3", "4", "5"]},
+            id: "/5",
+            delay: 1900
+        },
+        {
+            type: "text",
+            align: "left",
+            msg: "I have a suggestion for your destination account. Would you like to see it?",
+            delay: 1800,
+        },
+        {
+            type: "input",
+            align: "left",
+            input: {type: "buttons", buttons: ["Show Me"]},
+            delay: 1900
+        }
+    ];
+    var currentMessage = 0;
+    const chatBox = document.getElementsByClassName('chat');
+    const chatMessageList = document.getElementById('message-list');
+    const chatMessageListNonRemovableCount = chatMessageList.childNodes.length;
+
+    // console.log($('.chat-message-list'))
+    // console.log(chatMessageList)
+
+    function updateScroll() {
+        chatBox[0].offsetHeight += 200;
+        chatBox[0].scrollTop = chatBox[0].scrollHeight - chatBox[0].clientHeight;
+         $('.chat-message-list').animate({ scrollTop: $('.chat-message-list').height() }, 600);
+         // console.log($('.chat-message-list').height())
+    }
+    // setInterval(updateScroll, 300);
+
+    function postMessage(alignment, text, onclick) {
+        const bubble = document.createElement("li");
+        bubble.className = 'message-' + alignment;
+        bubble.innerText = text;
+        bubble.onclick = onclick;
+        chatMessageList.appendChild(bubble);
+        updateScroll();
+    }
+
+    function showInputBox() {
+        $(".chat-message-list").append("<input type='text' class='input' placeholder='Type Something..'>");
+        updateScroll();
+    }
+    function showInputButtons(button_names) { //param refers to btn array
+        const buttonContainer = document.createElement("div");
+        buttonContainer.className = 'btn-container';
+
+        const indexToReplayFrom = currentMessage-1;
+
+        for (let i = 0; i < button_names.length; i++) {
+            const linkOut =  document.createElement("a");
+            linkOut.href = "{{ site.baseurl }}/ira";
+
+            const button = document.createElement("button");
+            button.className = 'btn';
+            button.innerText = button_names[i];
+            button.onclick = () => {
+                postMessage("right", button_names[i], () => {
+                    replayFrom(indexToReplayFrom);
+                });
+                chatMessageList.removeChild(buttonContainer);
+                updateScroll();
+                resumePlaybackWithDelay();
+
+                if(button_names[i].id === "/5") {
+                    console.log("hit");
+                    button.innerText = button_names[i] + button_names[i].id;
+                }
+                if(i === button_names.length){
+                    alert("last btn")
+                    button.onclick = () => {
+                        alert("last btn")
+                    }
+                }
+            };
+
+            buttonContainer.appendChild(button);
+        }
+        chatMessageList.appendChild(buttonContainer);
+    }
+
+    function replayFrom(messageIndex) {
+        while (chatMessageList.childNodes.length > chatMessageListNonRemovableCount + messageIndex) {
+            chatMessageList.removeChild(chatMessageList.lastChild);
+        }
+
+        currentMessage = messageIndex;
+        processCurrentMessage();
+    }
+
+    function resumePlaybackWithDelay() {
+        setTimeout(processCurrentMessage, 600);
+    }
+
+    function processCurrentMessage() {
+        if (currentMessage >= chatMessages.length) {
+            window.location = "{{ site.baseurl }}/ira"; //exit to next page on last msg
+            return;
+        }
+
+        const msg = chatMessages[currentMessage++]; //incriment msg so it doesnt repeat from beginning each time its called
+
+        switch (msg.type) {
+            case "text":
+                postMessage(msg.align, msg.msg);
+                // setup a timer which will call processCurrentMessage() after a delay message.delay
+                setTimeout(processCurrentMessage, msg.delay/debugAccelerator);
+                break;
+            case "input":
+                switch (msg.input.type) {
+                    case "text":
+                        showInputBox();
+                        break;
+                    case "buttons":
+                        showInputButtons(msg.input.buttons);
+                        updateScroll();
+                        break;
+                }
+                // do nothing, wait for the user to input/respond. when they do (on button click) call processCurrentMessage();
+                break;
+        }
+    }
+
+    processCurrentMessage();
+
+
+</script>

@@ -1,0 +1,78 @@
+@keyframes blink-dots {
+  0% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink-on-off {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes msgExpandLeft {
+  0% {
+    transform: translateX(-5rem) scale(.6);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    color: $light-grey-2;
+  }
+  100% {
+    opacity: 1;
+    color: #000;
+  }
+}
+@keyframes msgExpandRight {
+  0% {
+    transform: translateX(5rem) scale(.6);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    color: $light-grey-2;
+  }
+  100% {
+    opacity: 1;
+    //color: #000;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}

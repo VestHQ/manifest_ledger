@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include meta.html %}
+</head>
+
+<body>
+<div class="chat welcome back-green">
+    <div class="top">
+        <h3 class="verify-code white-text">Enter Your Credentials <a class="x white-text" onclick="goBack()"></a></h3>
+        <div class="line--2"></div>
+    </div>
+
+    <img src="{{ site.baseurl }}/assets/img/FidelityLogo.png" alt="" class="fidelity-logo">
+
+    <img src="../assets/img/Fidelity_Successful_Check.png" alt="" class="check">
+
+    <h1 class="heading--white">Your Account was successfully linked to your previous 401(k) plan!</h1>
+
+    <a href="{{ site.baseurl }}/transfer_initiation/" class="btn-large fidelity-btn btm-fixed">Continue</a>
+</div>
+
+{% include script_toggle_link.html %}
+</body>
+</html>

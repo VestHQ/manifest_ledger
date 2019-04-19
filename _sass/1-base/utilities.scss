@@ -1,0 +1,102 @@
+.u-mg-mid { margin: 3rem auto 6rem auto !important;}
+.u-mg-sm { margin: 3rem auto !important;}
+.u-mg-top-sm { margin: 2rem !important;}
+.u-mg-xsm { margin: 2rem 1rem !important;}
+.u-bottom {
+  position: absolute;
+  bottom: 1.5rem;
+  //right: 50%; left: 50%;
+  transform: translate(50%, -50%);
+}
+.u-mg-left-sm { margin-left: 1.7rem !important;}
+
+.mg-top-btm-sm {margin: 3rem auto 2rem auto !important;}
+
+.mg-btm-small{ margin-bottom: 2rem !important;}
+
+.mg-btm-mid {
+  margin-bottom: 8rem !important;
+}
+.u-font-mid { font-size: 2.2rem !important;}
+
+.u-width-mid { width: 66.666% !important;}
+.u-width-sm { width: 30% !important;}
+
+.text-left {
+  text-align: left !important;
+}
+.u-plus {
+  position: absolute;
+  right: 1rem;
+  width: 3rem !important;
+  height: 3rem !important;
+  font-size: 2.8rem !important;
+  padding: 0 0 1px 0 !important;
+}
+
+.u-mg-top-lg {
+  margin-top: 15vh !important;
+}
+
+.u-mg-btm-mid {
+  margin-bottom: 4rem !important;
+}
+
+.u-mg-btm-less {
+  margin-bottom: 2rem !important;
+}
+
+.u-font-wight-mid { font-weight: 500 !important;}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem auto 1rem auto;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 8%;
+  position: relative;
+}
+
+.screen-col {
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-between;
+
+  height: 100%;
+}
+
+.highlight--blue {
+  color: $blue;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-wrap {
+  margin-left: 1.7rem;
+}
+
+.mg-top-sm {margin-top: 2rem !important;}
+
+.option-final-text {
+  width: 70% !important;
+  margin: 1rem auto !important;
+}
+
+.u-btm-none {
+  bottom: 0 !important;
+}
+
+.u-center {
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+}

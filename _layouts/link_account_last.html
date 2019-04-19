@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include meta.html %}
+</head>
+
+<body>
+<div class="chat welcome">
+    <div class="top">
+        <h3 class="manifest"><a class="backArrow" onclick="goBack()"></a>Manifest</h3>
+        <div class="line--2"></div>
+    </div>
+
+
+    <h1 class="heading--top text-center">Link your <span class="highlight--blue">existing account</span></h1>
+
+    <input type="text" class="search" placeholder="Search">
+
+    <div class="companies">
+        <a href="{{ site.baseurl }}/fidelity_login_last" class="companies__link">
+            <img src="{{ site.baseurl }}/assets/img/FidelityLogo.png"
+                 class="companies__logo companies__logo--green companies__logo--sm">
+        </a>
+        <a href="{{ site.baseurl }}/fidelity_login_last" class="companies__link">
+            <img src="{{ site.baseurl }}/assets/img/wells.png"
+                 class="companies__logo companies__logo--red-2">
+        </a>
+        <a href="{{ site.baseurl }}/fidelity_login_last" class="companies__link">
+            <img src="{{ site.baseurl }}/assets/img/wealthfront_white.png"
+                 class="companies__logo companies__logo--dark-blue">
+        </a>
+        <a href="{{ site.baseurl }}/fidelity_login_last" class="companies__link">
+            <img src="{{ site.baseurl }}/assets/img/prudential.png" class="companies__logo companies__logo--blue-pru">
+        </a>
+
+        <a href="{{ site.baseurl }}/fidelity_login_last" class="companies__link">
+            <img src="{{ site.baseurl }}/assets/img/vanguard-logo.png" class="companies__logo companies__logo--red-2">
+        </a>
+        <a href="{{ site.baseurl }}/fidelity_login_last" class="companies__link">
+            <img src="{{ site.baseurl }}/assets/img/td.png" class="companies__logo companies__logo--light-green">
+        </a>
+        <a href="{{ site.baseurl }}/fidelity_login_last" class="companies__link">
+            <img src="{{ site.baseurl }}/assets/img/charles-schwab-logo-white.png"
+                 class="companies__logo companies__logo--sm companies__logo--blue">
+        </a>
+        <a href="{{ site.baseurl }}/fidelity_login_last" class="companies__link">
+            <img src="{{ site.baseurl }}/assets/img/empower.svg" class="companies__logo companies__logo--red-1">
+        </a>
+        <a href="{{ site.baseurl }}/fidelity_login_last" class="companies__link">
+            <img src="{{ site.baseurl }}/assets/img/John_Hancock.svg.png" class="companies__logo">
+        </a>
+        <a href="{{ site.baseurl }}/fidelity_login_last" class="companies__link">
+            <img src="{{ site.baseurl }}/assets/img/mass-mutual.png" class="companies__logo companies__logo--blue-mid">
+        </a>
+    </div>
+</div>
+
+
+{% include script_toggle_link.html %}
+</body>
+</html>

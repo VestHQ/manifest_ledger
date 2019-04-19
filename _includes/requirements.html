@@ -1,0 +1,91 @@
+
+
+<div class="chat welcome">
+ <div class="top">
+     <h3 class="manifest"><a class="backArrow" onclick="goBack()"></a>Manifest</h3>
+     <div class="line--2"></div>
+ </div>
+
+    <h1 class="heading heading--blue u-mg-mid">Requirements</h1>
+
+    <ul class="list" id="list">
+
+        <li class="radio-row radio-row--2">
+            <label for="selection1" class="item"> You have to have worked at this company (company name)
+                <input id="selection1" type="radio" name="selection1"  class="radio-input radio-input--left" onclick="addToCheckedArr(this)">
+                <span class="radio-img radio-img--left"></span>
+            </label>
+        </li>
+
+        <li class="radio-row radio-row--2">
+            <label for="selection2" class="item"> You have to be terminated from this company (company name)
+                <input id="selection2" type="radio" name="selection2" class="radio-input radio-input--left" onclick="addToCheckedArr(this)">
+                <span class="radio-img radio-img--left"></span>
+            </label>
+        </li>
+
+        <li class="radio-row radio-row--2">
+            <label for="selection3" class="item"> You must have 401(k) balance in order to make the transfer
+                <input id="selection3" type="radio" name="selection3" class="radio-input radio-input--left" onclick="addToCheckedArr(this)">
+                <span class="radio-img radio-img--left"></span>
+            </label>
+        </li>
+
+        <li class="radio-row radio-row--2">
+            <label for="selection4" class="item"> You would like to transfer/rollover your 401(k) or want to learn about your options to rollover/transfer
+                <input id="selection4" type="radio" name="selection4" class="radio-input radio-input--left" onclick="addToCheckedArr(this)">
+                <span class="radio-img radio-img--left"></span>
+            </label>
+        </li>
+    </ul>
+
+    <a class="btn-large btm-fixed" id="btn" onclick="allCheckedAddLink()">Save &nbsp; &nbsp; &rarr;</a>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous">
+</script>
+
+<script>
+
+    const list = document.getElementById('list');
+    const btn = document.getElementById('btn');
+    const allCheckedInputs = [];
+
+    function addToCheckedArr(e){
+        if(e.checked){
+            allCheckedInputs.push(e)
+        }
+    }
+
+    function allCheckedAddLink() {
+        if(allCheckedInputs.length === 4) {
+            console.log('all checked');
+            btn.href = "{{site.baseurl}}/create_account/"
+        } else {
+            btn.href = "{{site.baseurl}}/sorry/"
+        }
+    }
+
+    // function onCheck(choice) {
+    //     console.log('clicked')
+        // choice.classList.toggle('checked');
+        // const button = document.getElementById('addLink');
+        // if(choice){
+        //     button.classList.remove("btn--disabled");
+        //     button.classList.add("btn");
+        //     button.href = choice.value;
+        // }
+    // }
+
+
+    function toggleClass(x) {
+        x.classList.toggle('checked');
+        console.log(x)
+    }
+
+</script>

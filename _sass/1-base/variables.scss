@@ -1,4 +1,8 @@
 $avenir: "AvenirLTStd-Book", sans-serif;
+$inter-light: "interlight_beta", "AvenirLTStd-Book", sans-serif;
+$inter-regular: "interregular", "AvenirLTStd-Book", sans-serif;
+$inter-bold: "interbold", "AvenirLTStd-Book", sans-serif;
+$inter-semi-bold: "intersemi_bold", "AvenirLTStd-Book", sans-serif;
 
 $light-blue: #00b0f0;
 $mid-blue: #2a5669;
@@ -8,3 +12,61 @@ $footer-height: 5vh;
 
 $cold-blue: #3F5A9E;
 $light-blue-grey: #d4dcea;
+
+
+
+
+$tiaa-blue: #005791;
+$green: #006244;
+$charles-blue: #00A1E0;
+$wealthfront-blue: #0F1AAD;
+$td-green: #27B23A;
+$prudential-blue: #3179BC;
+$fargo-red: #B21118;
+$vangard-red: #B42B36;
+$empower-red: #BD2F43;
+$mutal-blue: #0D3068;
+
+$blue: #4E78F6;
+$blue-light: lighten($blue, 20%);
+$background-grey: #f0f0f0;
+$background-grey-2: #f9f9f9;
+$light-grey: #BFC6CF;
+$light-grey-2: #F0F0F0;
+
+$dark-grey: #50525C;
+$mid-grey: #A0AAB8;
+
+$box-shadow: 0 20px 47px rgba(180, 182, 196, 0.22);
+
+$msg-border: 0 1rem 1rem 1rem;
+$msg-border-right: 1rem 0 1rem 1rem;
+
+$phone-height: 66rem;
+$phone-width: 37rem;
+
+$silver: #E0E0E0;
+
+$grey: #A3ABB5;
+
+.x {
+  &::after {
+    content: "\2715";
+    font-size: 2.2rem;
+    color: #545454;
+    position: absolute;
+    right: 2rem;
+    top: -5px;
+  }
+}
+
+.backArrow {
+  &::before {
+    content: "←";
+    font-size: 2.6rem;
+    color: #545454;
+    position: absolute;
+    left: 2rem;
+    top: -3px;
+  }
+}

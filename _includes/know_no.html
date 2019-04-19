@@ -1,0 +1,42 @@
+<div class="chat welcome">
+    <div class="top">
+        <h3 class="manifest"><a class="backArrow" onclick="goBack()"></a>Manifest</h3>
+        <div class="line"></div>
+    </div>
+
+    <h1 class="heading heading--top">What accounts do you currently have?</h1>
+    <p class="heading--grey">Please select the first one to link</p>
+
+<!--
+    <div class="button-col">
+        <a href="{{ site.baseurl }}/link_other" class="btn">Current 401(k) <small>(Recommended for test)</small></a>
+        <a href="{{ site.baseurl }}/link_other" class="btn btn-dark-grey">Current 401(b)</a>
+        <a href="{{ site.baseurl }}/link_ira" class="btn btn-dark-grey">Current IRA</a>
+        <a href="{{ site.baseurl }}/henry" class="btn btn-dark-grey">No Other Accounts</a>
+    </div> -->
+
+    <div class="col">
+                <div class="row">
+                    <p class="option">Current 401(k)</p>
+                    <a href="{{ site.baseurl }}/link_other"><img src="{{ site.baseurl }}/assets/img/silver-check.png" alt="" class="option__check"></a>
+                </div>
+
+                 <div class="row">
+                    <p class="option">Current 403(b)</p>
+                    <a href="{{ site.baseurl }}/link_other"><img src="{{ site.baseurl }}/assets/img/silver-check.png" alt="" class="option__check"></a>
+                 </div>
+
+                 <div class="row">
+                    <p class="option">Current IRA</p>
+                    <a href="{{ site.baseurl }}/link_ira"><img src="{{ site.baseurl }}/assets/img/check_small.png" alt="" class="option__check"></a>
+                 </div>
+
+                  <div class="row">
+                      <p class="option">No Other Accounts</p>
+                      <a href="{{ site.baseurl }}/know_no"><img src="{{ site.baseurl }}/assets/img/silver-check.png" alt="" class="option__check"></a>
+                  </div>
+            </div>
+
+            <a href="{{ site.baseurl }}/link_ira" class="btn">Continue</a>
+
+</div>

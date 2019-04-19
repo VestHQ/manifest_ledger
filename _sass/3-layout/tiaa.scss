@@ -1,0 +1,30 @@
+.back-blue { background: $tiaa-blue !important;}
+.back-blue-light { background: $charles-blue !important;}
+.back-red { background: $fargo-red !important;}
+
+.tiaa-logo {
+  width: 18rem;
+  height: auto;
+  margin: 2rem auto;
+}
+
+.charles-logo {
+  width: 24rem;
+  height: auto;
+  margin: 5rem auto;
+}
+
+.tiaa-success {
+  background-image: url("../../assets/img/tiaa_succsess.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //object-fit: cover;
+  height: 73rem;
+  width: $phone-width;
+}
+
+.check {
+  width: 7.5rem;
+  height: auto;
+  margin: 0 auto;
+}

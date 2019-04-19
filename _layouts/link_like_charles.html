@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include meta.html %}
+</head>
+
+<body>
+<div class="chat welcome">
+    <div class="top">
+        <h3 class="manifest"><a class="backArrow" onclick="goBack()"></a>Manifest</h3>
+        <div class="line line--40"></div>
+    </div>
+
+    <h1 class="heading--top">How would you rate your current IRA provider?</h1>
+
+    <ul class="col" id="list">
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> Love it
+                <input type="radio" name="selection" value="{{ site.baseurl }}/link_third" onclick="onCheck(this)" class="radio-input">
+                <span class="radio-img"></span>
+            </label>
+        </li>
+
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> Like it
+                <input type="radio" name="selection" value="{{ site.baseurl }}/link_third" onclick="onCheck(this)" class="radio-input">
+                <span class="radio-img"></span>
+            </label>
+        </li>
+
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> Don't mind it
+                <input type="radio" name="selection" value="{{ site.baseurl }}/link_third" onclick="onCheck(this)" class="radio-input">
+                <span class="radio-img"></span>
+            </label>
+        </li>
+
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> Hate it
+                <input type="radio" name="selection" value="{{ site.baseurl }}/link_third" onclick="onCheck(this)" class="radio-input">
+                <span class="radio-img"></span>
+            </label>
+        </li>
+    </ul>
+
+    <a id="addLink" class="btn--disabled btm-fixed">Continue</a>
+</div>
+{% include script_toggle_link.html %}
+</body>
+</html>

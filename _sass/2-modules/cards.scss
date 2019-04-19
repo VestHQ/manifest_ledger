@@ -1,0 +1,46 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  position: absolute;
+  left: -16%;
+  bottom: 14%;
+}
+
+.card {
+  height: auto;
+  width: 18rem;
+
+  &--top {
+    height: 16rem;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  &--1 {
+    width: 16rem;
+  }
+  &--2 {
+    margin: -.5rem .5rem 0 .5rem;
+  }
+  &--3 {
+    width: 16rem;
+  }
+}
+
+.card-transfer {
+  width: 75%;
+  height: 16rem;
+  background: darken($light-grey-2, 10%);
+  border-radius: 1rem;
+  margin: 1rem auto;
+
+  &__text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    margin: 2rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+}

@@ -1,0 +1,76 @@
+input {border-radius: 0;}
+.form {
+  font-family: $avenir;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  position: relative;
+
+  &__label {
+    align-self: flex-start;
+    position: relative;
+    z-index:1;
+    top: 2.5rem;
+    left: 8.4rem;
+    color: $dark-grey;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+
+  &__input {
+    position: relative;
+    width: 80%;
+    border: none;
+    outline: none;
+    background: $background-grey-2;
+    border-bottom: 1px solid $light-grey;
+    padding: 2.2rem 0 1rem 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    &:focus,
+    &:active {
+      border-bottom: 2px solid lighten($blue, 20%);
+    }
+    &:placeholder-shown {
+      color: $light-grey;
+    }
+  }
+}
+
+.tiaa-form {
+  font-family: $avenir;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  color: #fff;
+
+  &__label {
+    align-self: flex-start;
+    position: relative;
+    z-index:1;
+    top: 2.5rem;
+    left: 4rem;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+  }
+
+  &__input {
+    color: #fff;
+    background: $tiaa-blue;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $light-grey;
+    padding: 2.5rem 0 1rem 0;
+    font-weight: 800;
+  }
+}

@@ -1,0 +1,37 @@
+<div class="chat welcome">
+    <div class="top">
+        <h3 class="manifest"><a class="backArrow" onclick="goBack()"></a>Manifest</h3>
+        <div class="line line--90"></div>
+    </div>
+
+    <h1 class="heading--top">Do you have any other accounts? Link your <span class="highlight--blue">fourth account</span></h1>
+
+    <p class="heading--grey">Please select the fourth account to link</p>
+
+    <ul class="col" id="list">
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> Old 401(k) or 403(b)
+                <input type="radio" name="selection" value="{{ site.baseurl }}/link_old" onclick="onCheck(this)" class="radio-input">
+
+                <span class="radio-img"></span>
+            </label>
+        </li>
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> Current IRA
+                <input type="radio" name="selection" value="{{ site.baseurl }}/current_ira" onclick="onCheck(this)" class="radio-input">
+
+                <span class="radio-img"></span>
+            </label>
+        </li>
+
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> No Other Accounts
+                <input type="radio" name="selection" value="{{ site.baseurl }}/account_aggregation" onclick="onCheck(this)" class="radio-input">
+
+                <span class="radio-img"></span>
+            </label>
+        </li>
+    </ul>
+
+    <a id="addLink" class="btn--disabled btm-fixed">Continue</a>
+</div>

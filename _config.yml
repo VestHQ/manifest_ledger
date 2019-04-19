@@ -12,6 +12,9 @@ url: manifestledger.com
 repository: https://github.com/VestHQ/manifest_ledger
 google_analytics: UA-122835127-1
 
+#categories:
+baseurl: /demo
+prepend: site.baseurl
 
 # Build settings
 markdown: kramdown

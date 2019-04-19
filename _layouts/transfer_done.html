@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include meta.html %}
+</head>
+
+<body>
+<div class="chat welcome">
+    <div class="top">
+        <h3 class="verify-code"><a class="backArrow" onclick="goBack()"></a>Linked Accounts Dashboard</h3>
+        <div class="line--2"></div>
+    </div>
+
+    <h2 class="text text--black text-left">Account To Transfer:</h2>
+    <img src="{{ site.baseurl }}/assets/img/card_tiaa.png"  class="card--top">
+
+    <h3 class="text text--black text-left u-mg-top-sm">Current Transfer Options: <span class="circle-number u-plus">+</span></h3>
+    <div class="card-container">
+        <img src="{{ site.baseurl }}/assets/img/card_wells.png"  class="card card--1">
+        <img src="{{ site.baseurl }}/assets/img/card_fidelity_unlinked.png"  class="card card--2">
+        <img src="{{ site.baseurl }}/assets/img/card_charles.png"  class="card card--3">
+    </div>
+
+
+    <a href="{{ site.baseurl }}/done" class="btn btm-fixed btm-fixed--2">Continue</a>
+
+</div>
+
+{% include script_toggle_link.html %}
+</body>
+</html>

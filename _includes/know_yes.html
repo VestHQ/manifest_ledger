@@ -1,0 +1,43 @@
+<div class="chat welcome">
+    <div class="top">
+        <h3 class="manifest"><a class="backArrow" onclick="goBack()"></a> Manifest</h3>
+        <div class="line"></div>
+    </div>
+
+    <h1 class="heading heading--top heading--secondary">What type of account is your <span class="heading--blue">desination account</span>?</h1>
+
+    <p class="heading--grey">Please select the first one to link</p>
+
+    <ul class="col" id="list">
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> A 401(k) or 403(b) account
+                <input type="radio" name="selection" value="{{ site.baseurl }}/link_other" onclick="onCheck(this)" class="radio-input">
+                <span class="radio-img"></span>
+            </label>
+        </li>
+
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> An IRA account
+                <input type="radio" name="selection" value="{{ site.baseurl }}/link_ira" onclick="onCheck(this)" class="radio-input">
+                <span class="radio-img"></span>
+            </label>
+        </li>
+
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> A new IRA
+                <input type="radio" name="selection" value="{{ site.baseurl }}/account_help" onclick="onCheck(this)" class="radio-input">
+                <span class="radio-img"></span>
+            </label>
+        </li>
+
+        <li class="radio-row">
+            <label for="selection" class="radio-label"> Actually. I'm not sure
+                <input type="radio" name="selection" value="{{ site.baseurl }}/dont_worry" onclick="onCheck(this)" class="radio-input">
+                <span class="radio-img"></span>
+            </label>
+        </li>
+    </ul>
+
+    <a id="addLink" class="btn--disabled btm-fixed">Continue</a>
+
+</div>

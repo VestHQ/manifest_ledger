@@ -9,9 +9,11 @@ Manifest makes 401(k) transfers seamless - maximizing retirement outcomes and el
 #### Deployment
 Deployment is done through the gh-pages branch directly to <a href="www.manifestledger.com">manifestledger.com</a>
 
+The demo app is begins on <a href="www.manifestledger.com/demo/demo_index">manifestledger.com/demo_index</a>
+
 #### Built With
-* Jekyll (version 3.8.4)
-*  Saas compiled to CSS
+* Jekyll
+*  Sass
 *  HTML5
 * Plugins:
      * CSS auto-prefixer 

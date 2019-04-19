@@ -1,0 +1,120 @@
+.welcome {
+  font-family: $avenir;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+}
+
+.placeholder {
+  width: 12rem;
+  height: 12rem;
+  margin: 2rem auto;
+  border-radius: 50%;
+  background: $silver;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  //margin: 1rem auto;
+}
+
+.dot {
+  text-decoration: none;
+  cursor: pointer;
+  color: $blue;
+  font-size: 7.5rem;
+  line-height: 0;
+  font-family: $inter-regular;
+
+  //height: 1rem;
+  //width: 1rem;
+  //margin:  0 1rem;
+  //background-color: $blue;
+  //border-radius: 50%;
+
+  &--light {
+    color: lighten($blue, 20%);
+  }
+}
+
+.list {
+  display: list-item;
+  position: relative;
+
+  .item {
+    font-size: 1.7rem;
+    padding: 0 15%;
+    margin-bottom: 2rem;
+    position: relative;
+    cursor: pointer;
+
+    min-width:27rem;
+
+    &__img {
+      width: 1.8rem;
+      height: auto;
+      margin-right: 1rem;
+      position: absolute;
+      top: 1rem;
+      left: 3rem;
+    }
+  }
+}
+
+.unchecked {
+  font-size: 1.8rem;
+  color: $silver;
+  cursor: pointer;
+  margin-right: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+
+  //&--right {
+  //  @extend .unchecked;
+  //  top: 0;
+  //  right: 1rem;
+  //}
+}
+
+.checked {
+  @extend .unchecked;
+  color: $blue;
+}
+
+.unchecked-right {
+  font-size: 1.8rem;
+  color: $silver;
+  cursor: pointer;
+  margin-right: 1rem;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+.checked-right {
+  @extend .unchecked-right;
+  color: $blue;
+}
+
+.line--2 {
+  width: 100%;
+  background: $grey;
+  height: 1px !important;
+}
+
+.circle-number {
+  display: inline-block;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: $blue;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 3px 2px 0 1px;
+  margin-right: 2rem;
+  margin-left: -3rem;
+}

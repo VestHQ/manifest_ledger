@@ -1,0 +1,17 @@
+.dashes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+
+  &__line {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid $blue;
+    background: $background-grey-2;
+    width: 3.6rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}

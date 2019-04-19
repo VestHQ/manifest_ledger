@@ -1,0 +1,107 @@
+.header {
+  font-family: $avenir;
+  text-align: center;
+
+  &__img {
+    border-radius: 50%;
+    width: 11rem;
+    height: auto;
+    object-fit: cover;
+    margin-top: 2rem;
+  }
+
+  &__primary {
+    font-size: 2.8rem;
+    margin: .6rem 1.2rem;
+    letter-spacing: 1px;
+  }
+  &__secondary {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #4d4d4d;
+  }
+  &__tertiary {
+    color: darken($light-grey, 15%);
+    font-weight: 700;
+  }
+}
+
+//.date {
+//  font-family: $avenir;
+//  text-align: center;
+//  color: $light-grey;
+//  font-size: 1.2rem;
+//  margin: 20% auto 2rem auto;
+//}
+//
+//.typing {
+//  display: flex;
+//  align-content: center;
+//  align-items: center;
+//
+//  //animation: 1.2s moveDown forwards 1.6s;
+//
+//  &__henry {
+//    width: 4rem;
+//    height: auto;
+//    margin: 0 1rem 0 2.4rem;
+//  }
+//
+//  &__bubble {
+//    width: 5.1rem;
+//    height: 3rem;
+//    padding: 0 .4rem;
+//    background-color: $light-grey-2;
+//    border-radius: $msg-border;
+//
+//    //animation: .6s blink-on-off forwards 1.6s;
+//
+//    .dot {
+//      height: .66rem;
+//      width: .66rem;
+//      float: left;
+//      margin: 1rem 0 0 .7rem;
+//      background-color: $blue;
+//      display: block;
+//      border-radius: 50%;
+//      opacity: 0.4;
+//
+//      @for $i from 1 through 3 {
+//        &:nth-of-type(#{$i}) {
+//          animation: .8s blink-dots forwards 2 ($i * .2s);
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//.msg {
+//  background: $light-grey-2;
+//  font-family: $avenir;
+//  font-size: 1.6rem;
+//  border-radius: $msg-border;
+//  padding: 1rem 2rem;
+//  width: 55%;
+//  margin: 1rem auto 0 18%;
+//
+//  color: $light-grey-2;
+//  opacity: 0;
+//  animation:
+//          //.8s blink-dots forwards 2,
+//          .5s msgExpand forwards .6s;
+//}
+.bottom {
+  background: #f9f9f9;
+  padding: 2rem 0;
+}
+.bottom-line {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  bottom: 1rem; right:0; left:0;
+  width: 15rem;
+  height: .4rem;
+  background: $light-grey;
+  border-radius: 2rem;
+}
