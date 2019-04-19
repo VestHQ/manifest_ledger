@@ -13,8 +13,7 @@ repository: https://github.com/VestHQ/manifest_ledger
 google_analytics: UA-122835127-1
 
 #categories:
-baseurl: /demo
-prepend: site.baseurl
+#baseurl: /demo
 
 # Build settings
 markdown: kramdown
