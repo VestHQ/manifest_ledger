@@ -1,0 +1,31 @@
+<!-- header -->
+<header class="header">
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <a href="/"><img src="./assets/images/manifest_logo_color.png" alt=""></a>
+            </div>
+            <div class="navigation">
+                <button class="nav-toggle" id="manifest-nav-toggle">
+                    <span></span>
+                </button>
+
+                {% assign current = page.url | downcase | split: '/' %}
+
+                <ul class="nav-link" id="manifest-nav">
+                    {% if page.active == "about" %}
+                        <li class="active"><a href="/about.html">About</a></li>
+                    {% else %}
+                        <li><a href="/about.html">About</a></li>
+                    {% endif %}
+
+                    {% if page.active == "contact" %}
+                        <li class="active"><a href="/contact.html">Contact</a></li>
+                    {% else %}
+                        <li><a href="/contact.html">Contact</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

@@ -10,3 +10,16 @@
         'title': '{{ page.title | replace: "'", "\\'" }}'
     });
 </script>
+
+<!-- Nav and Mobile Nav -->
+<script type="text/javascript">
+    document.getElementById("manifest-nav-toggle").addEventListener('click', function (e) { 
+        if(document.getElementById('manifest-nav').classList.contains('nav-open') !== true){
+            document.getElementById('manifest-nav').classList.add('nav-open');
+            this.classList.add('close-menu');
+        }else{
+            document.getElementById('manifest-nav').classList.remove('nav-open');
+            this.classList.remove('close-menu');
+        }
+    });
+</script>
