@@ -445,7 +445,16 @@ header {
 
     .brand-logo {
         align-items: center;
+        margin-top: 5px;
         margin-bottom: 25px;
+
+        .col {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            img {
+                max-width: 135px;
+            }
+        }
 
         .col:nth-child(3){
             order: 2;
