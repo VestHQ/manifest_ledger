@@ -38,6 +38,7 @@ html, body {
 }
 
 body{
+    background: url('../images/manifest_footer_large.svg') no-repeat center bottom;
     font-family: 'Inter', sans-serif; 
     font-style: normal;
     font-weight: normal;
@@ -111,24 +112,6 @@ header {
     }
 }
 
-.ft-investors {
-    h4 {
-        color: $primary-color;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
-        text-transform: uppercase;
-    }
-    span {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 18px;
-        max-width: 180px;
-    }
-}
-
 .brand-logo{
     display: flex;
     flex-direction: row;
@@ -169,6 +152,26 @@ header {
 
 .brand-sec{
     padding-bottom: 90px;
+    .ft-investors {
+        h4 {
+            color: $primary-color;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+        span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            margin: 0 auto;
+            max-width: 180px;
+            margin-top: 12px;
+        }
+    }
 }
 
 /* Nac */
@@ -343,10 +346,6 @@ header {
         }
     }
 
-    .brand-sec {
-    	min-height: 850px;
-    }
-
     .brand-logo{
         align-items: center;
         .col{
@@ -427,6 +426,17 @@ header {
 
     .brand-sec {
         padding-bottom: 25px;
+        .ft-investors {
+            h4 {
+                font-size: 12px;
+                line-height: 15px;
+            }
+            span {
+                font-size: 12px;
+                line-height: 18px;
+                margin-top: 5px;
+            }
+        }
     }
 
     .brand-sec h2 {
@@ -446,7 +456,14 @@ header {
         }
     }
 
-    .inverster-info .col img {
-        margin-bottom: 25px;
+    .inverster-info {
+        .col {
+            img {
+                margin-bottom: 25px;
+            }
+            &:last-child {
+                margin-top: 30px;
+            }
+        }
     }
 }
