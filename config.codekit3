@@ -591,6 +591,16 @@
 		"oAP": "/assets/FINAL_WO_BG.mp4",
 		"oF": 0
 		},
+	"/assets/fonts.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -811,14 +821,6 @@
 		"oAP": "/assets/fonts/Inter/Inter-ExtraLightItalic.woff2",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-italic.var (1).woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-italic.var (1).woff2",
-		"oF": 0
-		},
 	"/assets/fonts/Inter/Inter-italic.var.woff2": {
 		"cB": 0,
 		"ft": 8192,
@@ -873,14 +875,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/assets/fonts/Inter/Inter-Regular.woff2",
-		"oF": 0
-		},
-	"/assets/fonts/Inter/Inter-roman.var (1).woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-roman.var (1).woff2",
 		"oF": 0
 		},
 	"/assets/fonts/Inter/Inter-roman.var.woff2": {

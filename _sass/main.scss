@@ -1,4 +1,3 @@
-@import "/assets/css/fonts.css";
 @import "1-base/1-base-dir";
 @import "3-layout/3-layout-dir";
 
@@ -54,7 +53,7 @@ body{
 }
 
 body, p, address, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', sans-serif; 
+    font-family: $avenir;
     font-style: normal;
 }
 
@@ -263,11 +262,12 @@ section.contact{
             max-width: 595px;
         }
         &.contact-info {
-            height: 100vh;
+            min-height: 590px;
             margin-left: 150px;
             max-width: 300px;
             @include respond(phone) {
                 margin-left: 0;
+                min-height: 300px;
                 max-width: 100vh;
                 width: 100%;
                 padding-top: 25px;
