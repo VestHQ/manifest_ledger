@@ -1642,6 +1642,19 @@
 		"oAP": "/assets/css/main.css.map",
 		"oF": 0
 		},
+	"/assets/css/main.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/main.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.eot": {
 		"cB": 0,
 		"ft": 8192,

@@ -1,6 +1,6 @@
 sass:
   sass_dir: _sass
-  style: expanded
+  style: compressed
 
 exclude: [".idea/"]
 

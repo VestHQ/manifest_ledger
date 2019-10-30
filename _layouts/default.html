@@ -13,19 +13,17 @@
     <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
 
 </head>
-<body class="home">
-    {% include load_animation.html %}
-    <div class="flex">
+<body>
+<div class="flex">
+    {% include title.html %}
 
-    	{% include header.html %}
+    <main class="container">
+        {% include load_animation.html %}
+        {% include main.html %}
 
-        <main class="container">
-            
-            {% include main.html %}
-
-        </main>
-            {% include footer.html %}
-    </div>
+    </main>
+        {% include footer.html %}
+</div>
 {% include scripts.html %}
 
 </body>
