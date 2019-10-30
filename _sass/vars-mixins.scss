@@ -1,0 +1,32 @@
+// variables
+$color_1: black;
+$color_2: #fff;
+$color_3: #d4dcea;
+$color_4: #102A5E;
+$font_family_1: "AvenirLTStd-Book",sans-serif;
+$font_family_2: "Avenir Next","AvenirLTStd-Book",sans-serif;
+$font_family_3: "Avenir Next", Chivo, sans-serif;
+$background_color_1: #fff;
+$background_color_2: #d4dcea;
+$background_color_3: transparent;
+
+
+$primary-color: #0040ff;
+$primary-color-dark: #1544d0;
+$secondary-color: #b7c5ff;
+$gray: #e0e0e0;
+$light-white: #f9f9f9;
+$black: #000000;
+$white: #ffffff;
+
+// mixins
+@mixin container-inner {
+    max-width: 1190px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+@mixin container-home {
+    max-width: 100vw;
+    padding: 0 30px;
+    margin: 0 auto;
+}

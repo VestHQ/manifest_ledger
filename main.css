@@ -1,0 +1,42 @@
+/*
+Error: Invalid CSS after "...ase/1-base-dir"": expected "{", was ";"
+        on line 4 of assets/css/main.scss
+
+1: ---
+2: 
+3: ---
+4: @import "../_sass/1-base/1-base-dir";
+5: @import "../_sass/3-layout/3-layout-dir";
+6: @import "fonts.css";
+7: 
+8: 
+9: // variables
+
+Backtrace:
+assets/css/main.scss:4
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Users/kataro/.rvm/gems/ruby-2.6.3/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/Users/kataro/.rvm/gems/ruby-2.6.3/bin/sass:23:in `load'
+/Users/kataro/.rvm/gems/ruby-2.6.3/bin/sass:23:in `<main>'
+/Users/kataro/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `eval'
+/Users/kataro/.rvm/gems/ruby-2.6.3/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ase/1-base-dir\"\": expected \"{\", was \";\"\A         on line 4 of assets/css/main.scss\A \A 1: ---\A 2: \A 3: ---\A 4: @import \"../_sass/1-base/1-base-dir\";\A 5: @import \"../_sass/3-layout/3-layout-dir\";\A 6: @import \"fonts.css\";\A 7: \A 8: \A 9: // variables"; }

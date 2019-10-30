@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/index_style.css" media="screen" title="CSS">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/about.css" media="screen" title="CSS">
+
     {% include meta.html %}
     <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
 </head>
 <body>
 
-    {% include header.html %}
+	{% include load_animation.html %}
 
-    {% include load_animation.html %}
+    {% include header.html %}
 
     {% include about.html %}
 
     {% include footer.html %}
-
-</div>
 
 {% include scripts.html %}
 
