@@ -281,6 +281,14 @@
 		"oAP": "/_includes/about.html",
 		"oF": 0
 		},
+	"/_includes/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_includes/contact.html",
+		"oF": 0
+		},
 	"/_includes/error.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -353,6 +361,14 @@
 		"oAP": "/_layouts/about.html",
 		"oF": 0
 		},
+	"/_layouts/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_layouts/contact.html",
+		"oF": 0
+		},
 	"/_layouts/default.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -391,6 +407,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_sass/1-base/base.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/_sass/1-base/forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/1-base/forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1232,6 +1261,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/CNAME",
+		"oF": 0
+		},
+	"/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/contact.html",
 		"oF": 0
 		},
 	"/Gemfile": {

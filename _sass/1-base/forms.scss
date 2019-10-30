@@ -1,0 +1,33 @@
+form {
+	input, textarea {
+		font-family: Inter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 28px;
+		width: 100%;
+	}
+	input {
+		background: $white;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-bottom: 1px solid $grey2;
+		margin: 4px 0 27px 0;
+		padding-bottom: 18px;
+		&:focus {
+			border-bottom: 2px solid $primary-color;
+		}
+	}
+	textarea {
+		background: $light-white;
+		border: none;
+		border-radius: 25px;
+		min-height: 237px;
+		padding: 20px;
+	}
+	.submit-button {
+		margin-top:20px;
+		min-width: 225px;
+	}
+}

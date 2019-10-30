@@ -23,7 +23,6 @@
 
 
 .text-box {
-  margin-left: 35px;
   max-width: 584px;
   width: 45vw;
   height: auto;
@@ -34,13 +33,12 @@
   }
 
   @media screen and (min-width: 690px) {
-     height: 100vh;
-     padding-top: 145px;
+    margin-left: 35px;
   }
 
   @media screen and (max-width: 820px) {
-     margin-right: 0;
-     width: 80vw;
+    margin-right: 0;
+    width: 80vw;
   }
 
   @include respond(phone) {
@@ -72,28 +70,20 @@
 
 .heading {
   color: $primary-color;
-  font-size: 48px;
-  line-height: 57px;
   margin-bottom: 28px;
 
   &--sub {
-    font-size: 17px;
-    line-height: 28px;
     margin-bottom: 60px;
     max-width: 502px;
   }
 
   @include respond(tab-land) {
-    font-size: 3rem;
     &--sub {
-      font-size: 2rem;
       margin-bottom: 45px;
     }
   }
   @include respond(small-phone) {
-    font-size: 2.2rem;
     &--sub {
-      font-size: 1.5rem;
       margin-bottom: 45px;
     }
   }
@@ -105,15 +95,23 @@
   }
   .btn-solid-blue {
     background: $primary-color;
+    border: 3px solid transparent;
     border-radius: 5px;
     display: inline-block;
-    padding: 35.5px 42px;
+    padding: 32px 40.5px;
     color: $white;
+    cursor: pointer;
     font-weight: 600;
     font-size: 20px;
     line-height: 0px;
     text-align: center;
     text-decoration: none;
+    transition: background-color 0.5s ease;
+    &:hover {
+      color: $primary-color;
+      background: $white;
+      border: 3px solid $primary-color;
+    }
     @include respond(large-phone) {
       font-size: 15px;
       padding: 26px 12px;
