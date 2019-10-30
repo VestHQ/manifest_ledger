@@ -3,7 +3,7 @@
     <div class="container">
         <div class="nav">
             <div class="logo">
-                <a href="/"><img src="assets/images/logo.png" alt="Manifest" width="164" height="29"></a>
+                <a href="/"><img src="../assets/images/logo.png" alt="Manifest" width="164" height="29"></a>
             </div>
             <div class="navigation">
                 <button class="nav-toggle" id="manifest-nav-toggle">
@@ -14,16 +14,16 @@
 
                 <ul class="nav-link" id="manifest-nav">
                     {% if page.active == "about" %}
-                        <li class="active"><a href="/about.html">About</a></li>
+                        <li class="active"><a href="/about/">About Us</a></li>
                     {% else %}
-                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/about/">About Us</a></li>
                     {% endif %}
 
-                    <!--{% if page.active == "contact" %}
-                        <li class="active"><a href="/contact.html">Contact</a></li>
+                    {% if page.active == "contact" %}
+                        <li class="active"><a href="/contact/">Contact</a></li>
                     {% else %}
-                        <li><a href="/contact.html">Contact</a></li>
-                    {% endif %}-->
+                        <li><a href="/contact/">Contact</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </div>

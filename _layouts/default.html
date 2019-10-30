@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% include meta.html %}
     <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
 </head>
+
 <body class="home">
-<div class="flex">
+
+    {% include load_animation.html %}
 
 	{% include header.html %}
 
-    <main class="container">
-        {% include load_animation.html %}
-        {% include main.html %}
+    {% include main.html %}
 
-    </main>
-        {% include footer.html %}
-</div>
-{% include scripts.html %}
+    {% include footer.html %}
+	
+	{% include scripts.html %}
 
 </body>
 </html>
