@@ -62,7 +62,7 @@ p a, p a:hover, p a:active, p a:visited {
 }
 
 h1 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 48px;
     line-height: 58px;
     @media(max-width:767px){
@@ -188,7 +188,7 @@ section.contact{
     }
 }
 
-.inverster-info{
+.invester-info{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -464,7 +464,7 @@ section.contact{
         }
     }
 
-    .inverster-info{
+    .invester-info{
     	margin-bottom: 30px;
         .col{
         	padding: 0 92px;
@@ -522,7 +522,7 @@ section.contact{
 
     .about-mainfest{
         margin-top: 35px;
-        margin-bottom: 80px;
+        margin-bottom: 25px;
     }
 
     .contact-action {
@@ -579,8 +579,10 @@ section.contact{
         }
     }
 
-    .inverster-info {
+    .invester-info {
+        margin: 5px 0;
         .col {
+            flex: none;
             img {
                 margin-bottom: 25px;
             }

@@ -30,7 +30,7 @@
         url('Inter-Bold.woff') format('woff'),
         url('Inter-Bold.ttf') format('truetype'),
         url('Inter-Bold.svg#Inter-Bold') format('svg');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -54,7 +54,7 @@
         url('Inter-BoldItalic.woff') format('woff'),
         url('Inter-BoldItalic.ttf') format('truetype'),
         url('Inter-BoldItalic.svg#Inter-BoldItalic') format('svg');
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
 }
 
@@ -78,7 +78,7 @@
         url('Inter-Bold_1.woff') format('woff'),
         url('Inter-Bold_1.ttf') format('truetype'),
         url('Inter-Bold_1.svg#Inter-Bold') format('svg');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -90,7 +90,7 @@
         url('Inter-BoldItalic_1.woff') format('woff'),
         url('Inter-BoldItalic_1.ttf') format('truetype'),
         url('Inter-BoldItalic_1.svg#Inter-BoldItalic') format('svg');
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
 }
 
