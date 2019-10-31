@@ -4,12 +4,15 @@
 * {
     outline: none;
     &:hover {
-        -webkit-transition: all 0.7s ease;
-        -moz-transition: all 0.7s ease;
-        -ms-transition: all 0.7s ease;
-        -o-transition: all 0.7s ease;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
     }
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
+
+
 
 // Custom Scroll
 ::-webkit-scrollbar {
