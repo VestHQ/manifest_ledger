@@ -555,6 +555,16 @@
 		"oAP": "/about.html",
 		"oF": 0
 		},
+	"/assets/css/fonts-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/fonts-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/assets/css/fonts.css": {
 		"aP": 1,
 		"bl": 0,
@@ -591,186 +601,356 @@
 		"oAP": "/assets/FINAL_WO_BG.mp4",
 		"oF": 0
 		},
-	"/assets/fonts.css": {
+	"/assets/fonts/Inter-web/Inter-Black.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Black.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Black.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Black.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-BlackItalic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-BlackItalic.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-BlackItalic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-BlackItalic.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Bold.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Bold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Bold.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-BoldItalic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-BoldItalic.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-BoldItalic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-BoldItalic.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-ExtraBold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-ExtraBold.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-ExtraBold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-ExtraBold.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-ExtraBoldItalic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-ExtraBoldItalic.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-ExtraBoldItalic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-ExtraBoldItalic.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-ExtraLight-BETA.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-ExtraLight-BETA.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-ExtraLight-BETA.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-ExtraLight-BETA.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-ExtraLightItalic-BETA.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-ExtraLightItalic-BETA.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-ExtraLightItalic-BETA.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-ExtraLightItalic-BETA.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Italic.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Italic.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Light-BETA.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Light-BETA.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Light-BETA.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Light-BETA.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-LightItalic-BETA.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-LightItalic-BETA.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-LightItalic-BETA.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-LightItalic-BETA.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Medium.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Medium.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Medium.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Medium.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-MediumItalic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-MediumItalic.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-MediumItalic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-MediumItalic.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Regular.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Regular.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Regular.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-SemiBold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-SemiBold.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-SemiBold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-SemiBold.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-SemiBoldItalic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-SemiBoldItalic.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-SemiBoldItalic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-SemiBoldItalic.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Thin-BETA.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Thin-BETA.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-Thin-BETA.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-Thin-BETA.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-ThinItalic-BETA.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-ThinItalic-BETA.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/Inter-ThinItalic-BETA.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-web/Inter-ThinItalic-BETA.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-web/inter.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts-min.css",
+		"oAP": "/assets/fonts/Inter-web/inter-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.eot": {
+	"/assets/fonts/Inter/font-inter-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/font-inter-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/fonts/Inter/font-inter.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/font-inter-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/fonts/Inter/Inter-Bold.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.eot",
+		"oAP": "/assets/fonts/Inter/Inter-Bold.eot",
 		"oF": 0
 		},
-	"/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.svg": {
+	"/assets/fonts/Inter/Inter-Bold.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.svg",
+		"oAP": "/assets/fonts/Inter/Inter-Bold.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.ttf": {
+	"/assets/fonts/Inter/Inter-Bold.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.ttf",
+		"oAP": "/assets/fonts/Inter/Inter-Bold.ttf",
 		"oF": 0
 		},
-	"/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.woff": {
+	"/assets/fonts/Inter/Inter-Bold.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.woff",
-		"oF": 0
-		},
-	"/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/AvenirLTStd-Book/AvenirLTStd-Book.woff2",
-		"oF": 0
-		},
-	"/assets/fonts/AvenirLTStd-Book/font.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/AvenirLTStd-Book/font-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.eot",
-		"oF": 0
-		},
-	"/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.otf",
-		"oF": 0
-		},
-	"/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.ttf",
-		"oF": 0
-		},
-	"/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/BerlingLTStd-Roman/BerlingLTStd-Roman.woff",
-		"oF": 0
-		},
-	"/assets/fonts/BerlingLTStd-Roman/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/BerlingLTStd-Roman/styles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.eot",
-		"oF": 0
-		},
-	"/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.otf",
-		"oF": 0
-		},
-	"/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.ttf",
-		"oF": 0
-		},
-	"/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.woff",
-		"oF": 0
-		},
-	"/assets/fonts/HelveticaLTStd-Roman/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/HelveticaLTStd-Roman/styles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/fonts/Inter/Inter-Black.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-Black.woff2",
-		"oF": 0
-		},
-	"/assets/fonts/Inter/Inter-BlackItalic.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-BlackItalic.woff2",
+		"oAP": "/assets/fonts/Inter/Inter-Bold.woff",
 		"oF": 0
 		},
 	"/assets/fonts/Inter/Inter-Bold.woff2": {
@@ -781,6 +961,82 @@
 		"oAP": "/assets/fonts/Inter/Inter-Bold.woff2",
 		"oF": 0
 		},
+	"/assets/fonts/Inter/Inter-Bold_1.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-Bold_1.eot",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-Bold_1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/fonts/Inter/Inter-Bold_1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/fonts/Inter/Inter-Bold_1.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-Bold_1.ttf",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-Bold_1.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-Bold_1.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-Bold_1.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-Bold_1.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-BoldItalic.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-BoldItalic.eot",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-BoldItalic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/fonts/Inter/Inter-BoldItalic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/fonts/Inter/Inter-BoldItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-BoldItalic.ttf",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-BoldItalic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-BoldItalic.woff",
+		"oF": 0
+		},
 	"/assets/fonts/Inter/Inter-BoldItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
@@ -789,84 +1045,80 @@
 		"oAP": "/assets/fonts/Inter/Inter-BoldItalic.woff2",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-ExtraBold.woff2": {
+	"/assets/fonts/Inter/Inter-BoldItalic_1.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-ExtraBold.woff2",
+		"oAP": "/assets/fonts/Inter/Inter-BoldItalic_1.eot",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-ExtraBoldItalic.woff2": {
+	"/assets/fonts/Inter/Inter-BoldItalic_1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/fonts/Inter/Inter-BoldItalic_1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/fonts/Inter/Inter-BoldItalic_1.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-ExtraBoldItalic.woff2",
+		"oAP": "/assets/fonts/Inter/Inter-BoldItalic_1.ttf",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-ExtraLight.woff2": {
+	"/assets/fonts/Inter/Inter-BoldItalic_1.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-ExtraLight.woff2",
+		"oAP": "/assets/fonts/Inter/Inter-BoldItalic_1.woff",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-ExtraLightItalic.woff2": {
+	"/assets/fonts/Inter/Inter-BoldItalic_1.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-ExtraLightItalic.woff2",
+		"oAP": "/assets/fonts/Inter/Inter-BoldItalic_1.woff2",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-italic.var.woff2": {
+	"/assets/fonts/Inter/Inter-Regular.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-italic.var.woff2",
+		"oAP": "/assets/fonts/Inter/Inter-Regular.eot",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-Italic.woff2": {
+	"/assets/fonts/Inter/Inter-Regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/fonts/Inter/Inter-Regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/fonts/Inter/Inter-Regular.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-Italic.woff2",
+		"oAP": "/assets/fonts/Inter/Inter-Regular.ttf",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-Light.woff2": {
+	"/assets/fonts/Inter/Inter-Regular.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-Light.woff2",
-		"oF": 0
-		},
-	"/assets/fonts/Inter/Inter-LightItalic.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-LightItalic.woff2",
-		"oF": 0
-		},
-	"/assets/fonts/Inter/Inter-Medium.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-Medium.woff2",
-		"oF": 0
-		},
-	"/assets/fonts/Inter/Inter-MediumItalic.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-MediumItalic.woff2",
+		"oAP": "/assets/fonts/Inter/Inter-Regular.woff",
 		"oF": 0
 		},
 	"/assets/fonts/Inter/Inter-Regular.woff2": {
@@ -877,12 +1129,80 @@
 		"oAP": "/assets/fonts/Inter/Inter-Regular.woff2",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-roman.var.woff2": {
+	"/assets/fonts/Inter/Inter-Regular_1.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-roman.var.woff2",
+		"oAP": "/assets/fonts/Inter/Inter-Regular_1.eot",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-Regular_1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/fonts/Inter/Inter-Regular_1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/fonts/Inter/Inter-Regular_1.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-Regular_1.ttf",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-Regular_1.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-Regular_1.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-Regular_1.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-Regular_1.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBold.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBold.eot",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBold.ttf",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBold.woff",
 		"oF": 0
 		},
 	"/assets/fonts/Inter/Inter-SemiBold.woff2": {
@@ -893,6 +1213,82 @@
 		"oAP": "/assets/fonts/Inter/Inter-SemiBold.woff2",
 		"oF": 0
 		},
+	"/assets/fonts/Inter/Inter-SemiBold_1.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBold_1.eot",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBold_1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBold_1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBold_1.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBold_1.ttf",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBold_1.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBold_1.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBold_1.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBold_1.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBoldItalic.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBoldItalic.eot",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBoldItalic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBoldItalic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBoldItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBoldItalic.ttf",
+		"oF": 0
+		},
+	"/assets/fonts/Inter/Inter-SemiBoldItalic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter/Inter-SemiBoldItalic.woff",
+		"oF": 0
+		},
 	"/assets/fonts/Inter/Inter-SemiBoldItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
@@ -901,141 +1297,47 @@
 		"oAP": "/assets/fonts/Inter/Inter-SemiBoldItalic.woff2",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-Thin.woff2": {
+	"/assets/fonts/Inter/Inter-SemiBoldItalic_1.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-Thin.woff2",
+		"oAP": "/assets/fonts/Inter/Inter-SemiBoldItalic_1.eot",
 		"oF": 0
 		},
-	"/assets/fonts/Inter/Inter-ThinItalic.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter-ThinItalic.woff2",
-		"oF": 0
-		},
-	"/assets/fonts/Inter/Inter.var.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Inter/Inter.var.woff2",
-		"oF": 0
-		},
-	"/assets/fonts/Montserrat-Regular/Montserrat-Regular.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Montserrat-Regular/Montserrat-Regular.eot",
-		"oF": 0
-		},
-	"/assets/fonts/Montserrat-Regular/Montserrat-Regular.svg": {
+	"/assets/fonts/Inter/Inter-SemiBoldItalic_1.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/fonts/Montserrat-Regular/Montserrat-Regular.svg",
+		"oAP": "/assets/fonts/Inter/Inter-SemiBoldItalic_1.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/assets/fonts/Montserrat-Regular/Montserrat-Regular.ttf": {
+	"/assets/fonts/Inter/Inter-SemiBoldItalic_1.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Montserrat-Regular/Montserrat-Regular.ttf",
+		"oAP": "/assets/fonts/Inter/Inter-SemiBoldItalic_1.ttf",
 		"oF": 0
 		},
-	"/assets/fonts/Montserrat-Regular/Montserrat-Regular.woff": {
+	"/assets/fonts/Inter/Inter-SemiBoldItalic_1.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Montserrat-Regular/Montserrat-Regular.woff",
+		"oAP": "/assets/fonts/Inter/Inter-SemiBoldItalic_1.woff",
 		"oF": 0
 		},
-	"/assets/fonts/Montserrat-Regular/preview.html": {
+	"/assets/fonts/Inter/Inter-SemiBoldItalic_1.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Montserrat-Regular/preview.html",
+		"oAP": "/assets/fonts/Inter/Inter-SemiBoldItalic_1.woff2",
 		"oF": 0
-		},
-	"/assets/fonts/Montserrat-Regular/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/Montserrat-Regular/styles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.eot",
-		"oF": 0
-		},
-	"/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.otf",
-		"oF": 0
-		},
-	"/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.ttf",
-		"oF": 0
-		},
-	"/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/MyriadPro-Regular/MyriadPro-Regular.woff",
-		"oF": 0
-		},
-	"/assets/fonts/MyriadPro-Regular/preview.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/MyriadPro-Regular/preview.html",
-		"oF": 0
-		},
-	"/assets/fonts/MyriadPro-Regular/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/MyriadPro-Regular/styles-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/assets/images/animation-gumball.gif": {
 		"ft": 4194304,

@@ -57,9 +57,13 @@ body, p, address, h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
+p a, p a:hover, p a:active, p a:visited {
+    color: $primary-color-dark;
+}
+
 h1 {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 48px;
     line-height: 58px;
     @media(max-width:767px){
         font-size: 32px;
