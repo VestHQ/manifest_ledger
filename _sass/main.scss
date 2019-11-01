@@ -118,6 +118,9 @@ h5, form label {
 		    color: $primary-color;
 	    }
 	}
+    @media(max-width:767px){
+        line-height: 39px;
+    }
 }
 
 
