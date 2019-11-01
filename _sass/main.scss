@@ -293,6 +293,7 @@ section.contact{
 .nav-link.nav-open{
     display: flex !important;
     flex-direction: column;
+    z-index: 10px;
 }
 
 .nav{
