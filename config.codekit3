@@ -601,6 +601,14 @@
 		"oAP": "/assets/FINAL_WO_BG.mp4",
 		"oF": 0
 		},
+	"/assets/FINAL_WO_BG.webm": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/FINAL_WO_BG.webm",
+		"oF": 0
+		},
 	"/assets/fonts/Inter-web/Inter-Black.woff": {
 		"cB": 0,
 		"ft": 8192,
