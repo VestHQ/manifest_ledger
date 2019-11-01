@@ -22,13 +22,16 @@ html {
 }
 
 body{
-  /*background: url('../images/manifest_footer_large.svg') no-repeat center bottom $white;*/
+  background: url('../images/manifest_footer_large.svg') no-repeat center bottom $white;
   box-sizing: border-box;
   font-family: $avenir;
   max-width: 114rem;
   min-height: 100vh;
   background-color: $white;
   overflow-x: hidden;
+  &.home {
+    background: $white;
+  }
 }
 
 .flex {
