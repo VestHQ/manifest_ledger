@@ -96,10 +96,14 @@
 }
 
 .btn {
-  min-width: 225px;
   @media screen and (max-width: 820px) {
-    min-width: 165px;
     text-align: center;
+  }
+  a, button {
+    min-width: 225px;
+    @media screen and (max-width: 820px) {
+      min-width: 165px;
+    }
   }
   .btn-solid-blue {
     background: $primary-color;
