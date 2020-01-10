@@ -9,10 +9,9 @@ title: manifest ledger
 email: tripathi@vesthq.com
 description: "A fintech lab."
 keywords: fintech, news, media, affordable, modern, 401(k), retirement, full-service, automated, retirement, pre-tax, auto-enrollment, HR-tech, Fintech, Chicago, Illinois, mobile, compliance, fiduciary, harbor, harborhq, vest, vesthq
-url: http://manifestledger.com
+url: https://manifestledger.com
 repository: https://github.com/VestHQ/manifest_ledger
 google_analytics: UA-122835127-1
-
 
 # Build settings
 markdown: kramdown
@@ -25,8 +24,6 @@ plugins:
 autoprefixer:
   browsers:
     - last 10 versions
-
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
