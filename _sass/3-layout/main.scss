@@ -56,16 +56,19 @@
   @media screen and (max-width: 820px) {
     width: 48vw;
   }
+
   @include respond(phone) {
     width: 70vw;
   }
 }
 
-.anim-gumball, #video-hp {
+.anim-gumball,
+#video-hp {
   margin-bottom: 20px;
   max-width: 100%;
   position: relative;
   z-index: -1;
+
   @media screen and (max-width: 820px) {
     margin-bottom: 30px;
   }
@@ -89,6 +92,7 @@
       margin-bottom: 45px;
     }
   }
+
   @include respond(small-phone) {
     &--sub {
       margin-bottom: 45px;
@@ -100,12 +104,16 @@
   @media screen and (max-width: 820px) {
     text-align: center;
   }
-  a, button {
+
+  a,
+  button {
     min-width: 225px;
+
     @media screen and (max-width: 820px) {
       min-width: 165px;
     }
   }
+
   .btn-solid-blue {
     background: $primary-color;
     border: 3px solid transparent;
@@ -120,16 +128,19 @@
     text-align: center;
     text-decoration: none;
     transition: background-color 0.5s ease;
+
     &:hover {
       color: $primary-color;
       background: $white;
       border: 3px solid $primary-color;
     }
+
     @include respond(large-phone) {
       font-size: 15px;
       padding: 26px 12px;
     }
   }
+
   .btn-double-border {
     position: relative;
     display: inline-block;
@@ -179,4 +190,81 @@
       }
     }
   }
+}
+
+// THREE BOXES
+.three__containers {
+  margin-top: 250px;
+  display: grid;
+  gap: 275px;
+
+  @include respond(phone) {
+    gap: 105px;
+    margin-top: 150px;
+  }
+
+  .home__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+
+    @media screen and (max-width: 820px) {
+      display: grid;
+      grid-auto-flow: dense;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 120px;
+    }
+
+    @include respond(phone) {
+      gap: 55px;
+    }
+
+    &__text {
+      max-width: 471px;
+      justify-self: start;
+
+      @media screen and (max-width: 820px) {
+        justify-self: auto;
+      }
+
+      &--title {
+        color: $primary-color;
+        margin-bottom: 20px;
+
+        @include respond(phone) {
+          margin-bottom: 8px;
+        }
+      }
+
+      &--heading {
+        margin-bottom: 33px;
+        line-height: 42px;
+
+        @media screen and (max-width: 767px) {
+          line-height: 28px;
+          margin-bottom: 26px;
+        }
+
+        @include respond(phone) {}
+      }
+    }
+
+    &__img {
+      width: 95%;
+      height: auto;
+    }
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.yellow-line {
+  width: 29px;
+  height: 4px;
+  margin-bottom: 10px;
+  background-color: $yellow;
 }
