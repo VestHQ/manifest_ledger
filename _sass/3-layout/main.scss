@@ -80,7 +80,11 @@
 
 .heading {
   color: $primary-color;
-  margin-bottom: 28px;
+  margin-bottom: 68px;
+
+  @include respond (phone) {
+    margin-bottom: 50px;
+  }
 
   &--sub {
     margin-bottom: 60px;
