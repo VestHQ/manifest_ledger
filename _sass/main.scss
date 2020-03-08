@@ -5,6 +5,7 @@
     outline: none;
 
     &:hover {
+        transition: all 0.8s ease;
         -webkit-transition: all 0.8s ease;
         -moz-transition: all 0.8s ease;
         -ms-transition: all 0.8s ease;
@@ -220,8 +221,6 @@ section.contact {
 }
 
 .brand-sec {
-    border: 2px dotted aqua;
-
     margin-bottom: 327px;
 
     @include respond(phone) {
@@ -233,7 +232,6 @@ section.contact {
         margin: 0 auto;
         padding: 0 30px;
         max-width: 1250px;
-        border: 2px dotted azure;
         position: relative;
     }
 
