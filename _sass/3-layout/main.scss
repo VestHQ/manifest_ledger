@@ -198,13 +198,13 @@
 
 // THREE BOXES
 .three__containers {
-  margin-top: 250px;
+  margin: 250px 0 350px 0;
   display: grid;
   gap: 275px;
 
   @include respond(phone) {
     gap: 105px;
-    margin-top: 150px;
+    margin: 150px 0 170px 0;
   }
 
   .home__block {
