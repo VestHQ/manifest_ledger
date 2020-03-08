@@ -118,6 +118,10 @@
     }
   }
 
+  .submit-button {
+    min-width: 185px;
+  }
+
   .btn-solid-blue {
     background: $primary-color;
     border: 3px solid transparent;
@@ -134,9 +138,9 @@
     transition: background-color 0.5s ease;
 
     &:hover {
-      color: $primary-color;
-      background: $white;
-      border: 3px solid $primary-color;
+      color: $white;
+      background: $light-hover;
+      border: 3px solid $light-hover;
     }
 
     @include respond(large-phone) {
@@ -152,7 +156,6 @@
     line-height: 1.4;
     margin-bottom: 2rem;
     border: 1.5px solid $dark-blue;
-    //border-radius: 3px;
     color: black;
 
     font-size: 1.5rem;

@@ -370,6 +370,10 @@ section.contact {
             margin-left: 150px;
             max-width: 300px;
 
+            .contact-title {
+                margin-bottom: 10px;
+            }
+
             @include respond(phone) {
                 margin-left: 0;
                 min-height: 300px;
