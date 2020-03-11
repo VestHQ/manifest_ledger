@@ -124,7 +124,7 @@
   }
 
   .home-btn {
-    padding: 28px 16.5px;
+    padding: 28px 26.5px;
   }
   .contact-btn {
     padding: 28px 40.5px;
@@ -214,7 +214,7 @@
 
   @include respond(phone) {
     gap: 105px;
-    margin: 150px 0 170px 0;
+    margin: 120px 0 170px 0;
   }
 
   .home__block {

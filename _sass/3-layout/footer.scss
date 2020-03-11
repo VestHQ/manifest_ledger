@@ -1,5 +1,6 @@
 .footer {
   padding: 40px 15px 15px 20px;
+  margin-bottom: 25px;
   text-align: center;
 
   @include respond (phone) {
