@@ -27,9 +27,8 @@
   width: 45vw;
   height: auto;
 
-  @include respond(tab-port) {
-    //text-align: center;
-    //margin-right: 0;
+  .u-mb {
+    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 690px) {
@@ -80,7 +79,7 @@
 
 .heading {
   color: $primary-color;
-  margin-bottom: 28px;
+  margin-bottom: 48px;
 
   @include respond (phone) {
     margin-bottom: 20px;
@@ -209,13 +208,14 @@
 
 // THREE BOXES
 .three__containers {
-  margin: 250px 0 350px 0;
+  margin: 30px 0 175px 0;
   display: grid;
-  gap: 275px;
+  gap: 175px;
 
   @include respond(phone) {
-    gap: 105px;
     margin: 120px 0 170px 0;
+    gap: 105px;
+    margin-bottom: 105px;
   }
 
   .home__block {
@@ -239,9 +239,9 @@
         justify-self: auto;
       }
 
-      @include respond(phone) {
+      @media screen and (max-width: 820px) {
         margin: 0;
-        margin-bottom: 105px;
+        margin-bottom: 65px;
       }
 
       &--title {
