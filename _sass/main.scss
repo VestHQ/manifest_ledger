@@ -82,7 +82,7 @@ p a:visited {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 48px;
     line-height: 58px;
 
@@ -108,7 +108,7 @@ h4 {
     font-size: 20px;
     line-height: 25px;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 
     @include respond (phone) {
         margin-bottom: 3px;
@@ -135,6 +135,7 @@ form label {
 .heading {
     line-height: 55px;
     width: 100%;
+    font-weight: 600;
 
     &.inner {
         color: $primary-color;
@@ -166,7 +167,7 @@ header {
 // About
 .about-mainfest {
     display: grid;
-    gap: 160px;
+    gap: 100px;
 
     @include respond(tab-port) {
         gap: 80px;
@@ -201,6 +202,9 @@ section.contact {
     margin-top: 5px;
 }
 
+.contact-btn{
+    padding: 28px 40.5px;
+}
 
 // PAGE: ABOUT
 .contact-action {
@@ -213,6 +217,11 @@ section.contact {
     .col {
         margin-bottom: 15px;
     }
+
+    .job-board {
+        color: $primary-color;
+        font-weight: 600;
+    }
 }
 
 .about--img {
@@ -221,7 +230,7 @@ section.contact {
 }
 
 .brand-sec {
-    margin-bottom: 327px;
+    margin-bottom: 160px;
 
     @include respond(phone) {
         margin-bottom: 97px;
@@ -298,26 +307,23 @@ section.contact {
 //     }
 // }
 
-// .brand-sec {
-//     padding-bottom: 55px;
+.brand-sec {
+    padding-bottom: 55px;
 
-//     .ft-investors {
-//         h4 {
-//             color: $primary-color;
-//         }
+    .ft-investors {
+        h4 {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+        }
 
-//         span {
-//             font-style: normal;
-//             font-weight: normal;
-//             font-size: 14px;
-//             line-height: 18px;
-//             display: block;
-//             margin: 0 auto;
-//             max-width: 180px;
-//             margin-top: 12px;
-//         }
-//     }
-// }
+        span {
+            font-size: 14px;
+            line-height: 21px;
+            margin-top: 12px;
+        }
+    }
+}
 
 
 // PAGE: CONTACT
@@ -363,6 +369,10 @@ section.contact {
 
         &.form-contact {
             max-width: 595px;
+
+            .editor {
+                margin-top: 20px;
+            }
         }
 
         &.contact-info {
@@ -588,8 +598,8 @@ section.contact {
 
 @media(max-width:767px) {
     body {
-        font-size: 15px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 21px;
     }
 
     .container {
@@ -651,59 +661,16 @@ section.contact {
         .ft-investors {
             align-self: start;
 
-            h4 {
+            .ft-investors--name {
                 font-size: 14px;
                 line-height: 17px;
+                letter-spacing: 0.15em;
             }
 
-            span {
+            .ft-investors--description {
                 font-size: 12px;
                 line-height: 18px;
-                // margin-top: 5px;
             }
         }
     }
-
-    // .brand-sec h2 {
-    //     padding-top: 20px;
-    // }
-
-    // .brand-logo {
-    //     align-items: center;
-    //     margin-top: 5px;
-    //     margin-bottom: 25px;
-
-    //     .col {
-    //         padding-top: 30px;
-    //         padding-bottom: 30px;
-
-    //         img {
-    //             max-width: 135px;
-    //         }
-    //     }
-
-    //     .col:nth-child(3) {
-    //         order: 2;
-    //     }
-
-    //     .col:last-child {
-    //         order: 1;
-    //     }
-    // }
-
-    // .invester-info {
-    //     margin: 5px 0;
-
-    //     .col {
-    //         flex: none;
-
-    //         img {
-    //             margin-bottom: 25px;
-    //         }
-
-    //         &:last-child {
-    //             margin-top: 30px;
-    //         }
-    //     }
-    // }
 }

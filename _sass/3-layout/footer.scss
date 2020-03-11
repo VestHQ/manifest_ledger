@@ -1,5 +1,5 @@
 .footer {
-  padding: 40px 0 20px;
+  padding: 40px 15px 15px 20px;
   text-align: center;
 
   @include respond (phone) {
@@ -9,17 +9,29 @@
   &__copyright {
     display: flex;
     font-size: 14px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    max-width: 250px;
+    max-width: 290px;
     margin: 0 auto 14px auto;
+    gap: 25px;
+
+    .socials {
+      display: flex;
+      gap: 11px;
+    }
 
     @include respond (phone) {
       margin: 0 auto 10px auto;
+      font-size: 12px;
     }
   }
 
   &__legal {
     font-size: 12px;
+
+    @include respond (phone) {
+      font-size: 10px;
+      line-height: 14px;
+    }
   }
 }
