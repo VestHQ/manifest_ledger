@@ -18,7 +18,11 @@
 
     .socials {
       display: flex;
-      gap: 11px;
+      margin-right: 25px;
+
+      .u-mr {
+        margin-right: 11px;
+      }
     }
 
     @include respond (phone) {
