@@ -177,19 +177,13 @@ header {
         @include container-inner;
     }
 
-    margin-bottom: 40px;
-    margin-top: 5px;
+    margin: 65px 0 25px 0;
 }
 
-
-// .brand-sec {
-//     .container {
-//         @include container-inner;
-//     }
-
-//     h2 {
-//         padding-top: 25px;
-//     }
+// .about-hero {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 80px;
 // }
 
 // Contact
@@ -198,8 +192,12 @@ section.contact {
         @include container-inner;
     }
 
-    margin-bottom: 40px;
-    margin-top: 5px;
+    margin: 60px 0 25px 0;
+
+    @include respond(large-phone) {
+        margin-top: 25px;
+    }
+
 }
 
 .contact-btn {
@@ -225,12 +223,12 @@ section.contact {
 }
 
 .about--img {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
 }
 
 .brand-sec {
-    margin-bottom: 160px;
+    margin-bottom: 80px;
 
     @include respond(phone) {
         margin-bottom: 97px;
@@ -246,8 +244,16 @@ section.contact {
 
     &__investors {
         display: grid;
-        gap: 75px;
+        gap: 35px;
         grid-template-columns: repeat(3, 1fr);
+
+        img {
+            max-width: 200px;
+
+            @include respond (phone) {
+                width: 100%;
+            }
+        }
 
         @include respond(phone) {
             gap: 46px;
@@ -361,7 +367,7 @@ section.contact {
 
 section.contact {
     @include respond(phone) {
-        padding-top: 35px;
+        padding-top: 0;
     }
 
     .col {
@@ -411,7 +417,7 @@ section.contact {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 25px 0;
+    padding: 25px 0 35px 0;
     width: 100%;
 
     .logo {
@@ -422,6 +428,11 @@ section.contact {
         img {
             max-width: 100%;
             width: 100%;
+
+            @include respond (phone) {
+                height: auto;
+                width: 70%;
+            }
         }
     }
 }
@@ -546,7 +557,7 @@ section.contact {
     }
 
     .nav {
-        padding: 60px 0;
+        padding: 20px 0;
 
         .logo {
             height: 29px;
@@ -646,8 +657,13 @@ section.contact {
     }
 
     .about-mainfest {
-        margin-top: 35px;
-        margin-bottom: 25px;
+        margin: 65px 0 25px 0;
+        max-width: 1250px;
+
+        @include respond(large-phone) {
+            margin-top: 25px;
+            gap: 20px;
+        }
     }
 
     .contact-action {
@@ -657,6 +673,10 @@ section.contact {
 
     .brand-sec {
         padding-bottom: 25px;
+
+        @include respond (phone) {
+            margin-top: 65px;
+        }
 
         .ft-investors {
             align-self: start;
