@@ -1,6 +1,6 @@
 *,
 *::after,
-*::before{
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -9,28 +9,31 @@
 html {
   font-size: 62.5%;
 
-  @include respond(tab-land) {  // width < 1200?
+  @include respond(tab-land) {
+    // width < 1200?
     font-size: 56.25%;
   }
 
-  @include respond(tab-port) { // width < 900?
+  @include respond(tab-port) {
+    // width < 900?
     font-size: 50%;
   }
+
   @include respond(big-desktop) {
     font-size: 75%;
   }
 }
 
-body{
+body {
   background: url('../images/manifest_footer_large.svg') no-repeat center bottom $white;
   box-sizing: border-box;
   font-family: $avenir;
   max-width: 114rem;
   min-height: 100vh;
-  background-color: $white;
   overflow-x: hidden;
-  &.home {
-    background: $white;
+
+  @include respond (phone) {
+    background-size: 430%;
   }
 }
 

@@ -56,16 +56,19 @@
   @media screen and (max-width: 820px) {
     width: 48vw;
   }
+
   @include respond(phone) {
     width: 70vw;
   }
 }
 
-.anim-gumball, #video-hp {
+.anim-gumball,
+#video-hp {
   margin-bottom: 20px;
   max-width: 100%;
   position: relative;
   z-index: -1;
+
   @media screen and (max-width: 820px) {
     margin-bottom: 30px;
   }
@@ -79,6 +82,11 @@
   color: $primary-color;
   margin-bottom: 28px;
 
+  @include respond (phone) {
+    margin-bottom: 20px;
+    letter-spacing: -0.021em;
+  }
+
   &--sub {
     margin-bottom: 60px;
     max-width: 502px;
@@ -89,6 +97,7 @@
       margin-bottom: 45px;
     }
   }
+
   @include respond(small-phone) {
     &--sub {
       margin-bottom: 45px;
@@ -100,18 +109,32 @@
   @media screen and (max-width: 820px) {
     text-align: center;
   }
-  a, button {
-    min-width: 225px;
+
+  a,
+  button {
+    min-width: 185px;
+
     @media screen and (max-width: 820px) {
       min-width: 165px;
     }
   }
+
+  .submit-button {
+    min-width: 185px;
+  }
+
+  .home-btn {
+    padding: 28px 26.5px;
+  }
+  .contact-btn {
+    padding: 28px 40.5px;
+  }
+
   .btn-solid-blue {
     background: $primary-color;
     border: 3px solid transparent;
     border-radius: 12px;
     display: inline-block;
-    padding: 32px 40.5px;
     color: $white;
     cursor: pointer;
     font-weight: 600;
@@ -120,16 +143,19 @@
     text-align: center;
     text-decoration: none;
     transition: background-color 0.5s ease;
+
     &:hover {
-      color: $primary-color;
-      background: $white;
-      border: 3px solid $primary-color;
+      color: $white;
+      background: $light-hover;
+      border: 3px solid $light-hover;
     }
+
     @include respond(large-phone) {
       font-size: 15px;
       padding: 26px 12px;
     }
   }
+
   .btn-double-border {
     position: relative;
     display: inline-block;
@@ -137,7 +163,6 @@
     line-height: 1.4;
     margin-bottom: 2rem;
     border: 1.5px solid $dark-blue;
-    //border-radius: 3px;
     color: black;
 
     font-size: 1.5rem;
@@ -179,4 +204,86 @@
       }
     }
   }
+}
+
+// THREE BOXES
+.three__containers {
+  margin: 250px 0 350px 0;
+  display: grid;
+  gap: 275px;
+
+  @include respond(phone) {
+    gap: 105px;
+    margin: 120px 0 170px 0;
+  }
+
+  .home__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+
+    @media screen and (max-width: 820px) {
+      display: grid;
+      grid-auto-flow: dense;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 120px;
+    }
+
+    @include respond(phone) {
+      gap: 55px;
+    }
+
+    &__text {
+      max-width: 471px;
+      justify-self: start;
+
+      @media screen and (max-width: 820px) {
+        justify-self: auto;
+      }
+
+      &--title {
+        color: $primary-color;
+        margin-bottom: 20px;
+        font-weight: 600;
+        letter-spacing: .05em;
+
+        @include respond(phone) {
+          margin-bottom: 8px;
+        }
+      }
+
+      &--heading {
+        margin-bottom: 33px;
+        line-height: 42px;
+
+        @media screen and (max-width: 767px) {
+          line-height: 28px;
+          margin-bottom: 26px;
+        }
+
+        @include respond(phone) {
+          margin-bottom: 10px;
+          letter-spacing: -0.021em;
+        }
+      }
+    }
+
+    &__img {
+      width: 95%;
+      height: auto;
+    }
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.yellow-line {
+  width: 29px;
+  height: 4px;
+  margin-bottom: 10px;
+  background-color: $yellow;
 }
