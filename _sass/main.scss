@@ -1,4 +1,5 @@
 @import "1-base/1-base-dir";
+@import "2-components/2-components-dir";
 @import "3-layout/3-layout-dir";
 
 * {
@@ -83,23 +84,23 @@ p a:visited {
 
 h1 {
     font-weight: 600;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 40px;
+    line-height: 50px;
 
-    @media(max-width:767px) {
-        font-size: 30px;
-        line-height: 39px;
+    @include respond(phone) {
+        font-size: 25px;
+        line-height: 32px;
     }
 }
 
 h2 {
     font-weight: 600;
-    font-size: 34px;
-    line-height: 41spx;
+    font-size: 30px;
+    line-height: 40px;
 
-    @media(max-width:767px) {
-        font-size: 20px;
-        line-height: 24px;
+    @include respond(phone) {
+        font-size: 18px;
+        line-height: 25px;
     }
 }
 
@@ -133,9 +134,12 @@ form label {
 // HEADER
 
 .heading {
-    line-height: 55px;
     width: 100%;
     font-weight: 600;
+
+    @include respond (phone) {
+        width: 99%;
+    }
 
     &.inner {
         color: $primary-color;
@@ -147,13 +151,7 @@ form label {
             color: $primary-color;
         }
     }
-
-    @media(max-width:767px) {
-        line-height: 39px;
-    }
 }
-
-
 
 header {
     .container {
