@@ -1,4 +1,5 @@
 @import "1-base/1-base-dir";
+@import "2-components/2-components-dir";
 @import "3-layout/3-layout-dir";
 
 * {
@@ -83,21 +84,21 @@ p a:visited {
 
 h1 {
     font-weight: 600;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 40px;
+    line-height: 48px;
 
-    @media(max-width:767px) {
+    @include respond(phone) {
         font-size: 30px;
-        line-height: 39px;
+        line-height: 36px;
     }
 }
 
 h2 {
     font-weight: 600;
-    font-size: 34px;
-    line-height: 41spx;
+    font-size: 30px;
+    line-height: 36px;
 
-    @media(max-width:767px) {
+    @include respond(phone) {
         font-size: 20px;
         line-height: 24px;
     }
@@ -133,9 +134,12 @@ form label {
 // HEADER
 
 .heading {
-    line-height: 55px;
     width: 100%;
     font-weight: 600;
+
+    @include respond (phone) {
+        width: 99%;
+    }
 
     &.inner {
         color: $primary-color;
@@ -147,13 +151,7 @@ form label {
             color: $primary-color;
         }
     }
-
-    @media(max-width:767px) {
-        line-height: 39px;
-    }
 }
-
-
 
 header {
     .container {
@@ -180,13 +178,17 @@ header {
     margin: 65px 0 25px 0;
 }
 
-// .about-hero {
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     gap: 80px;
-// }
-
 // Contact
+.contact {
+    &--heading {
+        margin-bottom: 55px;
+
+        @include respond(phone){
+            margin-bottom: 36px;
+        }
+    }
+}
+
 section.contact {
     .container {
         @include container-inner;
@@ -197,7 +199,6 @@ section.contact {
     @include respond(large-phone) {
         margin-top: 25px;
     }
-
 }
 
 .contact-btn {
@@ -205,15 +206,30 @@ section.contact {
 }
 
 // PAGE: ABOUT
-.contact-action {
-    display: none;
-    text-align: center;
-    padding-top: 115px;
-}
+.about__hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px;
+    justify-items: center;
+    align-items: center;
 
-.about-content {
-    .col {
-        margin-bottom: 15px;
+    padding: 0 40px;
+    max-width: 1315px;
+    margin: 55px auto;
+
+
+    p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    @include respond (tab-port) {
+        grid-template-columns: 1fr;
+    }
+
+    @include respond(phone) {
+        margin: 0 auto;
+        padding: 0 30px;
+        gap: 75px;
     }
 
     .job-board {
@@ -222,41 +238,42 @@ section.contact {
     }
 }
 
-.about--img {
-    max-width: 200px;
-    height: auto;
-}
-
 .brand-sec {
-    margin-bottom: 80px;
+    padding: 0 40px;
+    max-width: 1315px;
+    margin: 55px auto;
 
     @include respond(phone) {
-        margin-bottom: 97px;
-
+        margin-bottom: 40px;
     }
 
     &--title {
         margin: 0 auto;
-        padding: 0 30px;
         max-width: 1250px;
         position: relative;
+        margin-bottom: 50px;
     }
 
     &__investors {
         display: grid;
-        gap: 35px;
-        grid-template-columns: repeat(3, 1fr);
+        gap: 35px 270px;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        align-items: center;
 
         img {
-            max-width: 200px;
+            max-width: 175px;
 
             @include respond (phone) {
                 width: 100%;
             }
         }
 
+        @media (max-width:1120px) {
+            gap: 35px 180px;
+        }
+
         @include respond(phone) {
-            gap: 46px;
+            gap: 45px 55px;
             grid-template-columns: repeat(2, 1fr);
         }
     }
@@ -264,7 +281,7 @@ section.contact {
     .yellow-line-about {
         width: 57px;
         height: 4px;
-        top: -3px;
+        top: -7px;
         background-color: $yellow;
         position: absolute;
 
@@ -273,45 +290,6 @@ section.contact {
         }
     }
 }
-
-
-// .brand-logo {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     margin: 40px 0;
-//     margin-left: -15px;
-//     margin-right: -15px;
-
-//     .col {
-//         width: 50%;
-//         padding: 15px;
-//         text-align: center;
-
-//         img {
-//             max-width: 100%;
-//             height: auto;
-//         }
-//     }
-// }
-
-// .invester-info {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     margin: 35px -15px 0;
-
-//     .col {
-//         width: 50%;
-//         text-align: center;
-//         padding: 0 10px;
-
-//         img {
-//             max-width: 100%;
-//         }
-//     }
-// }
 
 .brand-sec {
     padding-bottom: 55px;
@@ -341,6 +319,12 @@ section.contact {
 
 .col {
     flex: 1;
+}
+
+.contact-action {
+    display: none;
+    text-align: center;
+    padding-top: 115px;
 }
 
 .flex-grid-thirds {
@@ -377,7 +361,11 @@ section.contact {
             max-width: 595px;
 
             .editor {
-                margin: 20px 0;
+                margin: 20px 0 37px 0;
+
+                @include respond(phone){
+                    margin-bottom: 25px;
+                }
             }
         }
 
@@ -399,7 +387,11 @@ section.contact {
             }
 
             address {
-                margin-bottom: 55px;
+                margin-bottom: 75px;
+
+                @include respond(phone){
+                    margin-bottom: 25px;
+                }
             }
         }
     }
@@ -656,16 +648,6 @@ section.contact {
         margin-bottom: 20px;
     }
 
-    .about-mainfest {
-        margin: 65px 0 25px 0;
-        max-width: 1250px;
-
-        @include respond(large-phone) {
-            margin-top: 25px;
-            gap: 20px;
-        }
-    }
-
     .contact-action {
         text-align: center;
         padding-top: 35px;
@@ -675,7 +657,7 @@ section.contact {
         padding-bottom: 25px;
 
         @include respond (phone) {
-            margin-top: 65px;
+            margin-top: 40px;
         }
 
         .ft-investors {

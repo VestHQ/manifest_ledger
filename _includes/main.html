@@ -3,12 +3,8 @@
         <img src="../assets/images/manifest_logo_color.png" alt="manifest" class="manifest">
     </div>
 
-    <!--
-    <img class="anim-gumball" src="../assets/images/animation-gumball.gif" alt="Gumball Machine" width="650px">
-    -->
-
     <div class="col left">
-        <video id="video-hp" loop muted autoplay playsinline>
+        <video id="video-hp" loop muted autoplay playsinline >
             <source src="/assets/FINAL_WO_BG.webm" type="video/webm">
             <source src="/assets/FINAL_WO_BG.mp4" type="video/mp4">
         </video>
@@ -16,36 +12,23 @@
 
 
     <aside class="col text-box">
-        <h1 class="heading u-mb">When you’re on the move, we make transferring a breeze!</h1>
+        <h1 class="heading title u-mb">When you’re on the move, we make transferring a breeze!</h1>
         <p class="heading--sub">Manifest engages participants through employers and retirement providers so they can
             keep their accounts consolidated as they switch jobs.</p>
 
         <div class="btn">
-            <a class="btn-solid-blue home-btn typeform-share button" href="https://sierramoore.typeform.com/to/djp4CS"
-                target="_blank" data-mode="drawer_left" data-submit-close-delay="2">Request Demo</a>
-            <script>
-                (function () {
-                    var qs, js, q, s, d = document,
-                        gi = d.getElementById,
-                        ce = d.createElement,
-                        gt = d.getElementsByTagName,
-                        id = "typef_orm_share",
-                        b = "https://embed.typeform.com/";
-                    if (!gi.call(d, id)) {
-                        js = ce.call(d, "script");
-                        js.id = id;
-                        js.src = b + "embed.js";
-                        q = gt.call(d, "script")[0];
-                        q.parentNode.insertBefore(js, q)
-                    }
-                })()
-            </script>
-
+            <a href="{% link contact.html %}" class="btn-solid-blue home-btn button">Request Demo</a>
         </div>
     </aside>
+
 </div>
 
-<section class="three__containers container">
+<div class="learn-more">
+    <a class="learn-more--text" href="#main">Learn More</a>
+    <img class="learn-more--arrow" src="/assets/images/shapes/down-arrow.svg" alt="scroll down to learn more">
+</div>
+
+<section class="three__containers container" id="main">
 
     <div class="home__block">
         <div class="home__block__text">
@@ -55,20 +38,25 @@
             <p>Manifest helps participants combine their accounts into an active account, often resulting in a gain of
                 up to 36% over 10 years.</p>
         </div>
-        <img class="home__block__img" src="/assets/images/Consolidation.svg"
-            alt="Consolidate Old Retirement Accounts to 401(k) Plan">
+        <div class="home__block__img">
+            <img class="home__block__img--img" src="/assets/images/Consolidation.svg"
+                alt="Consolidate Old Retirement Accounts to 401(k) Plan">
+        </div>
     </div>
 
     <div class="home__block reverse">
-        <div class="home__block__text">
+        <div class="home__block__text reverse--text">
             <div class="yellow-line"></div>
             <h3 class="home__block__text--title">DIGITALIZATION</h3>
             <h2 class="home__block__text--heading">Say goodbye to manual, time intensive transfers</h2>
             <p>Close to 9 out of 10 people who start a transfer today, don’t finish. Manifest is the first independent,
                 digital platform making retirement transfers seamless.</p>
         </div>
-        <img class="home__block__img" src="/assets/images/Digitization.svg"
-            alt="Digitizing 401(k), 403(b), 457 Transfers">
+
+        <div class="home__block__img">
+            <img class="home__block__img--img" src="/assets/images/Digitization.svg"
+                alt="Digitizing 401(k), 403(b), 457 Transfers">
+        </div>
     </div>
 
     <div class="home__block">
@@ -79,7 +67,10 @@
             <p>Manifest brings transparency throughout the transferring process so participants, employers, and
                 providers can easily track their accounts from start to finish.</p>
         </div>
-        <img class="home__block__img" src="/assets/images/Transparency.svg"
-            alt="Transparent Transfer Process for Participants, Providers, Employers">
+
+        <div class="home__block__img">
+            <img class="home__block__img--img" src="/assets/images/Transparency.svg"
+                alt="Transparent Transfer Process for Participants, Providers, Employers">
+        </div>
     </div>
 </section>

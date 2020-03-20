@@ -1,24 +1,37 @@
 form {
-	input, textarea {
+
+	input,
+	textarea {
 		font-family: Inter;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 17px;
 		line-height: 28px;
 		width: 100%;
+
 	}
+
 	input {
 		background: $white;
 		border-top: none;
 		border-right: none;
 		border-left: none;
 		border-bottom: 1px solid $grey2;
-		margin: 4px 0 27px 0;
+		margin: 5px 0 27px 0;
 		padding-bottom: 18px;
+
+		@include respond(phone) {
+			font-size: 14px !important;
+			line-height: 23px !important;
+			margin: 11px 0 27px 0;
+			padding-bottom: 14px;
+		}
+
 		&:focus {
 			border-bottom: 2px solid $primary-color;
 		}
 	}
+
 	textarea {
 		background: #f0f0f0;
 		border: none;
@@ -27,7 +40,8 @@ form {
 		padding: 20px;
 		resize: none;
 	}
+
 	.submit-button {
-		margin-top:20px;
+		margin-top: 20px;
 	}
 }
