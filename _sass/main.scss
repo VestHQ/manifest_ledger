@@ -179,6 +179,16 @@ header {
 }
 
 // Contact
+.contact {
+    &--heading {
+        margin-bottom: 55px;
+
+        @include respond(phone){
+            margin-bottom: 36px;
+        }
+    }
+}
+
 section.contact {
     .container {
         @include container-inner;
@@ -189,7 +199,6 @@ section.contact {
     @include respond(large-phone) {
         margin-top: 25px;
     }
-
 }
 
 .contact-btn {
@@ -352,7 +361,11 @@ section.contact {
             max-width: 595px;
 
             .editor {
-                margin: 20px 0;
+                margin: 20px 0 37px 0;
+
+                @include respond(phone){
+                    margin-bottom: 25px;
+                }
             }
         }
 
@@ -374,7 +387,11 @@ section.contact {
             }
 
             address {
-                margin-bottom: 55px;
+                margin-bottom: 75px;
+
+                @include respond(phone){
+                    margin-bottom: 25px;
+                }
             }
         }
     }
