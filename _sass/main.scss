@@ -84,8 +84,8 @@ p a:visited {
 
 h1 {
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 38px;
+    line-height: 46px;
 
     @include respond(phone) {
         font-size: 30px;
@@ -96,11 +96,11 @@ h1 {
 h2 {
     font-weight: 600;
     font-size: 25px;
-    line-height: 35px;
+    line-height: 30px;
 
     @include respond(phone) {
         font-size: 18px;
-        line-height: 26px;
+        line-height: 22px;
     }
 }
 
@@ -219,18 +219,13 @@ section.contact {
 .about__hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 55px;
+    gap: 85px;
     justify-items: center;
     align-items: center;
 
     padding: 0 40px;
     max-width: 1315px;
     margin: 55px auto;
-
-
-    p:not(:last-child) {
-        margin-bottom: 20px;
-    }
 
     @include respond (tab-port) {
         grid-template-columns: 1fr;
@@ -239,8 +234,24 @@ section.contact {
     @include respond(phone) {
         margin: 0 auto;
         padding: 0 30px;
-        gap: 75px;
+        gap: 55px;
     }
+
+    &__text {
+        max-width: 480px;
+        justify-self: start;
+
+        p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width:896px) {
+            justify-self: center;
+            max-width: 100%;
+        }
+    }
+
+
 
     .job-board {
         color: $primary-color;
@@ -249,7 +260,7 @@ section.contact {
 }
 
 .brand-sec {
-    padding: 0 40px;
+    padding: 0 40px 70px 40px;
     max-width: 1315px;
     margin: 55px auto;
 
@@ -266,7 +277,7 @@ section.contact {
 
     &__investors {
         display: grid;
-        gap: 35px 270px;
+        gap: 35px 245px;
         grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
         align-items: center;
 
@@ -301,20 +312,28 @@ section.contact {
     }
 }
 
-.brand-sec {
-    padding-bottom: 55px;
+.ft-investors {
+    align-self: start;
 
-    .ft-investors {
-        h4 {
-            font-size: 20px;
-            line-height: 24px;
-            letter-spacing: 0.05em;
-        }
+    &--name {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        margin-bottom: 10px;
 
-        span {
+        @include respond (phone) {
             font-size: 14px;
-            line-height: 21px;
-            margin-top: 12px;
+            line-height: 17px;
+        }
+    }
+
+    &--description {
+        font-size: 16px;
+        line-height: 24px;
+
+        @include respond(phone) {
+            font-size: 12px;
+            line-height: 18px;
         }
     }
 }
@@ -668,21 +687,6 @@ section.contact {
 
         @include respond (phone) {
             margin-top: 40px;
-        }
-
-        .ft-investors {
-            align-self: start;
-
-            .ft-investors--name {
-                font-size: 14px;
-                line-height: 17px;
-                letter-spacing: 0.15em;
-            }
-
-            .ft-investors--description {
-                font-size: 12px;
-                line-height: 18px;
-            }
         }
     }
 }
