@@ -52,8 +52,8 @@ img {
 
 body {
     font-weight: normal;
-    font-size: 17px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 26px;
     max-width: 100%;
 
     @media(max-width:767px) {
@@ -95,12 +95,22 @@ h1 {
 
 h2 {
     font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 25px;
+    line-height: 35px;
 
     @include respond(phone) {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include respond(phone) {
+        font-size: 13px;
     }
 }
 
@@ -183,7 +193,7 @@ header {
     &--heading {
         margin-bottom: 55px;
 
-        @include respond(phone){
+        @include respond(phone) {
             margin-bottom: 36px;
         }
     }
@@ -363,7 +373,7 @@ section.contact {
             .editor {
                 margin: 20px 0 37px 0;
 
-                @include respond(phone){
+                @include respond(phone) {
                     margin-bottom: 25px;
                 }
             }
@@ -389,7 +399,7 @@ section.contact {
             address {
                 margin-bottom: 75px;
 
-                @include respond(phone){
+                @include respond(phone) {
                     margin-bottom: 25px;
                 }
             }

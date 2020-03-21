@@ -4,7 +4,7 @@
     </div>
 
     <div class="col left">
-        <video id="video-hp" loop muted autoplay playsinline >
+        <video id="video-hp" loop muted autoplay playsinline>
             <source src="/assets/FINAL_WO_BG.webm" type="video/webm">
             <source src="/assets/FINAL_WO_BG.mp4" type="video/mp4">
         </video>
@@ -74,3 +74,17 @@
         </div>
     </div>
 </section>
+
+<script>
+    const scrollBtn = document.querySelector(".learn-more");
+    window.addEventListener("scroll", e => {
+        const scrollBtnY = window.scrollY + scrollBtn.getBoundingClientRect().bottom; // Y
+        const scrolled = window.scrollY;
+        console.log(scrolled, scrollBtnY)
+
+        if (scrolled > scrollBtnY) {
+            console.log("past btn");
+            scrollBtn.style.visibility = 'hidden'
+        }
+    });
+</script>
