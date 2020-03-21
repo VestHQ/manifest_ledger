@@ -204,10 +204,11 @@ section.contact {
         @include container-inner;
     }
 
-    margin: 60px 0 25px 0;
+    margin: 60px 0 115px 0;
 
-    @include respond(large-phone) {
-        margin-top: 25px;
+    @include respond(laptop) {
+        margin: 60px 0 15px 0;
+
     }
 }
 
