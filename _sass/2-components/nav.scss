@@ -1,0 +1,219 @@
+// ************ NAV ************
+.nav-link.nav-open {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 25px 0 45px 0 !important;
+    width: 100%;
+
+    @include respond(phone){
+        padding-bottom: 60px;
+    }
+
+    .logo {
+        height: 29px;
+        padding: 0;
+        width: 164px;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+
+            @include respond (phone) {
+                height: auto;
+                width: 70%;
+            }
+        }
+    }
+}
+
+.nav-toggle {
+    border: 0;
+    background-color: rgba($color: #ffffff, $alpha: 0);
+    cursor: pointer;
+}
+
+.nav-link {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    a {
+        color: $white;
+        text-decoration: none;
+        font-size: 17px;
+        line-height: 21px;
+        position: relative;
+    }
+
+    li {
+        padding: 6px 20px;
+        position: relative;
+
+        a {
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -11px;
+                width: 43px;
+                height: 5px;
+                background-color: $primary-color;
+                display: none;
+            }
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    li:hover {
+        a {
+            &::before {
+                display: block;
+            }
+        }
+    }
+
+    li.active {
+        position: relative;
+        font-weight: 600;
+
+        a {
+            &::before {
+                display: block;
+            }
+        }
+    }
+}
+
+.nav-toggle {
+    span {
+        display: block;
+        height: 2px;
+        width: 26px;
+        position: relative;
+        background-color: $black;
+        margin: 7px 0;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -7px;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: $black;
+            cursor: pointer;
+            transition: all ease-in-out 0.2s;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: $black;
+            cursor: pointer;
+            transition: all ease-in-out 0.2s;
+        }
+    }
+}
+
+.nav-toggle.close-menu {
+    span {
+        background: rgba($color: #000000, $alpha: 0);
+
+        &::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .nav {
+        padding: 20px 0;
+
+        .logo {
+            height: 29px;
+            width: 164px;
+        }
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-link {
+        a {
+            color: $black;
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .nav-link {
+        background-color: $white;
+        display: none;
+        margin-top: 40px;
+        padding-top: 20px;
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+
+        li {
+            padding: 15px 0;
+
+            a {
+                color: $primary-color;
+                font-size: 20px;
+                line-height: 24px;
+                display: inline-block;
+                width: 100%;
+
+                &::before {
+                    background-color: $white;
+                }
+            }
+
+            &.active {
+                a {
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+}

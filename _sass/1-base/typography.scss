@@ -1,0 +1,19 @@
+.title {
+    font-size: 38px;
+    line-height: 47px;
+
+    @include respond(phone) {
+        font-size: 25px;
+        line-height: 32px;
+    }
+}
+
+.heading {
+    color: $primary-color;
+    margin-bottom: 20px;
+
+    @include respond (phone) {
+        margin-bottom: 18px;
+        letter-spacing: -0.021em;
+    }
+}

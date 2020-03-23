@@ -1,0 +1,79 @@
+// CONTACT PAGE
+.contact {
+
+  &--heading {
+    max-width: 1250px;
+    padding: 0 40px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+
+    @include respond(phone) {
+      margin-bottom: 36px;
+      padding: 0 30px;
+    }
+  }
+
+  &__container {
+    display: grid;
+    max-width: 1250px;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 150px;
+    padding: 0 40px;
+    margin-bottom: 100px;
+    
+    @media (max-width:1000px) {
+      grid-template-columns: 1fr;
+      max-width: max-content;
+      gap: 60px;
+    }
+    
+    @include respond(phone) {
+      padding: 0 30px;
+      margin-bottom: 60px;
+    }
+
+    &__form {
+      width: 600px;
+
+      @media (max-width:1000px) {
+        width: auto;
+      }
+
+      .name {
+        width: 50%;
+        float: left;
+      }
+
+      textarea {
+        margin-top: 20px;
+
+        @include respond(phone) {
+          font-size: 14px;
+          line-height: 23px;
+        }
+      }
+
+      .btn {
+        margin-top: 35px;
+      }
+    }
+
+    &__info {
+
+      &--title {
+        margin-bottom: 10px;
+      }
+
+      address {
+        font-style: normal;
+        margin-bottom: 75px;
+
+        @include respond(phone) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
