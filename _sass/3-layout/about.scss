@@ -1,0 +1,121 @@
+// ABOUT PAGE
+.about__hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 85px;
+    justify-items: center;
+    align-items: center;
+
+    padding: 0 40px;
+    max-width: 1315px;
+    margin: 55px auto;
+
+    @include respond (tab-port) {
+        grid-template-columns: 1fr;
+    }
+
+    @include respond(phone) {
+        margin: 0 auto;
+        padding: 0 30px;
+        gap: 55px;
+    }
+
+    &__text {
+        max-width: 480px;
+        justify-self: start;
+
+        p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width:896px) {
+            justify-self: center;
+            max-width: 100%;
+        }
+
+        .job-board {
+            color: $primary-color;
+            font-weight: 600;
+        }
+    }
+}
+
+.brand-sec {
+    padding: 0 40px 70px 40px;
+    max-width: 1315px;
+    margin: 55px auto;
+
+    @include respond(phone) {
+        margin: 40px auto;
+        margin-bottom: 25px;
+    }
+
+    &--title {
+        margin: 0 auto;
+        max-width: 1250px;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    &__investors {
+        display: grid;
+        gap: 35px 245px;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        align-items: center;
+
+        img {
+            max-width: 175px;
+
+            @include respond (phone) {
+                width: 100%;
+            }
+        }
+
+        @media (max-width:1120px) {
+            gap: 35px 180px;
+        }
+
+        @include respond(phone) {
+            gap: 45px 55px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .ft-investors {
+            align-self: start;
+
+            &--name {
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.05em;
+                margin-bottom: 10px;
+
+                @include respond (phone) {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+
+            &--description {
+                font-size: 16px;
+                line-height: 24px;
+
+                @include respond(phone) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    .yellow-line-about {
+        width: 57px;
+        height: 4px;
+        top: -7px;
+        background-color: $yellow;
+        position: absolute;
+
+        @include respond(phone) {
+            width: 35px;
+        }
+    }
+}

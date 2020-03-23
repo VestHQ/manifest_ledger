@@ -1,26 +1,18 @@
-<div class="container">
-    <div class="overlay">
-        <img src="../assets/images/manifest_logo_color.png" alt="manifest" class="manifest">
-    </div>
+<div class="hero">
+    <video class="hero--video" loop muted autoplay playsinline>
+        <source src="/assets/videos/gumball.webm" type="video/webm">
+        <source src="/assets/videos/gumball.mp4" type="video/mp4">
+    </video>
 
-    <div class="col left">
-        <video id="video-hp" loop muted autoplay playsinline>
-            <source src="/assets/FINAL_WO_BG.webm" type="video/webm">
-            <source src="/assets/FINAL_WO_BG.mp4" type="video/mp4">
-        </video>
-    </div>
-
-
-    <aside class="col text-box">
-        <h1 class="heading title u-mb">When you’re on the move, we make transferring a breeze!</h1>
-        <p class="heading--sub">Manifest engages participants through employers and retirement providers so they can
+    <div class="hero__text">
+        <h1 class="heading title">When you’re on the move, we make transferring a breeze!</h1>
+        <p class="hero__text--para">Manifest engages participants through employers and retirement providers so they can
             keep their accounts consolidated as they switch jobs.</p>
 
         <div class="btn">
             <a href="{% link contact.html %}" class="btn-solid-blue home-btn button">Request Demo</a>
         </div>
-    </aside>
-
+    </div>
 </div>
 
 <div class="learn-more">
@@ -39,7 +31,7 @@
                 up to 36% over 10 years.</p>
         </div>
         <div class="home__block__img">
-            <img class="home__block__img--img" src="/assets/images/Consolidation.svg"
+            <img class="home__block__img--img" src="/assets/images/home/Consolidation.svg"
                 alt="Consolidate Old Retirement Accounts to 401(k) Plan">
         </div>
     </div>
@@ -54,7 +46,7 @@
         </div>
 
         <div class="home__block__img">
-            <img class="home__block__img--img" src="/assets/images/Digitization.svg"
+            <img class="home__block__img--img" src="/assets/images/home/Digitization.svg"
                 alt="Digitizing 401(k), 403(b), 457 Transfers">
         </div>
     </div>
@@ -69,22 +61,10 @@
         </div>
 
         <div class="home__block__img">
-            <img class="home__block__img--img" src="/assets/images/Transparency.svg"
+            <img class="home__block__img--img" src="/assets/images/home/Transparency.svg"
                 alt="Transparent Transfer Process for Participants, Providers, Employers">
         </div>
     </div>
 </section>
 
-<script>
-    const scrollBtn = document.querySelector(".learn-more");
-    window.addEventListener("scroll", e => {
-        const scrollBtnY = window.scrollY + scrollBtn.getBoundingClientRect().bottom; // Y
-        const scrolled = window.scrollY;
-        console.log(scrolled, scrollBtnY)
-
-        if (scrolled > scrollBtnY) {
-            console.log("past btn");
-            scrollBtn.style.visibility = 'hidden'
-        }
-    });
-</script>
+<script src="/assets/js/interactions.js"></script>
