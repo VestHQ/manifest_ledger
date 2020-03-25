@@ -23,10 +23,6 @@
         max-width: 480px;
         justify-self: start;
 
-        p:not(:last-child) {
-            margin-bottom: 20px;
-        }
-
         @media (max-width:896px) {
             justify-self: center;
             max-width: 100%;
@@ -53,7 +49,11 @@
         margin: 0 auto;
         max-width: 1250px;
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
+
+        @include respond (phone) {
+            margin-bottom: 50px;
+        }
     }
 
     &__investors {
@@ -79,23 +79,19 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        .ft-investors {
+        .investor {
             align-self: start;
 
             &--name {
-                font-size: 16px;
-                line-height: 19px;
-                letter-spacing: 0.05em;
                 margin-bottom: 6px;
-                
+
                 @include respond (phone) {
-                    font-size: 14px;
-                    line-height: 17px;
+
                     margin-bottom: 4px;
                 }
             }
 
-            &--description {
+            &--title {
                 font-size: 16px;
                 line-height: 24px;
 
