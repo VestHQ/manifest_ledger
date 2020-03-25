@@ -18,7 +18,8 @@
 }
 
 html,
-body {
+body,
+textarea {
     font-family: 'Inter', sans-serif;
 }
 
@@ -26,13 +27,15 @@ img {
     max-width: 100%;
 }
 
-body {
+body,
+input,
+textarea {
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     max-width: 100%;
 
-    @media(max-width:767px) {
+    @include respond(phone) {
         font-size: 14px;
         line-height: 21px;
     }
@@ -113,5 +116,3 @@ header {
         max-width: 1340px;
     }
 }
-
-
