@@ -18,10 +18,14 @@
 
         @media screen and (max-width: 820px) {
             margin-bottom: 30px;
+            margin: 0 23px;
         }
     }
 
     &__text {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         max-width: 499px;
         width: 45vw;
         height: auto;
@@ -40,19 +44,11 @@
         }
 
         &--para {
-            margin-bottom: 50px;
+            margin-bottom: 66px;
             max-width: 502px;
-        }
 
-        @include respond(tab-land) {
-            &--para {
-                margin-bottom: 45px;
-            }
-        }
-
-        @include respond(small-phone) {
-            &--para {
-                margin-bottom: 30px;
+            @include respond(phone) {
+                margin-bottom: 47px;
             }
         }
     }
@@ -154,11 +150,4 @@
             margin-left: 100px;
         }
     }
-}
-
-.yellow-line {
-    width: 29px;
-    height: 4px;
-    margin-bottom: 10px;
-    background-color: $yellow;
 }

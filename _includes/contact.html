@@ -2,21 +2,21 @@
     <h1 class="heading contact--heading">Get In Touch</h1>
 
     <div class="contact__container">
-        <form class="contact__container__form" name="submit-to-google-sheet">
+        <form id="form-contact" class="contact__container__form" name="submit-to-google-sheet">
 
             <label>Full Name</label>
-            <div><input class="name" type="text" placeholder="First" title="First" name="firstName" required></div>
-            <div><input class="name" type="text" placeholder="Last" title="Last" name="lastName" required></div>
+            <div class="name">
+                <input type="text" placeholder="First" title="First" name="firstName" required>
+                <input type="text" placeholder="Last" title="Last" name="lastName" required>
+            </div>
 
             <label>Email</label>
-            <input type="email" id="3-219" placeholder="johndoe@manifestledger.com" name="email" novalidate="" required>
+            <input type="email" placeholder="johndoe@manifestledger.com" name="email" novalidate="" required>
 
             <label>Message</label>
             <textarea placeholder="Enter your message" title="message" name="message"></textarea>
 
-            <div class="btn">
-                <button type="submit" class="btn btn-solid-blue contact-btn" id="submit-button">Submit</button>
-            </div>
+            <button type="submit" id="submit-button" class="btn--submit-form">Submit</button>
 
         </form>
 

@@ -4,7 +4,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 85px;
     justify-items: center;
-    align-items: center;
 
     padding: 0 40px;
     max-width: 1315px;
@@ -76,7 +75,7 @@
         }
 
         @include respond(phone) {
-            gap: 45px 55px;
+            gap: 45px 47px;
             grid-template-columns: repeat(2, 1fr);
         }
 
@@ -87,11 +86,12 @@
                 font-size: 16px;
                 line-height: 19px;
                 letter-spacing: 0.05em;
-                margin-bottom: 10px;
-
+                margin-bottom: 6px;
+                
                 @include respond (phone) {
                     font-size: 14px;
                     line-height: 17px;
+                    margin-bottom: 4px;
                 }
             }
 
@@ -104,18 +104,6 @@
                     line-height: 18px;
                 }
             }
-        }
-    }
-
-    .yellow-line-about {
-        width: 57px;
-        height: 4px;
-        top: -7px;
-        background-color: $yellow;
-        position: absolute;
-
-        @include respond(phone) {
-            width: 35px;
         }
     }
 }
