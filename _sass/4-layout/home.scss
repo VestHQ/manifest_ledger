@@ -11,17 +11,18 @@
     }
 
     &--video {
-        margin-bottom: 20px;
         max-width: 650px;
-        position: relative;
-        z-index: -1;
 
         @media screen and (max-width: 820px) {
+            margin: 0 23px;
             margin-bottom: 30px;
         }
     }
 
     &__text {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         max-width: 499px;
         width: 45vw;
         height: auto;
@@ -40,19 +41,11 @@
         }
 
         &--para {
-            margin-bottom: 50px;
+            margin-bottom: 66px;
             max-width: 502px;
-        }
 
-        @include respond(tab-land) {
-            &--para {
-                margin-bottom: 45px;
-            }
-        }
-
-        @include respond(small-phone) {
-            &--para {
-                margin-bottom: 30px;
+            @include respond(phone) {
+                margin-bottom: 47px;
             }
         }
     }
@@ -108,7 +101,6 @@
             &--title {
                 color: $primary-color;
                 margin-bottom: 20px;
-                letter-spacing: .05em;
 
                 @include respond(phone) {
                     margin-bottom: 15px;
@@ -120,7 +112,6 @@
 
                 @include respond(phone) {
                     margin-bottom: 10px;
-                    letter-spacing: -0.021em;
                 }
             }
         }
@@ -141,24 +132,21 @@
             }
         }
     }
-}
 
-.reverse {
-    flex-direction: row-reverse;
+    .reverse {
+        flex-direction: row-reverse;
 
-    &--text {
-        margin-left: 200px;
-        margin-right: 0 !important;
+        &--text {
+            margin-left: 200px;
+            margin-right: 0 !important;
 
-        @media screen and (max-width: 920px) {
-            margin-left: 100px;
+            @media screen and (max-width: 920px) {
+                margin-left: 100px;
+            }
+
+            @media (max-width: 820px) {
+                margin-left: 0;
+            }
         }
     }
-}
-
-.yellow-line {
-    width: 29px;
-    height: 4px;
-    margin-bottom: 10px;
-    background-color: $yellow;
 }

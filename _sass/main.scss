@@ -1,6 +1,7 @@
-@import "1-base/1-base-dir";
-@import "2-components/2-components-dir";
-@import "3-layout/3-layout-dir";
+@import "1-abstracts/1-abstracts-dir";
+@import "2-base/2-base-dir";
+@import "3-components/3-components-dir";
+@import "4-layout/4-layout-dir";
 
 * {
     outline: none;
@@ -16,94 +17,14 @@
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-html,
-body {
-    font-family: 'Inter', sans-serif;
-}
-
 img {
     max-width: 100%;
 }
 
-body {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
+body,
+input,
+textarea {
     max-width: 100%;
-
-    @media(max-width:767px) {
-        font-size: 14px;
-        line-height: 21px;
-    }
-}
-
-p a,
-p a:hover,
-p a:active,
-p a:visited {
-    color: $primary-color-dark;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-weight: 600;
-}
-
-h1 {
-    font-size: 38px;
-    line-height: 46px;
-
-    @include respond(phone) {
-        font-size: 30px;
-        line-height: 36px;
-    }
-}
-
-h2 {
-    font-size: 25px;
-    line-height: 30px;
-
-    @include respond(phone) {
-        font-size: 18px;
-        line-height: 22px;
-    }
-}
-
-h3 {
-    font-size: 16px;
-    line-height: 20px;
-
-    @include respond(phone) {
-        font-size: 13px;
-    }
-}
-
-h4 {
-    font-size: 20px;
-    line-height: 25px;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-
-    @include respond (phone) {
-        margin-bottom: 3px;
-    }
-}
-
-h5,
-form label {
-    color: $grey2;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-
-    @media(max-width:767px) {
-        font-size: 12px;
-        line-height: 16px;
-    }
 }
 
 // HEADER
@@ -112,5 +33,3 @@ header {
         max-width: 1340px;
     }
 }
-
-

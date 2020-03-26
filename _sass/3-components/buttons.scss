@@ -1,0 +1,83 @@
+@mixin btnBase {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include respond(phone) {
+        font-size: 15px;
+        margin: 0 auto;
+    }
+}
+
+// ACTION BUTTONS
+.btn {
+    @include btnBase;
+    border-radius: 12px;
+    width: max-content;
+    color: $white;
+    background-color: $primary-color;
+    transition: all .3s;
+    display: flex;
+    border: none;
+
+    &:hover {
+        background-color: $light-hover;
+    }
+
+    &--request-demo {
+        @extend .btn;
+        padding: 19px 36.5px;
+
+        @include respond(phone) {
+            padding: 15.5px 29px;
+        }
+    }
+
+    &--submit-form {
+        @extend .btn;
+        padding: 21px 70px;
+
+        &:focus {
+            transform: translateY(-3px);
+        }
+
+        &:disabled {
+            // background-color: $light-blue;
+            background-color: $gray;
+            color: $grey2;
+            cursor: not-allowed;
+        }
+
+        @include respond(phone) {
+            padding: 17px 57px;
+        }
+    }
+}
+
+// LEARN MORE 
+.learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include respond (phone) {
+        margin-top: 30px;
+    }
+
+    &--text {
+        @include btnBase;
+        color: $primary-color;
+        margin-bottom: 5px;
+
+        @include respond(phone) {
+            font-size: 15px;
+        }
+    }
+
+    &--arrow {
+        width: 20px;
+        height: auto;
+    }
+}
