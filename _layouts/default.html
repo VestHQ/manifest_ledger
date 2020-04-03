@@ -4,19 +4,26 @@
 <head>
     {% include meta.html %}
     <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="home">
 
     {% include load_animation.html %}
 
-	{% include header.html %}
+    {% include header.html %}
 
     {% include main.html %}
 
     {% include footer.html %}
-	
-	{% include scripts.html %}
 
+    {% include scripts.html %}
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
