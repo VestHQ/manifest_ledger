@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 25px 0 45px 0 !important;
+    padding: 25px 0 15px 0 !important;
     width: 100%;
 
     @include respond(phone){
@@ -181,7 +181,7 @@
     .nav-link {
         background-color: $white;
         display: none;
-        margin-top: 40px;
+        // margin-top: 40px;
         padding-top: 20px;
         position: absolute;
         left: 0;
