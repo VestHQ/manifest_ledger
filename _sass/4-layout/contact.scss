@@ -1,5 +1,10 @@
 // CONTACT PAGE
 .contact {
+  margin-top: 55px;
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
 
   &--heading {
     max-width: 1250px;
