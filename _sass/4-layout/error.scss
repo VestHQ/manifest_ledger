@@ -1,53 +1,33 @@
-.error-body {
-  background-image: linear-gradient(to bottom, $cold-blue, $dark-blue);
-  background-size: cover;
-  width: 100vw;
+.error-404 {
+  background-color: #E4ECFF;
   height: 100vh;
-  color: $light-blue-grey;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 52px;
 
-  .lost {
+  @include respond (phone) {
+    grid-template-columns: 1fr;
+    gap: 58px;
+  }
+
+
+  &__text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    align-self: center;
 
-    &__header {
-      font-size: 2.4rem;
-      font-family: "Avenir Next", Chivo, sans-serif;
-      font-weight: 500;
-      letter-spacing: 1px;
-      margin: 3rem auto;
+    max-width: 586px;
+    text-align: center;
 
-      @include respond(sm-phone) {
-        margin: 2rem auto;
-      }
+    @include respond(phone) {
+      margin-bottom: 140px;
+      padding: 20px;
     }
 
-    &__img {
-      width: 30rem;
-      height: auto;
-
-      @include respond(sm-phone) {
-        width: 22rem;
-      }
-    }
-
-    &__btn {
-      background-color: $light-blue-grey;
-      border: 2px solid $light-blue-grey;
-      font-family: "Avenir Next", Chivo, sans-serif;
-      color: $dark-blue;
-      padding: 1rem 1.4rem;
-      transition: background-color .6s;
-
-      &:hover {
-        background-color: transparent;
-        color: $light-blue-grey;
-      }
+    &--btn {
+      margin-top: 50px;
     }
   }
 }

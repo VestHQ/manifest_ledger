@@ -34,6 +34,15 @@
         }
     }
 
+    &--return-home {
+        @extend .btn;
+        padding: 19.5px 71px;
+
+        @include respond(phone) {
+            padding: 15.5px 58px;
+        }
+    }
+
     &--submit-form {
         @extend .btn;
         padding: 21px 70px;
@@ -43,7 +52,6 @@
         }
 
         &:disabled {
-            // background-color: $light-blue;
             background-color: $gray;
             color: $grey2;
             cursor: not-allowed;
@@ -61,12 +69,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
     margin-top: 10px;
+
     @include respond (phone) {
         margin-top: 30px;
     }
-    
+
     &--text {
         @include btnBase;
         color: $primary-color;
