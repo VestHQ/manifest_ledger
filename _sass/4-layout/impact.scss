@@ -21,7 +21,7 @@
 
     .chart {
         display: grid;
-        gap: 105px;
+        gap: 130px;
         grid-template-columns: 1fr 3fr;
 
         @include respond(tab-port) {
@@ -32,7 +32,7 @@
 
         .output {
             width: 100%;
-            max-width: 610px;
+            // max-width: 610px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -144,7 +144,7 @@
                     display: flex;
                     justify-content: space-between;
                     margin-top: 17px;
-                    max-width: 610px;
+                    // max-width: 610px;
 
                     &--name {
                         width: 150px;
@@ -183,7 +183,7 @@
 
         .output-2 {
             width: 100%;
-            max-width: 670px;
+            // max-width: 670px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -462,18 +462,6 @@
     }
 }
 
-
-// remove numerical arrows on input
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
 .label-years,
 .input-years {
     position: relative;
@@ -489,18 +477,26 @@ input[type=number] {
     left: 270px;
     border-left: 3px solid #F0F0F0;
     padding: 18px;
+
+    @include respond (phone) {
+        top: 32px;
+        left: 180px;
+    }
 }
 
-.text6 {
+.graph-title-caption {
     display: flex;
     flex-direction: column;
 
-    margin-left: 480px;
     width: 180px;
     text-align: center;
     color: $primary-color;
     font-weight: 600;
     line-height: 23px;
+
+    position: absolute;
+    left: 84vw;
+    top: 450px;
 
     span {
         color: $yellow;
@@ -519,6 +515,11 @@ input[type=number] {
     text-align: center;
     margin: 50px 0 20px -20px;
     line-height: 23px;
+
+
+    @include respond(tab-port) {
+        display: none;
+    }
 
     span {
         color: $yellow;
