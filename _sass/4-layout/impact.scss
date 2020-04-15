@@ -56,6 +56,9 @@
 
             &__graphic {
 
+                display: flex;
+                flex-direction: column;
+
                 @include respond(tab-port) {
                     display: none;
                 }
@@ -487,16 +490,14 @@
 .graph-title-caption {
     display: flex;
     flex-direction: column;
+    align-self: end;
 
     width: 180px;
     text-align: center;
     color: $primary-color;
     font-weight: 600;
     line-height: 23px;
-
-    position: absolute;
-    left: 84vw;
-    top: 450px;
+    margin-right: -40px;
 
     span {
         color: $yellow;
