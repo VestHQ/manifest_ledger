@@ -49,8 +49,8 @@ h1 {
     line-height: 46px;
 
     @include respond(phone) {
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 25px;
+        line-height: 32px;
     }
 }
 
