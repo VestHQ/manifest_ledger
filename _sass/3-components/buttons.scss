@@ -17,9 +17,9 @@
     width: max-content;
     color: $white;
     background-color: $primary-color;
-    transition: all .3s;
     display: flex;
     border: none;
+    transition: all .3s;
 
     &:hover {
         background-color: $light-hover;
@@ -40,6 +40,19 @@
 
         @include respond(phone) {
             padding: 15.5px 58px;
+        }
+    }
+
+    &--calculate {
+        @extend .btn;
+        padding: 20px 59px;
+
+        @include respond(phone) {
+            padding: 15px 48px;
+        }
+
+        &:focus {
+            transform: translateY(-3px);
         }
     }
 

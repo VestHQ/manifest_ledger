@@ -1,0 +1,464 @@
+.impact {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 40px;
+    min-height: 100vh;
+
+    @include respond(phone) {
+        padding: 0 30px;
+    }
+
+    &--heading {
+        color: $black;
+        margin-top: 70px;
+        margin-bottom: 76px;
+
+        @include respond(phone) {
+            margin-top: 37px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .chart {
+        display: grid;
+        gap: 105px;
+        grid-template-columns: 1fr 3fr;
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-top: 0;
+        }
+
+        .output {
+            width: 100%;
+            max-width: 610px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 670px;
+
+            @include respond(tab-port) {
+                grid-row: 1;
+                height: auto;
+                margin-top: 0;
+            }
+
+            &__text {
+
+                font-weight: 400;
+                line-height: 45px;
+
+                @include respond(phone) {
+                    line-height: 30px;
+                }
+            }
+
+            &__graphic {
+
+                @include respond(tab-port) {
+                    display: none;
+                }
+
+                .grid {
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    grid-template-rows: repeat(15, 18px);
+                    width: 100%;
+                    column-gap: 15px;
+                    border-bottom: 3px solid #E8E8E8;
+
+                    &--captions {
+                        font-size: 14px;
+                        line-height: 16px;
+                        text-align: center;
+                        margin: -10px auto;
+                    }
+
+                    .block1 {
+                        background: $yellow;
+                        grid-row: 16/11;
+                    }
+
+                    .text1 {
+                        grid-row: 10;
+                    }
+
+                    .block2 {
+                        grid-column: 2;
+                        background: $primary-color;
+                        grid-row: 10;
+                    }
+
+                    .text2 {
+                        grid-column: 2;
+                        grid-row: 9;
+                    }
+
+                    .block3 {
+                        grid-column: 3;
+                        background: $primary-color;
+                        grid-row: 10/ 7;
+                    }
+
+                    .text3 {
+                        grid-column: 3;
+                        grid-row: 5;
+                    }
+
+                    .block4 {
+                        grid-column: 4;
+                        background: $primary-color;
+                        grid-row: 4/ 7;
+                    }
+
+                    .text4 {
+                        grid-column: 4;
+                        grid-row: 2;
+                    }
+
+                    .block5 {
+                        grid-column: 5;
+                        background: $primary-color;
+                        grid-row: 4/ 11;
+                    }
+
+                    .text5 {
+                        grid-column: 5;
+                        grid-row: 2;
+                        font-weight: 600;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+
+                    .block6 {
+                        grid-column: 5;
+                        background: $yellow;
+                        grid-row: 11/ 16;
+                    }
+                }
+
+                .axis {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 17px;
+                    max-width: 610px;
+
+                    &--name {
+                        width: 150px;
+                        text-align: center;
+                        color: black;
+                    }
+                }
+
+                .graphic-labels {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 50px;
+
+                    &__label {
+                        display: flex;
+                    }
+
+                    .block {
+                        width: 42px;
+                        height: 30px;
+                        margin-right: 20px;
+
+                        &--yellow {
+                            @extend .block;
+                            background-color: $yellow;
+                        }
+
+                        &--blue {
+                            @extend .block;
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .output-2 {
+            width: 100%;
+            max-width: 670px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 400px;
+
+            @include respond(tab-port) {
+                grid-row: 1;
+                height: auto;
+                margin-top: 53px;
+            }
+
+            &__text {
+
+                font-weight: 400;
+                line-height: 45px;
+
+                @include respond(phone) {
+                    line-height: 30px;
+                }
+            }
+
+            &__graphic {
+
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                display: grid;
+                grid-template-columns: repeat(7, max-content);
+                width: 670px;
+
+                .num-symbol {
+                    font-weight: 500;
+                    font-size: 38px;
+                }
+
+                .circle-caption {
+                    grid-row: 2;
+                    text-align: center;
+                    width: 129px;
+                    align-self: start;
+                    justify-self: center;
+
+                    &--1 {
+                        @extend .circle-caption;
+                        grid-column: 3;
+                    }
+
+                    &--2 {
+                        @extend .circle-caption;
+                        grid-column: 5;
+                    }
+
+                    &--3 {
+                        @extend .circle-caption;
+                        grid-column: 7;
+                    }
+                }
+
+                .circle {
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    flex-direction: column;
+                    justify-self: center;
+
+                    &--1 {
+                        @extend .circle;
+                        background-color: $primary-color;
+                        width: 146px;
+                        height: 146px;
+                        font-weight: 600;
+                        font-size: 25px;
+                        color: white;
+                    }
+
+                    &--2 {
+                        @extend .circle;
+                        background-color: #E8EDFF;
+                        width: 122px;
+                        height: 122px;
+                        color: black;
+                        font-weight: 500;
+                        font-size: 25px;
+
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+
+                    &--3 {
+                        @extend .circle;
+                        background-color: $yellow;
+                        width: 104px;
+                        height: 104px;
+                        color: black;
+                        font-weight: 500;
+                        font-size: 25px;
+
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+
+                    &--3 {
+                        @extend .circle;
+                        background-color: $yellow;
+                        width: 104px;
+                        height: 104px;
+                        color: black;
+                        font-weight: 500;
+                        font-size: 25px;
+
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+
+                    &--4 {
+                        @extend .circle;
+                        background-color: $yellow-light;
+                        width: 86px;
+                        height: 86px;
+                        color: black;
+                        font-weight: 500;
+                        font-size: 25px;
+                    }
+                }
+
+                @include respond(tab-port) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .chart:nth-child(3) {
+        margin-top: 88px;
+
+        @include respond(tab-port) {
+            margin-top: 0;
+        }
+    }
+
+
+
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        background-color: #F0F0F0;
+        width: max-content;
+        padding: 45px 48px;
+        height: 555px;
+        width: 461px;
+
+        @include respond(tab-port) {
+            width: 100%;
+            height: auto;
+            padding: 27px;
+        }
+
+        &--title {
+            text-align: center;
+            margin-bottom: 51px;
+
+            @include respond(phone) {
+                margin-bottom: 30px;
+            }
+        }
+
+        input {
+            border: none;
+            padding: 16px;
+            border-radius: 5px;
+            border: 2px solid $white;
+            caret-color: $primary-color;
+            font-size: 25px;
+            font-weight: 600;
+            width: 100%;
+
+            &:focus {
+                border: 2px solid $primary-color;
+            }
+
+            @include respond(phone) {
+                font-size: 18px;
+            }
+
+        }
+
+        input:not(last-child) {
+            margin-bottom: 40px;
+
+            @include respond(phone) {
+                margin-bottom: 20px;
+            }
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: 600;
+            color: $black;
+            margin-bottom: 15px;
+            line-height: 20px;
+
+            @include respond(phone) {
+                font-size: 14px;
+                margin-bottom: 10px;
+
+            }
+
+        }
+
+        button {
+            margin: 0 auto;
+            margin-top: 40px;
+
+            @include respond(phone) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .footnotes {
+        border: 1px solid #757985;
+        margin-top: 78px;
+        padding: 28px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+        }
+
+        &__section {
+
+            &--title {
+                margin-bottom: 15px;
+            }
+
+            &--item {
+                line-height: 20px;
+                color: black;
+
+                span {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.number {
+    font-weight: 600;
+
+    &--input {
+        @extend .number;
+        border-bottom: 5px solid $yellow;
+    }
+
+    &--output {
+        @extend .number;
+        color: $primary-color;
+    }
+}
+
+
+// remove numerical arrows on input
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

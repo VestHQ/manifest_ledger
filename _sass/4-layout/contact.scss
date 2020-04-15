@@ -79,4 +79,30 @@
       }
     }
   }
+
+  input {
+    border: none;
+    border-bottom: 1px solid $grey2;
+    margin: 5px 0 27px 0;
+    padding-bottom: 18px;
+
+    @include respond(phone) {
+      margin: 11px 0 27px 0;
+      padding-bottom: 14px;
+    }
+
+    &:focus {
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+
+  textarea {
+    margin-top: 20px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    min-height: 237px;
+    padding: 20px;
+    resize: none;
+  }
 }
