@@ -9,6 +9,14 @@ let gainEl = document.getElementById('gain')
 let graphicOutputEl = document.getElementById('graphicOutput')
 
 calcBtnActive.addEventListener('click', () => {
+    // check for user input
+    if (numOldAccounts.value == 0) {
+        numOldAccounts.value = 1
+    }
+    if (avgAccountBalance.value == 0) {
+        avgAccountBalance.value = 8100
+    }
+
     numOldAccountsEl.textContent = numOldAccounts.value
     avgAccountBalanceEl.textContent = `$${formatNumber(avgAccountBalance.value)}`
     gainEl.textContent = `$${formatNumber(numOldAccounts.value + avgAccountBalance.value)}`
@@ -28,7 +36,16 @@ const participantCircleYearEl = document.getElementById('participant-circle')
 const employerCircleCostEl = document.getElementById('employerCost-circle')
 const participantCircleCostEl = document.getElementById('participantCost-circle')
 const totalCostReductionEl = document.getElementById('costReduction')
+
 calcBtnInactive.addEventListener('click', () => {
+    // check for user input
+    if (numAccountsTransferred.value == 0) {
+        numAccountsTransferred.value = 1
+    }
+    if (numYears.value == 0) {
+        numYears.value = 5
+    }
+
     inactiveAccountEl.textContent = numAccountsTransferred.value
     yearsEl.textContent = numYears.value
     graphicInactiveGain.textContent = `$${formatNumber(numYears.value * 1000)}`
