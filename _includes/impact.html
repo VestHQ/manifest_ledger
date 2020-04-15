@@ -5,20 +5,20 @@
         <div class="input-box">
             <h2 class="input-box--title">Active Participants</h2>
 
-            <label for="numOldAccounts">Number of old accounts consolidated:</label>
-            <input type="number" placeholder="1" min="0">
+            <label>Number of old accounts consolidated:</label>
+            <input type="number" id="numOldAccounts" placeholder="1" min="0">
 
-            <label for="avgAccountBalance">Average account balance per old account:</label>
-            <input type="number" placeholder="$8100" min="0">
+            <label>Average account balance per old account:</label>
+            <input type="number" id="avgAccountBalance" placeholder="$8100" min="0">
 
-            <button class="btn--calculate">Calculate</button>
+            <button class="btn--calculate" id="calcGains">Calculate</button>
         </div>
 
         <div class="output">
             <h2 class="output__text">
                 By transferring in <span id="numAccounts" class="number--input">1</span> old account(s)¹ with an average
-                balance² of <span class="number--input">$8,100</span>, participants can gain <span
-                    class="number--output">$9,352</span> from consolidation over 10 years³.
+                balance of <span id="avgAccount" class="number--input">$8,100</span>², participants can gain <span
+                    id="gain" class="number--output">$9,352</span> from consolidation over 10 years³.
             </h2>
 
             <div class="output__graphic">
@@ -35,7 +35,10 @@
                     <span class='text4 grid--captions'>Lower Cash out Risks</span>
                     <div class='block4'></div>
 
-                    <span class='text5'>$35,330</span>
+                    <span class='text6'>
+                        Total account balance after consolidation <br>
+                        <span>⤵</span></span>
+                    <span id="graphicOutput" class='text5'>$35,330</span>
                     <div class='block5'></div>
                     <div class='block6'></div>
                 </div>
@@ -65,28 +68,36 @@
         <div class="input-box">
             <h2 class="input-box--title">Inactive Participants</h2>
 
-            <label for="numOldAccounts">Number of inactive accounts transferred:</label>
-            <input type="number" placeholder="1" min="0">
+            <label>Number of inactive accounts transferred:</label>
+            <input id="numInactiveAccounts" type="number" placeholder="1" min="0">
 
-            <label for="avgAccountBalance">Over a period of:</label>
-            <input type="number" placeholder="5" min="0">
+            <label data-domain="Years" class=label-years>Over a period of:</label>
+            <input id="numYears" class='input-years' type="number" placeholder="5" min="0">
 
-            <button class="btn--calculate">Calculate</button>
+            <button id="calcBtnInactive" class="btn--calculate">Calculate</button>
         </div>
 
         <div class="output-2">
             <h2 class="output-2__text">
-                For every <span class="number--input">1</span> inactive account transferred out, a plan can gain <span
-                    class="number--output">$9,352</span> in cost over <span class="number--input">5</span> years⁵.
+                For every <span id="inactiveAccountsNum" class="number--input">1</span> inactive account transferred
+                out, a plan can gain <span id="inactiveGain" class="number--output">$9,352</span> in cost over <span
+                    id="years" class="number--input">5</span> years⁵.
             </h2>
 
             <div class="output-2__graphic">
-                <div class="circle--1">$589</div>
+                <span class="circle-caption--4">Total Cost Reduction from Transferring</span>
+                <div class="circle--1" id="costReduction">$589</div>
                 <span class="num-symbol">=</span>
-                <div class="circle--2">$360<span>(72 x <span>5</span>yrs)</span></div>
+                <div class="circle--2">
+                    <span id="employerCost-circle" class="u-graphic-caption">$360</span>
+                    <span>(72 x <span id="employer-circle">5</span>yrs)</span>
+                </div>
                 <span class="circle-caption--1">Employer Cost</span>
                 <span class="num-symbol">+</span>
-                <div class="circle--3">$180<span>(36 x <span>5</span>yrs)</span></div>
+                <div class="circle--3">
+                    <span id="participantCost-circle" class="u-graphic-caption">$180</span>
+                    <span>(36 x <span id="participant-circle">5</span>yrs)</span>
+                </div>
                 <span class="circle-caption--2">Participant Cost</span>
                 <span class="num-symbol">+</span>
                 <div class="circle--4">$49</div>
@@ -98,19 +109,31 @@
     <div class="footnotes">
         <div class="footnotes__section">
             <h4 class="footnotes__section--title">Active Accounts</h4>
-            <h5 class="footnotes__section--item"><span class="u-bold">1</span>The average American has 2.8 old accounts (2,500 Participant Survey)</h5>
-            <h5 class="footnotes__section--item"><span class="u-bold">2</span>$8,100 is the average retirement balance in 2018</h5>
-            <h5 class="footnotes__section--item"><span class="u-bold">3</span>Data assumes a 6% market return with a long-term investment horizon</h5>
-            <h5 class="footnotes__section--item"><span class="u-bold">4</span>Consolidation can increase an account by 36% over 20 years because the consolidated account is generally better managed, has lower cash out risks and lower fees (Washington University)</h5>
+            <h5 class="footnotes__section--item"><span class="u-bold">1</span>The average American has 2.8 old accounts
+                (2,500 Participant Survey)</h5>
+            <h5 class="footnotes__section--item"><span class="u-bold">2</span>$8,100 is the average retirement balance
+                in 2018</h5>
+            <h5 class="footnotes__section--item"><span class="u-bold">3</span>Data assumes a 6% market return with a
+                long-term investment horizon</h5>
+            <h5 class="footnotes__section--item"><span class="u-bold">4</span>Consolidation can increase an account by
+                36% over 20 years because the consolidated account is generally better managed, has lower cash out risks
+                and lower fees (Washington University)</h5>
         </div>
 
         <div class="footnotes__section">
             <h4 class="footnotes__section--title">Inactive Accounts</h4>
-            <h5 class="footnotes__section--item"><span class="u-bold">5</span>The average inactive account stays in a plan for 5 years or longer (Vanguard DC Survey 2018)</h5>
-            <h5 class="footnotes__section--item"><span class="u-bold">6</span>Employers pay providers about $36/yr in administrative fees and bear a cost of $36/yr for required regulatory communication and fiduciary risk</h5>
-            <h5 class="footnotes__section--item"><span class="u-bold">7</span>Providers charge inactive participants about $36 per year</h5>
-            <h5 class="footnotes__section--item"><span class="u-bold">8</span>Federal funds rate as of 2018 is 1.75% </h5>
+            <h5 class="footnotes__section--item"><span class="u-bold">5</span>The average inactive account stays in a
+                plan for 5 years or longer (Vanguard DC Survey 2018)</h5>
+            <h5 class="footnotes__section--item"><span class="u-bold">6</span>Employers pay providers about $36/yr in
+                administrative fees and bear a cost of $36/yr for required regulatory communication and fiduciary risk
+            </h5>
+            <h5 class="footnotes__section--item"><span class="u-bold">7</span>Providers charge inactive participants
+                about $36 per year</h5>
+            <h5 class="footnotes__section--item"><span class="u-bold">8</span>Federal funds rate as of 2018 is 1.75%
+            </h5>
         </div>
     </div>
 
 </section>
+
+<script src="/assets/js/impact.js"></script>

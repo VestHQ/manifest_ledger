@@ -129,6 +129,24 @@
                         font-weight: 600;
                         font-size: 20px;
                         text-align: center;
+
+                    }
+
+                    .text6 {
+                        grid-column: 5;
+                        grid-row: 1;
+                        margin: -80px -40px;
+                        width: 180px;
+                        text-align: center;
+                        color: $primary-color;
+                        font-weight: 600;
+
+                        span {
+                            color: $yellow;
+                            font-size: 35px;
+                            margin-top: 11px;
+                            display: block;
+                        }
                     }
 
                     .block6 {
@@ -224,6 +242,7 @@
                     align-self: start;
                     justify-self: center;
 
+
                     &--1 {
                         @extend .circle-caption;
                         grid-column: 3;
@@ -237,6 +256,14 @@
                     &--3 {
                         @extend .circle-caption;
                         grid-column: 7;
+                    }
+
+                    &--4 {
+                        @extend .circle-caption;
+                        grid-column: 1;
+                        color: $primary-color;
+                        width: 162px;
+                        font-weight: 600;
                     }
                 }
 
@@ -271,19 +298,9 @@
                         span {
                             font-size: 16px;
                         }
-                    }
 
-                    &--3 {
-                        @extend .circle;
-                        background-color: $yellow;
-                        width: 104px;
-                        height: 104px;
-                        color: black;
-                        font-weight: 500;
-                        font-size: 25px;
-
-                        span {
-                            font-size: 16px;
+                        .u-graphic-caption {
+                            font-size: 25px;
                         }
                     }
 
@@ -298,6 +315,10 @@
 
                         span {
                             font-size: 16px;
+                        }
+
+                        .u-graphic-caption {
+                            font-size: 25px;
                         }
                     }
 
@@ -461,4 +482,22 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+.label-years,
+.input-years {
+    position: relative;
+    display: block;
+    width: 170px;
+}
+
+.label-years::after {
+    content: attr(data-domain);
+    position: absolute;
+    z-index: 10;
+    top: 39px;
+    left: 270px;
+    border-left: 3px solid #F0F0F0;
+    padding: 18px;
+
 }
