@@ -35,7 +35,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 670px;
+            height: 640px;
 
             @include respond(tab-land) {
                 grid-row: 1;
@@ -157,7 +157,7 @@
                 .graphic-labels {
                     display: flex;
                     justify-content: space-between;
-                    margin-top: 50px;
+                    margin-top: 30px;
 
                     &__label {
                         display: flex;
