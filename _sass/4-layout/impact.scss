@@ -24,7 +24,7 @@
         gap: 130px;
         grid-template-columns: 1fr 3fr;
 
-        @include respond(tab-port) {
+        @include respond(tab-land) {
             grid-template-columns: 1fr;
             gap: 40px;
             margin-top: 0;
@@ -32,13 +32,12 @@
 
         .output {
             width: 100%;
-            // max-width: 610px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 670px;
 
-            @include respond(tab-port) {
+            @include respond(tab-land) {
                 grid-row: 1;
                 height: auto;
                 margin-top: 0;
@@ -55,6 +54,9 @@
             }
 
             &__graphic {
+
+                display: flex;
+                flex-direction: column;
 
                 @include respond(tab-port) {
                     display: none;
@@ -144,7 +146,6 @@
                     display: flex;
                     justify-content: space-between;
                     margin-top: 17px;
-                    // max-width: 610px;
 
                     &--name {
                         width: 150px;
@@ -165,7 +166,7 @@
                     .block {
                         width: 42px;
                         height: 30px;
-                        margin-right: 20px;
+                        margin-right: 15px;
 
                         &--yellow {
                             @extend .block;
@@ -183,13 +184,12 @@
 
         .output-2 {
             width: 100%;
-            // max-width: 670px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 400px;
 
-            @include respond(tab-port) {
+            @include respond(tab-land) {
                 grid-row: 1;
                 height: auto;
                 margin-top: 53px;
@@ -211,8 +211,11 @@
                 justify-content: space-between;
                 gap: 10px;
                 display: grid;
-                grid-template-columns: repeat(7, max-content);
-                width: 670px;
+                grid-template-columns: 146px max-content 123px max-content 105px max-content 85px;
+
+                @include respond(tab-land) {
+                    justify-content: space-evenly;
+                }
 
                 .num-symbol {
                     font-weight: 500;
@@ -225,7 +228,7 @@
                     width: 129px;
                     align-self: start;
                     justify-self: center;
-
+                    font-size: 16px;
 
                     &--1 {
                         @extend .circle-caption;
@@ -277,14 +280,14 @@
                         height: 122px;
                         color: black;
                         font-weight: 500;
-                        font-size: 25px;
+                        font-size: 20px;
 
                         span {
-                            font-size: 16px;
+                            font-size: 12px;
                         }
 
                         .u-graphic-caption {
-                            font-size: 25px;
+                            font-size: 20px;
                         }
                     }
 
@@ -295,14 +298,14 @@
                         height: 104px;
                         color: black;
                         font-weight: 500;
-                        font-size: 25px;
+                        font-size: 20px;
 
                         span {
-                            font-size: 16px;
+                            font-size: 12px;
                         }
 
                         .u-graphic-caption {
-                            font-size: 25px;
+                            font-size: 20px;
                         }
                     }
 
@@ -313,7 +316,7 @@
                         height: 86px;
                         color: black;
                         font-weight: 500;
-                        font-size: 25px;
+                        font-size: 20px;
                     }
                 }
 
@@ -343,7 +346,7 @@
         height: 555px;
         width: 461px;
 
-        @include respond(tab-port) {
+        @include respond(tab-land) {
             width: 100%;
             height: auto;
             padding: 27px;
@@ -448,12 +451,13 @@
     &--input {
         @extend .number;
         border-bottom: 5px solid $yellow;
+        padding: 0 8px;
     }
 
     &--input-single {
         @extend .number;
         border-bottom: 5px solid $yellow;
-        padding: 0 8px;
+        padding: 0 10px;
     }
 
     &--output {
@@ -487,16 +491,19 @@
 .graph-title-caption {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
 
     width: 180px;
     text-align: center;
     color: $primary-color;
+    text-transform: capitalize;
     font-weight: 600;
     line-height: 23px;
+    margin-right: -40px;
 
-    position: absolute;
-    left: 84vw;
-    top: 450px;
+    @include respond(tab-land) {
+        margin-right: 0;
+    }
 
     span {
         color: $yellow;
@@ -512,10 +519,15 @@
     color: $primary-color;
     width: 162px;
     font-weight: 600;
+    text-transform: capitalize;
     text-align: center;
     margin: 50px 0 20px -20px;
     line-height: 23px;
 
+
+    @include respond(tab-land) {
+        margin-left: 20px;
+    }
 
     @include respond(tab-port) {
         display: none;

@@ -52,7 +52,7 @@
         }
 
         &:focus {
-            transform: translateY(-3px);
+            outline: 2px dotted $primary-color;
         }
     }
 
