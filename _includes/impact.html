@@ -9,18 +9,22 @@
             <input type="number" id="numOldAccounts" placeholder="1" min="0">
 
             <label>Average account balance per old account:</label>
-            <input type="number" id="avgAccountBalance" placeholder="$8100" min="0">
+            <!-- <input type="number" id="avgAccountBalance" placeholder="$8100" min="0"> -->
+            <div>
+                <span class="dollar-sign">$</span>
+                <input type="number" id="avgAccountBalance" placeholder="8100" min="0" style="padding-left:20px;">
+            </div>
 
             <button class="btn--calculate" id="calcGains">Calculate</button>
         </div>
 
         <div class="output">
-            <h2 class="output__text">
+            <h3 class="output__text">
                 By transferring in <span id="numAccounts" class="number--input-single">1</span> old account(s)¹ with an
                 average
                 balance of <span id="avgAccount" class="number--input">$8,100</span>², participants can gain <span
                     id="gain" class="number--output">$9,352</span> from consolidation over 10 years³.
-            </h2>
+            </h3>
 
             <div class="output__graphic">
                 <span class='graph-title-caption'>
@@ -50,17 +54,6 @@
                     <h5 class="axis--name">Consolidated Accounts</h5>
                 </div>
 
-                <div class="graphic-labels">
-                    <div class="graphic-labels__label">
-                        <div class="block--yellow"></div>
-                        <span class="label--text">Original Account Balance</span>
-                    </div>
-
-                    <div class="graphic-labels__label">
-                        <div class="block--blue"></div>
-                        <span class="label--text">Gain From Consolidation</span>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -80,12 +73,12 @@
         </div>
 
         <div class="output-2">
-            <h2 class="output-2__text">
+            <h3 class="output-2__text">
                 For every <span id="inactiveAccountsNum" class="number--input-single">1</span> inactive account
                 transferred
                 out, a plan can gain <span id="inactiveGain" class="number--output">$9,352</span> in cost over <span
                     id="years" class="number--input-single">5</span> years⁵.
-            </h2>
+            </h3>
 
             <span class="circle-title-caption">Total Cost Reduction from Transferring <span>⤵</span></span>
             <div class="output-2__graphic">
@@ -93,18 +86,15 @@
                 <span class="num-symbol">=</span>
                 <div class="circle--2">
                     <span id="employerCost-circle" class="u-graphic-caption">$360</span>
-                    <span>(72 x <span id="employer-circle">5</span>yrs)</span>
+                    <span class="circle-equation">(72 x <span id="employer-circle">5</span>yrs)</span>
                 </div>
                 <span class="circle-caption--1">Employer Cost⁶</span>
                 <span class="num-symbol">+</span>
                 <div class="circle--3">
                     <span id="participantCost-circle" class="u-graphic-caption">$180</span>
-                    <span>(36 x <span id="participant-circle">5</span>yrs)</span>
+                    <span class="circle-equation">(36 x <span id="participant-circle">5</span>yrs)</span>
                 </div>
                 <span class="circle-caption--2">Participant Cost⁷</span>
-                <span class="num-symbol">+</span>
-                <div class="circle--4">$49</div>
-                <span class="circle-caption--3">Potential Interest Lost⁸</span>
             </div>
         </div>
     </div>

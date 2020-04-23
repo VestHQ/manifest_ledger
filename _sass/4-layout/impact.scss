@@ -35,7 +35,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 640px;
 
             @include respond(tab-land) {
                 grid-row: 1;
@@ -46,9 +45,11 @@
             &__text {
 
                 font-weight: 400;
-                line-height: 45px;
+                line-height: 26px;
+                letter-spacing: 0;
 
                 @include respond(phone) {
+                    font-size: 18px;
                     line-height: 30px;
                 }
             }
@@ -65,9 +66,9 @@
                 .grid {
                     display: grid;
                     grid-template-columns: repeat(5, 1fr);
-                    grid-template-rows: repeat(15, 18px);
+                    grid-template-rows: repeat(21, 15px);
                     width: 100%;
-                    column-gap: 15px;
+                    column-gap: 20px;
                     border-bottom: 3px solid #E8E8E8;
 
                     &--captions {
@@ -78,40 +79,41 @@
                     }
 
                     .block1 {
-                        background: $yellow;
-                        grid-row: 16/11;
+                        background: $secondary-color;
+                        grid-row: 12/22
                     }
 
                     .text1 {
-                        grid-row: 10;
+                        grid-row: 11;
+                        font-weight: 600;
                     }
 
                     .block2 {
                         grid-column: 2;
                         background: $primary-color;
-                        grid-row: 10;
+                        grid-row: 11;
                     }
 
                     .text2 {
                         grid-column: 2;
-                        grid-row: 9;
+                        grid-row: 10;
                     }
 
                     .block3 {
                         grid-column: 3;
                         background: $primary-color;
-                        grid-row: 10/ 7;
+                        grid-row: 11/ 8;
                     }
 
                     .text3 {
                         grid-column: 3;
-                        grid-row: 5;
+                        grid-row: 7;
                     }
 
                     .block4 {
                         grid-column: 4;
                         background: $primary-color;
-                        grid-row: 4/ 7;
+                        grid-row: 4/ 8;
                     }
 
                     .text4 {
@@ -122,12 +124,12 @@
                     .block5 {
                         grid-column: 5;
                         background: $primary-color;
-                        grid-row: 4/ 11;
+                        grid-row: 4/ 12;
                     }
 
                     .text5 {
                         grid-column: 5;
-                        grid-row: 2;
+                        grid-row: 0;
                         font-weight: 600;
                         font-size: 20px;
                         text-align: center;
@@ -135,11 +137,9 @@
 
                     .block6 {
                         grid-column: 5;
-                        background: $yellow;
-                        grid-row: 11/ 16;
+                        background: $secondary-color;
+                        grid-row: 12/ 22;
                     }
-
-
                 }
 
                 .axis {
@@ -148,35 +148,11 @@
                     margin-top: 17px;
 
                     &--name {
-                        width: 150px;
+                        font-weight: 600;
+                        width: 107px;
                         text-align: center;
                         color: black;
-                    }
-                }
-
-                .graphic-labels {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 30px;
-
-                    &__label {
-                        display: flex;
-                    }
-
-                    .block {
-                        width: 42px;
-                        height: 30px;
-                        margin-right: 15px;
-
-                        &--yellow {
-                            @extend .block;
-                            background-color: $yellow;
-                        }
-
-                        &--blue {
-                            @extend .block;
-                            background-color: $primary-color;
-                        }
+                        line-height: 18px;
                     }
                 }
             }
@@ -188,6 +164,7 @@
             flex-direction: column;
             justify-content: space-between;
             height: 400px;
+            position: relative;
 
             @include respond(tab-land) {
                 grid-row: 1;
@@ -198,9 +175,11 @@
             &__text {
 
                 font-weight: 400;
-                line-height: 45px;
+                line-height: 26px;
+                letter-spacing: 0;
 
                 @include respond(phone) {
+                    font-size: 18px;
                     line-height: 30px;
                 }
             }
@@ -208,10 +187,10 @@
             &__graphic {
 
                 align-items: center;
-                justify-content: space-between;
-                gap: 10px;
+                justify-content: center;
+                column-gap: 25px;
+                row-gap: 10px;
                 display: grid;
-                grid-template-columns: 146px max-content 123px max-content 105px max-content 85px;
 
                 @include respond(tab-land) {
                     justify-content: space-evenly;
@@ -244,14 +223,6 @@
                         @extend .circle-caption;
                         grid-column: 7;
                     }
-
-                    &--4 {
-                        @extend .circle-caption;
-                        grid-column: 1;
-                        color: $primary-color;
-                        width: 162px;
-                        font-weight: 600;
-                    }
                 }
 
                 .circle {
@@ -275,48 +246,40 @@
 
                     &--2 {
                         @extend .circle;
-                        background-color: #E8EDFF;
+                        background-color: $secondary-color;
                         width: 122px;
                         height: 122px;
                         color: black;
-                        font-weight: 500;
                         font-size: 20px;
 
-                        span {
+                        .circle-equation {
                             font-size: 12px;
+                            font-weight: 500;
                         }
 
                         .u-graphic-caption {
                             font-size: 20px;
+                            font-weight: 600;
                         }
                     }
 
                     &--3 {
                         @extend .circle;
-                        background-color: $yellow;
+                        background-color: $light-blue;
                         width: 104px;
                         height: 104px;
                         color: black;
-                        font-weight: 500;
                         font-size: 20px;
 
-                        span {
+                        .circle-equation {
                             font-size: 12px;
+                            font-weight: 500;
                         }
 
                         .u-graphic-caption {
                             font-size: 20px;
+                            font-weight: 600;
                         }
-                    }
-
-                    &--4 {
-                        @extend .circle;
-                        background-color: $yellow-light;
-                        width: 86px;
-                        height: 86px;
-                        color: black;
-                        font-weight: 500;
-                        font-size: 20px;
                     }
                 }
 
@@ -328,14 +291,12 @@
     }
 
     .chart:nth-child(3) {
-        margin-top: 88px;
+        margin-top: 110px;
 
         @include respond(tab-port) {
             margin-top: 0;
         }
     }
-
-
 
     .input-box {
         display: flex;
@@ -363,11 +324,11 @@
 
         input {
             border: none;
-            padding: 16px;
+            padding: 10px;
             border-radius: 5px;
             border: 2px solid $white;
             caret-color: $primary-color;
-            font-size: 25px;
+            font-size: 16px;
             font-weight: 600;
             width: 100%;
 
@@ -450,14 +411,14 @@
 
     &--input {
         @extend .number;
-        border-bottom: 5px solid $yellow;
-        padding: 0 8px;
+        border-bottom: 3px solid $yellow;
+        padding: 0 5px;
     }
 
     &--input-single {
         @extend .number;
-        border-bottom: 5px solid $yellow;
-        padding: 0 10px;
+        border-bottom: 3px solid $yellow;
+        padding: 0 6px;
     }
 
     &--output {
@@ -477,13 +438,13 @@
     content: attr(data-domain);
     position: absolute;
     z-index: 10;
-    top: 39px;
+    top: 33px;
     left: 270px;
     border-left: 3px solid #F0F0F0;
     padding: 18px;
 
     @include respond (phone) {
-        top: 32px;
+        top: 25px;
         left: 180px;
     }
 }
@@ -506,12 +467,12 @@
     }
 
     span {
-        color: $yellow;
         font-size: 35px;
-        margin-top: 11px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
         display: block;
         transform: scaleX(-1);
-        margin-right: 20px;
     }
 }
 
@@ -521,9 +482,9 @@
     font-weight: 600;
     text-transform: capitalize;
     text-align: center;
-    margin: 50px 0 20px -20px;
     line-height: 23px;
-
+    margin-left: 70px;
+    margin-top: 40px;
 
     @include respond(tab-land) {
         margin-left: 20px;
@@ -534,10 +495,16 @@
     }
 
     span {
-        color: $yellow;
+        transform: scaleX(-1);
         font-size: 35px;
-        margin-top: 11px;
+        margin-top: 20px;
         display: block;
-        margin-left: 10px;
+        margin-left: -30px;
     }
+}
+
+.dollar-sign {
+    position: absolute;
+    margin-left: 9px;
+    margin-top: 12px;
 }
