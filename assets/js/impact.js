@@ -5,8 +5,9 @@ const calcBtnActive = document.getElementById('calcGains')
 
 let numOldAccountsEl = document.getElementById('numAccounts')
 let avgAccountBalanceEl = document.getElementById('avgAccount')
+let unconsolidatedEl = document.getElementById('unconsolidated')
 let gainEl = document.getElementById('gain')
-let graphicOutputEl = document.getElementById('graphicOutput')
+let consolidatedEl = document.getElementById('consolidated')
 
 calcBtnActive.addEventListener('click', () => {
     // check for user input
@@ -19,8 +20,9 @@ calcBtnActive.addEventListener('click', () => {
 
     numOldAccountsEl.textContent = numOldAccounts.value
     avgAccountBalanceEl.textContent = `$${formatNumber(avgAccountBalance.value)}`
-    gainEl.textContent = `$${formatNumber(numOldAccounts.value + avgAccountBalance.value)}`
-    graphicOutputEl.textContent = `$${formatNumber(numOldAccounts.value + avgAccountBalance.value)}`
+    unconsolidatedEl.textContent = `$${formatNumber(numOldAccounts.value * avgAccountBalance.value)}`
+    gainEl.textContent = `$${formatNumber(Math.round(numOldAccounts.value * avgAccountBalance.value * .36))}`
+    consolidatedEl.textContent = `$${formatNumber(Math.round(numOldAccounts.value * avgAccountBalance.value * 1.36))}`
 })
 
 // INACTIVE ACCOUNTS
@@ -48,12 +50,12 @@ calcBtnInactive.addEventListener('click', () => {
 
     inactiveAccountEl.textContent = numAccountsTransferred.value
     yearsEl.textContent = numYears.value
-    graphicInactiveGain.textContent = `$${formatNumber(numYears.value * 1000)}`
+    graphicInactiveGain.textContent = `$${formatNumber(numAccountsTransferred.value * (72 * numYears.value) + (36 * numYears.value))}`
     employerCircleYearEl.textContent = numYears.value
     participantCircleYearEl.textContent = numYears.value
     employerCircleCostEl.textContent = `$${72 * numYears.value}`
     participantCircleCostEl.textContent = `$${36 * numYears.value}`
-    totalCostReductionEl.textContent = `$${(72 * numYears.value) + (36 * numYears.value) + 49}`
+    totalCostReductionEl.textContent = `$${(72 * numYears.value) + (36 * numYears.value)}`
 })
 
 
