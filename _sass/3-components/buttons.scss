@@ -52,7 +52,7 @@
         }
 
         &:focus {
-            outline: 2px dotted $primary-color;
+            background-color: $light-hover;
         }
     }
 

@@ -438,14 +438,19 @@
     content: attr(data-domain);
     position: absolute;
     z-index: 10;
-    top: 33px;
+    top: 37px;
     left: 270px;
+    padding: 13px;
     border-left: 3px solid #F0F0F0;
-    padding: 18px;
 
     @include respond (phone) {
-        top: 25px;
+        top: 32px;
         left: 180px;
+        padding: 10px;
+    }
+
+    @media (max-width:320px) {
+        left: 140px;
     }
 }
 
