@@ -1,4 +1,3 @@
-<script>
     // removes canvas from blocking btns after animation completes
     document.addEventListener('animationend', function () {
         canvas.parentNode.removeChild(canvas)
@@ -298,4 +297,3 @@
     };
 
     init();
-</script>
