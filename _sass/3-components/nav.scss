@@ -12,6 +12,7 @@
     position: relative;
     padding: 25px 0 15px 0 !important;
     width: 100%;
+    transition: all .3s;
 
     @include respond(phone){
         padding-bottom: 60px;
@@ -181,7 +182,6 @@
     .nav-link {
         background-color: $white;
         display: none;
-        // margin-top: 40px;
         padding-top: 20px;
         position: absolute;
         left: 0;
