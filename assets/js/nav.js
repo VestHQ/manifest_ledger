@@ -1,12 +1,15 @@
 const menu = document.getElementById('manifest-nav-toggle')
+const menuOpen = document.getElementById('manifest-nav')
+const navigation = document.querySelector('nav')
 
 menu.addEventListener('click', () => {
-    console.log('click')
-    if (document.getElementById('manifest-nav').classList.contains('nav-open') !== true) {
-        document.getElementById('manifest-nav').classList.add('nav-open');
-        this.classList.add('close-menu');
+    if (menuOpen.classList.contains('nav-open') !== true) {
+        menuOpen.classList.add('nav-open');
+        menu.classList.add('close-menu');
+        navigation.classList.add('fullscreen')
     } else {
-        document.getElementById('manifest-nav').classList.remove('nav-open');
-        this.classList.remove('close-menu');
+        menuOpen.classList.remove('nav-open');
+        menu.classList.remove('close-menu');
+        navigation.classList.remove('fullscreen')
     }
 });
