@@ -35,6 +35,45 @@
     }
 }
 
+.stories {
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url(/assets/images/about/bg.png);
+
+    @include respond (tab-port) {
+        background-image: none;
+        padding: 0;
+    }
+
+    @include respond(phone) {
+        margin: 40px auto;
+        margin-bottom: 25px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        background-color: #F2F5FF;
+        padding: 50px;
+
+        @include respond(phone) {
+            flex-direction: column;
+            padding: 35px 30px;
+        }
+    }
+
+    &__text {
+        max-width: 816px;
+        margin-right: 80px;
+
+        @include respond(phone) {
+            margin-right: 0;
+            margin-bottom: 45px;
+        }
+    }
+}
+
 .brand-sec {
     padding: 0 40px 70px 40px;
     max-width: 1315px;
