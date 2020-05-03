@@ -12,7 +12,7 @@ let consolidatedEl = document.getElementById('consolidated')
 calcBtnActive.addEventListener('click', () => {
     // check for user input
     if (numOldAccounts.value == 0) {
-        numOldAccounts.value = 1
+        numOldAccounts.value = 3
     }
     if (avgAccountBalance.value == 0) {
         avgAccountBalance.value = 8100
