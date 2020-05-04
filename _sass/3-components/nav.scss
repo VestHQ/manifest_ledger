@@ -15,7 +15,7 @@
     // transition: all .3s;
     z-index: 100;
 
-    @include respond(phone){
+    @include respond(phone) {
         padding-bottom: 60px;
     }
 
@@ -219,9 +219,15 @@
     }
 }
 
-.fullscreen{
+.fullscreen {
     position: fixed;
     margin-top: 30px;
     width: 92vw;
     background-color: white;
+}
+
+@-moz-document url-prefix() {
+    .fullscreen {
+        margin-top: 60px;
+    }
 }
