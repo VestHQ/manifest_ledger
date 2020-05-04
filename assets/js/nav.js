@@ -1,5 +1,5 @@
 const menu = document.getElementById('manifest-nav-toggle')
-const menuOpen = document.xwgetElementById('manifest-nav')
+const menuOpen = document.getElementById('manifest-nav')
 const navigation = document.querySelector('nav')
 
 menu.addEventListener('click', () => {
