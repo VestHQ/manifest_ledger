@@ -12,7 +12,8 @@
     position: relative;
     padding: 25px 0 15px 0 !important;
     width: 100%;
-    transition: all .3s;
+    // transition: all .3s;
+    z-index: 100;
 
     @include respond(phone){
         padding-bottom: 60px;
@@ -105,7 +106,7 @@
         background-color: $black;
         margin: 7px 0;
         cursor: pointer;
-        transition: all ease-in-out 0.2s;
+        // transition: all ease-in-out 0.2s;
 
         &::after {
             content: '';
@@ -216,4 +217,11 @@
     h1 {
         margin-bottom: 20px;
     }
+}
+
+.fullscreen{
+    position: fixed;
+    margin-top: 30px;
+    width: 92vw;
+    background-color: white;
 }
