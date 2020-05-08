@@ -52,23 +52,25 @@
     }
 
     &__wrapper {
-        display: flex;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        gap: 80px;
         align-items: center;
+
         background-color: #F2F5FF;
         padding: 50px;
 
         @include respond(phone) {
-            flex-direction: column;
+            gap: 0;
+            grid-template-columns: 1fr;
             padding: 35px 30px;
         }
     }
 
     &__text {
         max-width: 816px;
-        margin-right: 80px;
 
         @include respond(phone) {
-            margin-right: 0;
             margin-bottom: 45px;
         }
     }
