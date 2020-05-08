@@ -65,44 +65,44 @@ function formatNumber(num) {
 }
 
 // click outside
-document.addEventListener("click", (e) => {
-    const activeInputBox = document.querySelector(".input-box");
-    let targetElement = e.target; // clicked element
+// document.addEventListener("click", (e) => {
+//     const activeInputBox = document.querySelector(".input-box");
+//     let targetElement = e.target; // clicked element
 
-    do {
-        if (targetElement == activeInputBox) {
-            // This is a click inside. Do nothing, just return.
-            console.log('in')
-            return;
-        }
-        // Go up the DOM
-        targetElement = targetElement.parentNode;
-    } while (targetElement);
+//     do {
+//         if (targetElement == activeInputBox) {
+//             // This is a click inside. Do nothing, just return.
+//             console.log('in')
+//             return;
+//         }
+//         // Go up the DOM
+//         targetElement = targetElement.parentNode;
+//     } while (targetElement);
 
-    // This is a click outside.
-    // active
-    if (numOldAccounts.value == 0) {
-        console.log('out active')
-        numOldAccountsEl.textContent = 1
-        unconsolidatedEl.textContent = '$8,100'
-        gainEl.textContent = '$2,916'
-        consolidatedEl.textContent = '$11,016'
-    }
-    if (avgAccountBalance.value == 0) {
-        avgAccountBalanceEl.textContent = '$8,100'
-    }
+//     // This is a click outside.
+//     // active
+//     if (numOldAccounts.value == 0) {
+//         console.log('out active')
+//         numOldAccountsEl.textContent = 1
+//         unconsolidatedEl.textContent = '$8,100'
+//         gainEl.textContent = '$2,916'
+//         consolidatedEl.textContent = '$11,016'
+//     }
+//     if (avgAccountBalance.value == 0) {
+//         avgAccountBalanceEl.textContent = '$8,100'
+//     }
 
-    // inactive
-    if (numAccountsTransferred.value == 0) {
-        inactiveAccountEl.textContent = 1
-        graphicInactiveGain.textContent = '$540'
-    }
-    if (numYears.value == 0) {
-        yearsEl.textContent = 5
-        employerCircleYearEl.textContent = 5
-        participantCircleYearEl.textContent = 5
-        employerCircleCostEl.textContent = '$360'
-        participantCircleCostEl.textContent = '$180'
-        totalCostReductionEl.textContent = '$540'
-    }
-});
+//     // inactive
+//     if (numAccountsTransferred.value == 0) {
+//         inactiveAccountEl.textContent = 1
+//         graphicInactiveGain.textContent = '$540'
+//     }
+//     if (numYears.value == 0) {
+//         yearsEl.textContent = 5
+//         employerCircleYearEl.textContent = 5
+//         participantCircleYearEl.textContent = 5
+//         employerCircleCostEl.textContent = '$360'
+//         participantCircleCostEl.textContent = '$180'
+//         totalCostReductionEl.textContent = '$540'
+//     }
+// });
