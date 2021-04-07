@@ -1,102 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
 .title {
-    font-size: 38px;
-    line-height: 47px;
+  font-size: 38px;
+  line-height: 47px;
 
-    @include respond(phone) {
-        font-size: 25px;
-        line-height: 32px;
-    }
+  @include respond(phone) {
+    font-size: 25px;
+    line-height: 32px;
+  }
 }
 
 .heading {
-    color: $primary-color;
-    margin-bottom: 20px;
+  color: $primary-color;
+  margin-bottom: 20px;
 
-    @include respond (phone) {
-        margin-bottom: 18px;
-    }
+  @include respond(phone) {
+    margin-bottom: 18px;
+  }
 }
 
 html,
 body,
 textarea,
 input {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
+  font-family: $body;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 
-    @include respond(phone) {
-        font-size: 14px;
-        line-height: 21px;
-    }
+  @include respond(phone) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
-
 p:not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 h1 {
-    font-size: 38px;
-    line-height: 46px;
+  font-size: 38px;
+  line-height: 46px;
 
-    @include respond(phone) {
-        font-size: 25px;
-        line-height: 32px;
-    }
+  @include respond(phone) {
+    font-size: 25px;
+    line-height: 32px;
+  }
 }
 
 h2 {
-    font-size: 25px;
-    line-height: 35px;
+  font-size: 25px;
+  line-height: 35px;
 
-    @include respond(phone) {
-        font-size: 18px;
-        line-height: 26px;
-    }
+  @include respond(phone) {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 h3 {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: .05em;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
 
-    @include respond(phone) {
-        font-size: 13px;
-    }
+  @include respond(phone) {
+    font-size: 13px;
+  }
 }
 
 h4 {
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 
-    @include respond (phone) {
-        font-size: 14px;
-        line-height: 17px;
-    }
+  @include respond(phone) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 h5,
 form label {
-    color: $grey2;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
+  color: $grey2;
+  font-family: $body;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
 
-    @media(max-width:767px) {
-        font-size: 12px;
-        line-height: 16px;
-    }
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

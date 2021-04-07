@@ -26,13 +26,13 @@ html {
 }
 
 // remove numerical arrows on input
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type=number] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 
@@ -43,7 +43,7 @@ input[type=number] {
 }
 
 .container {
-  font-family: $avenir;
+  font-family: $body;
   width: 100vw;
   //min-height: calc(75vh - #{$footer-height});
   padding: 0;
