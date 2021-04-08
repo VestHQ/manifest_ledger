@@ -1,14 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
-.title {
-  font-size: 38px;
-  line-height: 47px;
-
-  @include respond(phone) {
-    font-size: 25px;
-    line-height: 32px;
-  }
-}
-
 .heading {
   margin-bottom: 20px;
 
@@ -47,6 +37,7 @@ h1 {
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
+  margin-bottom: 10px;
 
   @include respond(phone) {
     font-size: 25px;
@@ -98,4 +89,11 @@ form label {
     font-size: 12px;
     line-height: 16px;
   }
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-tertiary);
 }
