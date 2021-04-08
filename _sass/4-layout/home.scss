@@ -120,3 +120,38 @@
     }
   }
 }
+
+.cta {
+  background-image: url('../../assets/images/home/left.svg'),
+    url('../../assets/images/home/right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left, right;
+  height: 500px;
+  display: flex;
+  align-items: center;
+
+  @include respond(tablet) {
+    background-image: url('../../assets/images/home/right.svg');
+    background-position: right;
+  }
+
+  @include respond(phone) {
+    height: 400px;
+  }
+
+  &__text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @include respond(phone) {
+      padding: 0 20px;
+    }
+
+    &--title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+}
