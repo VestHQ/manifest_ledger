@@ -42,3 +42,79 @@
     }
   }
 }
+
+.three-features {
+  margin-top: 100px;
+  margin-bottom: 83px;
+  padding: 0 40px;
+  display: grid;
+  gap: 150px;
+
+  @include respond(phone) {
+    padding: 0 20px;
+    gap: 100px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include respond(laptop) {
+      flex-direction: column-reverse;
+    }
+    .text {
+      max-width: 550px;
+    }
+
+    .graphic {
+      @include respond(laptop) {
+        margin-bottom: 50px;
+      }
+
+      &--video {
+        max-width: 260px;
+        height: auto;
+      }
+    }
+
+    .card {
+      max-width: 422px;
+      background: var(--white);
+      padding: 30px;
+      box-shadow: var(--shadow);
+      border-radius: 16.66px;
+
+      @include respond(laptop) {
+        margin-bottom: 50px;
+      }
+
+      @include respond(phone) {
+        border-radius: 16.66px;
+        padding: 20px;
+      }
+
+      &--heading {
+        text-align: center;
+      }
+
+      &__grid {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        gap: 45px 60px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 0;
+
+        @include respond(phone) {
+          margin: 20px 0;
+        }
+      }
+
+      &--footer {
+        text-align: center;
+      }
+    }
+  }
+}

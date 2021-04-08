@@ -56,12 +56,14 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.05em;
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 600;
+  color: var(--color-text-dark-4);
 
   @include respond(phone) {
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 16.42px;
   }
 }
 
