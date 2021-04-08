@@ -92,7 +92,9 @@
 
       @include respond(phone) {
         border-radius: 16.66px;
+        width: 100%;
         padding: 20px;
+        margin-top: 25px;
       }
 
       &--heading {

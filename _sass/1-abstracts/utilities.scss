@@ -10,5 +10,25 @@
 .reverse-block {
   @include respond(laptop) {
     flex-direction: column !important;
+    padding: 0 20px;
+  }
+}
+
+.bg-graphic {
+  background-image: url('../../assets/images/home/graphic-1.svg');
+  background-position: left;
+  background-size: contain;
+  min-height: 591px;
+  display: flex;
+  background-repeat: no-repeat;
+
+  @include respond(laptop) {
+    background-size: 520px;
+    background-position-y: top;
+  }
+
+  @include respond(phone) {
+    background-position: top left;
+    background-size: 400px;
   }
 }
