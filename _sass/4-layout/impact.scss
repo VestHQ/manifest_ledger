@@ -1,515 +1,488 @@
 .impact {
-    max-width: 1340px;
-    margin: 0 auto;
-    padding: 0 40px;
-    min-height: 100vh;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+  min-height: 100vh;
+
+  @include respond(phone) {
+    padding: 0 30px;
+  }
+
+  &--heading {
+    margin-top: 70px;
+    margin-bottom: 76px;
 
     @include respond(phone) {
-        padding: 0 30px;
+      margin-top: 37px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .chart {
+    display: grid;
+    gap: 130px;
+    grid-template-columns: 1fr 3fr;
+
+    @include respond(laptop) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-top: 0;
     }
 
-    &--heading {
-        color: $black;
-        margin-top: 70px;
-        margin-bottom: 76px;
+    .output {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include respond(laptop) {
+        grid-row: 1;
+        height: auto;
+        margin-top: 0;
+      }
+
+      &__text {
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0;
 
         @include respond(phone) {
-            margin-top: 37px;
-            margin-bottom: 20px;
+          font-size: 18px;
+          line-height: 30px;
         }
-    }
+      }
 
-    .chart {
-        display: grid;
-        gap: 130px;
-        grid-template-columns: 1fr 3fr;
-
-        @include respond(tab-land) {
-            grid-template-columns: 1fr;
-            gap: 40px;
-            margin-top: 0;
-        }
-
-        .output {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            @include respond(tab-land) {
-                grid-row: 1;
-                height: auto;
-                margin-top: 0;
-            }
-
-            &__text {
-
-                font-weight: 400;
-                line-height: 26px;
-                letter-spacing: 0;
-
-                @include respond(phone) {
-                    font-size: 18px;
-                    line-height: 30px;
-                }
-            }
-
-            &__graphic {
-
-                display: flex;
-                flex-direction: column;
-
-                @include respond(tab-port) {
-                    display: none;
-                }
-
-                .grid {
-                    display: grid;
-                    grid-template-columns: repeat(5, 1fr);
-                    grid-template-rows: repeat(21, 15px);
-                    width: 100%;
-                    column-gap: 20px;
-                    border-bottom: 3px solid #E8E8E8;
-
-                    &--captions {
-                        font-size: 14px;
-                        line-height: 16px;
-                        text-align: center;
-                        margin: -10px auto;
-                    }
-
-                    .block1 {
-                        background: $secondary-color;
-                        grid-row: 12/22
-                    }
-
-                    .text1 {
-                        grid-row: 11;
-                        font-weight: 600;
-                    }
-
-                    .block2 {
-                        grid-column: 2;
-                        background: $primary-color;
-                        grid-row: 11;
-                    }
-
-                    .text2 {
-                        grid-column: 2;
-                        grid-row: 10;
-                    }
-
-                    .block3 {
-                        grid-column: 3;
-                        background: $primary-color;
-                        grid-row: 11/ 8;
-                    }
-
-                    .text3 {
-                        grid-column: 3;
-                        grid-row: 7;
-                    }
-
-                    .block4 {
-                        grid-column: 4;
-                        background: $primary-color;
-                        grid-row: 4/ 8;
-                    }
-
-                    .text4 {
-                        grid-column: 4;
-                        grid-row: 2;
-                    }
-
-                    .block5 {
-                        grid-column: 5;
-                        background: $primary-color;
-                        grid-row: 4/ 12;
-                    }
-
-                    .text5 {
-                        grid-column: 5;
-                        grid-row: 0;
-                        font-weight: 600;
-                        font-size: 20px;
-                        text-align: center;
-                    }
-
-                    .block6 {
-                        grid-column: 5;
-                        background: $secondary-color;
-                        grid-row: 12/ 22;
-                    }
-                }
-
-                .axis {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 17px;
-
-                    &--name {
-                        font-weight: 600;
-                        width: 107px;
-                        text-align: center;
-                        color: black;
-                        line-height: 18px;
-                    }
-                }
-            }
-        }
-
-        .output-2 {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 400px;
-            position: relative;
-
-            @include respond(tab-land) {
-                grid-row: 1;
-                height: auto;
-                margin-top: 53px;
-            }
-
-            &__text {
-
-                font-weight: 400;
-                line-height: 26px;
-                letter-spacing: 0;
-
-                @include respond(phone) {
-                    font-size: 18px;
-                    line-height: 30px;
-                }
-            }
-
-            &__graphic {
-
-                align-items: center;
-                justify-content: center;
-                column-gap: 25px;
-                row-gap: 10px;
-                display: grid;
-
-                @include respond(tab-land) {
-                    justify-content: space-evenly;
-                }
-
-                .num-symbol {
-                    font-weight: 500;
-                    font-size: 38px;
-                }
-
-                .circle-caption {
-                    grid-row: 2;
-                    text-align: center;
-                    width: 129px;
-                    align-self: start;
-                    justify-self: center;
-                    font-size: 16px;
-
-                    &--1 {
-                        @extend .circle-caption;
-                        grid-column: 3;
-                    }
-
-                    &--2 {
-                        @extend .circle-caption;
-                        grid-column: 5;
-                    }
-
-                    &--3 {
-                        @extend .circle-caption;
-                        grid-column: 7;
-                    }
-                }
-
-                .circle {
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    flex-direction: column;
-                    justify-self: center;
-
-                    &--1 {
-                        @extend .circle;
-                        background-color: $primary-color;
-                        width: 146px;
-                        height: 146px;
-                        font-weight: 600;
-                        font-size: 25px;
-                        color: white;
-                    }
-
-                    &--2 {
-                        @extend .circle;
-                        background-color: $secondary-color;
-                        width: 122px;
-                        height: 122px;
-                        color: black;
-                        font-size: 20px;
-
-                        .circle-equation {
-                            font-size: 12px;
-                            font-weight: 500;
-                        }
-
-                        .u-graphic-caption {
-                            font-size: 20px;
-                            font-weight: 600;
-                        }
-                    }
-
-                    &--3 {
-                        @extend .circle;
-                        background-color: $light-blue;
-                        width: 104px;
-                        height: 104px;
-                        color: black;
-                        font-size: 20px;
-
-                        .circle-equation {
-                            font-size: 12px;
-                            font-weight: 500;
-                        }
-
-                        .u-graphic-caption {
-                            font-size: 20px;
-                            font-weight: 600;
-                        }
-                    }
-                }
-
-                @include respond(tab-port) {
-                    display: none;
-                }
-            }
-        }
-    }
-
-    .chart:nth-child(3) {
-        margin-top: 110px;
-
-        @include respond(tab-port) {
-            margin-top: 0;
-        }
-    }
-
-    .input-box {
+      &__graphic {
         display: flex;
         flex-direction: column;
-        background-color: #F0F0F0;
-        width: max-content;
-        padding: 45px 48px;
-        height: 555px;
-        width: 461px;
 
-        @include respond(tab-land) {
-            width: 100%;
-            height: auto;
-            padding: 27px;
+        @include respond(tablet) {
+          display: none;
         }
 
-        &--title {
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(21, 15px);
+          width: 100%;
+          column-gap: 20px;
+          border-bottom: 3px solid #e8e8e8;
+
+          &--captions {
+            font-size: 14px;
+            line-height: 16px;
             text-align: center;
-            margin-bottom: 51px;
+            margin: -10px auto;
+          }
 
-            @include respond(phone) {
-                margin-bottom: 30px;
-            }
-        }
+          .block1 {
+            grid-row: 12/22;
+          }
 
-        input {
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            border: 2px solid $white;
-            caret-color: $primary-color;
-            font-size: 16px;
+          .text1 {
+            grid-row: 11;
             font-weight: 600;
-            width: 100%;
+          }
 
-            &:focus {
-                border: 2px solid $primary-color;
-            }
+          .block2 {
+            grid-column: 2;
+            grid-row: 11;
+          }
 
-            @include respond(phone) {
-                font-size: 18px;
-            }
+          .text2 {
+            grid-column: 2;
+            grid-row: 10;
+          }
 
-        }
+          .block3 {
+            grid-column: 3;
+            grid-row: 11/ 8;
+          }
 
-        input:not(last-child) {
-            margin-bottom: 40px;
+          .text3 {
+            grid-column: 3;
+            grid-row: 7;
+          }
 
-            @include respond(phone) {
-                margin-bottom: 20px;
-            }
-        }
+          .block4 {
+            grid-column: 4;
+            grid-row: 4/ 8;
+          }
 
-        label {
-            font-size: 16px;
+          .text4 {
+            grid-column: 4;
+            grid-row: 2;
+          }
+
+          .block5 {
+            grid-column: 5;
+            grid-row: 4/ 12;
+          }
+
+          .text5 {
+            grid-column: 5;
+            grid-row: 0;
             font-weight: 600;
-            color: $black;
-            margin-bottom: 15px;
-            line-height: 20px;
+            font-size: 20px;
+            text-align: center;
+          }
 
-            @include respond(phone) {
-                font-size: 14px;
-                margin-bottom: 10px;
-
-            }
-
+          .block6 {
+            grid-column: 5;
+            grid-row: 12/ 22;
+          }
         }
 
-        button {
-            margin: 0 auto;
-            margin-top: 40px;
+        .axis {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 17px;
 
-            @include respond(phone) {
-                margin-top: 20px;
-            }
+          &--name {
+            font-weight: 600;
+            width: 107px;
+            text-align: center;
+            color: black;
+            line-height: 18px;
+          }
         }
+      }
     }
 
-    .footnotes {
-        border: 1px solid #757985;
-        margin-top: 78px;
-        padding: 28px;
+    .output-2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 400px;
+      position: relative;
 
+      @include respond(laptop) {
+        grid-row: 1;
+        height: auto;
+        margin-top: 53px;
+      }
+
+      &__text {
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0;
+
+        @include respond(phone) {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+
+      &__graphic {
+        align-items: center;
+        justify-content: center;
+        column-gap: 25px;
+        row-gap: 10px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
 
-        @include respond(tab-port) {
-            grid-template-columns: 1fr;
+        @include respond(laptop) {
+          justify-content: space-evenly;
         }
 
-        &__section {
-
-            &--title {
-                margin-bottom: 15px;
-            }
-
-            &--item {
-                line-height: 20px;
-                color: black;
-
-                span {
-                    margin-right: 5px;
-                }
-            }
+        .num-symbol {
+          font-weight: 500;
+          font-size: 38px;
         }
+
+        .circle-caption {
+          grid-row: 2;
+          text-align: center;
+          width: 129px;
+          align-self: start;
+          justify-self: center;
+          font-size: 16px;
+
+          &--1 {
+            @extend .circle-caption;
+            grid-column: 3;
+          }
+
+          &--2 {
+            @extend .circle-caption;
+            grid-column: 5;
+          }
+
+          &--3 {
+            @extend .circle-caption;
+            grid-column: 7;
+          }
+        }
+
+        .circle {
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          flex-direction: column;
+          justify-self: center;
+
+          &--1 {
+            @extend .circle;
+            width: 146px;
+            height: 146px;
+            font-weight: 600;
+            font-size: 25px;
+            color: white;
+          }
+
+          &--2 {
+            @extend .circle;
+            width: 122px;
+            height: 122px;
+            color: black;
+            font-size: 20px;
+
+            .circle-equation {
+              font-size: 12px;
+              font-weight: 500;
+            }
+
+            .u-graphic-caption {
+              font-size: 20px;
+              font-weight: 600;
+            }
+          }
+
+          &--3 {
+            @extend .circle;
+            width: 104px;
+            height: 104px;
+            color: black;
+            font-size: 20px;
+
+            .circle-equation {
+              font-size: 12px;
+              font-weight: 500;
+            }
+
+            .u-graphic-caption {
+              font-size: 20px;
+              font-weight: 600;
+            }
+          }
+        }
+
+        @include respond(tablet) {
+          display: none;
+        }
+      }
     }
+  }
+
+  .chart:nth-child(3) {
+    margin-top: 110px;
+
+    @include respond(tablet) {
+      margin-top: 0;
+    }
+  }
+
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    width: max-content;
+    padding: 45px 48px;
+    height: 555px;
+    width: 461px;
+
+    @include respond(laptop) {
+      width: 100%;
+      height: auto;
+      padding: 27px;
+    }
+
+    &--title {
+      text-align: center;
+      margin-bottom: 51px;
+
+      @include respond(phone) {
+        margin-bottom: 30px;
+      }
+    }
+
+    input {
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 600;
+      width: 100%;
+
+      &:focus {
+      }
+
+      @include respond(phone) {
+        font-size: 18px;
+      }
+    }
+
+    input:not(last-child) {
+      margin-bottom: 40px;
+
+      @include respond(phone) {
+        margin-bottom: 20px;
+      }
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      line-height: 20px;
+
+      @include respond(phone) {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+
+    button {
+      margin: 0 auto;
+      margin-top: 40px;
+
+      @include respond(phone) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .footnotes {
+    border: 1px solid #757985;
+    margin-top: 78px;
+    padding: 28px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    @include respond(tablet) {
+      grid-template-columns: 1fr;
+    }
+
+    &__section {
+      &--title {
+        margin-bottom: 15px;
+      }
+
+      &--item {
+        line-height: 20px;
+        color: black;
+
+        span {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
 }
 
 .number {
-    font-weight: 600;
+  font-weight: 600;
 
-    &--input {
-        @extend .number;
-        border-bottom: 3px solid $yellow;
-        padding: 0 5px;
-    }
+  &--input {
+    @extend .number;
+    padding: 0 5px;
+  }
 
-    &--input-single {
-        @extend .number;
-        border-bottom: 3px solid $yellow;
-        padding: 0 6px;
-    }
+  &--input-single {
+    @extend .number;
+    padding: 0 6px;
+  }
 
-    &--output {
-        @extend .number;
-        color: $primary-color;
-    }
+  &--output {
+    @extend .number;
+  }
 }
 
 .label-years,
 .input-years {
-    position: relative;
-    display: block;
-    width: 170px;
+  position: relative;
+  display: block;
+  width: 170px;
 }
 
 .label-years::after {
-    content: attr(data-domain);
-    position: absolute;
-    z-index: 10;
-    top: 37px;
-    left: 270px;
-    padding: 13px;
-    border-left: 3px solid #F0F0F0;
+  content: attr(data-domain);
+  position: absolute;
+  z-index: 10;
+  top: 37px;
+  left: 270px;
+  padding: 13px;
+  border-left: 3px solid #f0f0f0;
 
-    @include respond (phone) {
-        top: 32px;
-        left: 180px;
-        padding: 10px;
-    }
+  @include respond(phone) {
+    top: 32px;
+    left: 180px;
+    padding: 10px;
+  }
 
-    @media (max-width:320px) {
-        left: 140px;
-    }
+  @media (max-width: 320px) {
+    left: 140px;
+  }
 }
 
 .graph-title-caption {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
 
-    width: 180px;
-    text-align: center;
-    color: $primary-color;
-    text-transform: capitalize;
-    font-weight: 600;
-    line-height: 23px;
-    margin-right: -40px;
+  width: 180px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 23px;
+  margin-right: -40px;
 
-    @include respond(tab-land) {
-        margin-right: 0;
-    }
+  @include respond(laptop) {
+    margin-right: 0;
+  }
 
-    span {
-        font-size: 35px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 20px;
-        display: block;
-        transform: scaleX(-1);
-    }
+  span {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: block;
+    transform: scaleX(-1);
+  }
 }
 
 .circle-title-caption {
-    color: $primary-color;
-    width: 162px;
-    font-weight: 600;
-    text-transform: capitalize;
-    text-align: center;
-    line-height: 23px;
-    margin-left: 70px;
-    margin-top: 40px;
+  width: 162px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 23px;
+  margin-left: 70px;
+  margin-top: 40px;
 
-    @include respond(tab-land) {
-        margin-left: 20px;
-    }
+  @include respond(laptop) {
+    margin-left: 20px;
+  }
 
-    @include respond(tab-port) {
-        display: none;
-    }
+  @include respond(tablet) {
+    display: none;
+  }
 
-    span {
-        transform: scaleX(-1);
-        font-size: 35px;
-        margin-top: 20px;
-        display: block;
-        margin-left: -30px;
-    }
+  span {
+    transform: scaleX(-1);
+    font-size: 35px;
+    margin-top: 20px;
+    display: block;
+    margin-left: -30px;
+  }
 }
 
 .dollar-sign {
-    position: absolute;
-    margin-left: 9px;
-    margin-top: 12px;
+  position: absolute;
+  margin-left: 9px;
+  margin-top: 12px;
 }

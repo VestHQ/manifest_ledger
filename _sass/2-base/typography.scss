@@ -10,7 +10,6 @@
 }
 
 .heading {
-  color: $primary-color;
   margin-bottom: 20px;
 
   @include respond(phone) {
@@ -88,7 +87,6 @@ h4 {
 
 h5,
 form label {
-  color: $grey2;
   font-family: $body;
   font-style: normal;
   font-weight: normal;

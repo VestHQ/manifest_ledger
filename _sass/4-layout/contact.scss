@@ -28,7 +28,7 @@
     padding: 0 40px;
     margin-bottom: 100px;
 
-    @media (max-width:1000px) {
+    @media (max-width: 1000px) {
       grid-template-columns: 1fr;
       max-width: max-content;
       gap: 60px;
@@ -42,7 +42,7 @@
     &__form {
       width: 600px;
 
-      @media (max-width:1000px) {
+      @media (max-width: 1000px) {
         width: auto;
       }
 
@@ -64,7 +64,6 @@
     }
 
     &__info {
-
       &--title {
         margin-bottom: 10px;
       }
@@ -82,7 +81,6 @@
 
   input {
     border: none;
-    border-bottom: 1px solid $grey2;
     margin: 5px 0 27px 0;
     padding-bottom: 18px;
 
@@ -92,7 +90,6 @@
     }
 
     &:focus {
-      border-bottom: 2px solid $primary-color;
     }
   }
 
