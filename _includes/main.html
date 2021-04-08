@@ -2,43 +2,46 @@
   <img src="/assets/images/logo.svg" alt="manifest" class="manifest" />
 </div>
 
-<div class="hero">
-  <video
-    class="hero--video"
-    loop
-    muted
-    autoplay
-    playsinline
-    data-aos="fade-right"
-    data-aos-delay="1300"
-    data-aos-duration="1000"
-  >
-    <source src="/assets/videos/hero-gumball.mp4" type="video/mp4" />
-  </video>
+<section class="hero">
+  <div class="hero-container">
+    <video
+      class="hero--video"
+      loop
+      muted
+      autoplay
+      playsinline
+      data-aos="fade-right"
+      data-aos-delay="1300"
+      data-aos-duration="1000"
+    >
+      <source src="/assets/videos/hero-gumball.mp4" type="video/mp4" />
+    </video>
 
-  <div
-    class="hero__text"
-    data-aos="fade-left"
-    data-aos-delay="1300"
-    data-aos-duration="1000"
-  >
-    <h1 class="heading title">Maximize retirement outcomes</h1>
-    <p class="hero__text--para">
-      Manifest is the easiest way to consolidate retirement accounts. We're
-      digitizing retirement transfers.
-    </p>
+    <div
+      class="hero__text"
+      data-aos="fade-left"
+      data-aos-delay="1300"
+      data-aos-duration="1000"
+    >
+      <h1 class="heading title">Maximize retirement outcomes</h1>
+      <p class="hero__text--para">
+        Manifest is the easiest way to consolidate retirement accounts. We're
+        digitizing retirement transfers.
+      </p>
 
-    <a href="{% link contact.html %}" class="btn--request-demo">Request Demo</a>
+      <a href="{% link contact.html %}" class="btn--request-demo"
+        >Request Demo</a
+      >
+    </div>
   </div>
-</div>
-
-<div class="learn-more">
-  <a class="learn-more--text" href="#home">Learn More</a>
-  <img
-    class="learn-more--arrow"
-    src="/assets/images/shapes/down-arrow.svg"
-    alt="scroll down to learn more"
-  />
-</div>
+  <div class="learn-more">
+    <a class="learn-more--text" href="#home">Learn More</a>
+    <img
+      class="learn-more--arrow"
+      src="/assets/images/shapes/down-arrow.svg"
+      alt="scroll down to learn more"
+    />
+  </div>
+</section>
 
 <script src="/assets/js/home.js"></script>
