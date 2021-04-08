@@ -43,12 +43,15 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 20px;
+  color: var(--color-secondary);
 
   @include respond(phone) {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
   }
 }
 
