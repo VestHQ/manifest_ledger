@@ -1,107 +1,100 @@
 @mixin btnBase {
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
 
-    @include respond(phone) {
-        font-size: 15px;
-        margin: 0 auto;
-    }
+  @include respond(phone) {
+    font-size: 15px;
+    margin: 0 auto;
+  }
 }
 
 // ACTION BUTTONS
 .btn {
-    @include btnBase;
-    border-radius: 12px;
-    width: max-content;
-    color: $white;
-    background-color: $primary-color;
-    display: flex;
-    border: none;
-    transition: all .3s;
+  @include btnBase;
+  border-radius: 12px;
+  width: max-content;
+  display: flex;
+  border: none;
+  transition: all 0.3s;
+  background-color: var(--color-secondary);
 
-    &:hover {
-        background-color: $light-hover;
+  &:hover {
+  }
+
+  &--request-demo {
+    @extend .btn;
+    padding: 8px 30px;
+    color: var(--white);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &--return-home {
+    @extend .btn;
+    padding: 19.5px 71px;
+
+    @include respond(phone) {
+      padding: 15.5px 58px;
+    }
+  }
+
+  &--calculate {
+    @extend .btn;
+    padding: 20px 59px;
+
+    @include respond(phone) {
+      padding: 15px 48px;
     }
 
-    &--request-demo {
-        @extend .btn;
-        padding: 19px 36.5px;
+    &:focus {
+    }
+  }
 
-        @include respond(phone) {
-            padding: 15.5px 29px;
-        }
+  &--submit-form {
+    @extend .btn;
+    padding: 21px 70px;
+
+    &:focus {
+      transform: translateY(-3px);
     }
 
-    &--return-home {
-        @extend .btn;
-        padding: 19.5px 71px;
-
-        @include respond(phone) {
-            padding: 15.5px 58px;
-        }
+    &:disabled {
+      cursor: not-allowed;
     }
 
-    &--calculate {
-        @extend .btn;
-        padding: 20px 59px;
-
-        @include respond(phone) {
-            padding: 15px 48px;
-        }
-
-        &:focus {
-            background-color: $light-hover;
-        }
+    @include respond(phone) {
+      padding: 17px 57px;
     }
-
-    &--submit-form {
-        @extend .btn;
-        padding: 21px 70px;
-
-        &:focus {
-            transform: translateY(-3px);
-        }
-
-        &:disabled {
-            background-color: $gray;
-            color: $grey2;
-            cursor: not-allowed;
-        }
-
-        @include respond(phone) {
-            padding: 17px 57px;
-        }
-    }
+  }
 }
 
-// LEARN MORE 
+// LEARN MORE
 .learn-more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    margin-top: 10px;
+  margin-top: 10px;
 
-    @include respond (phone) {
-        margin-top: 30px;
+  @include respond(phone) {
+    margin-top: 30px;
+  }
+
+  &--text {
+    @include btnBase;
+    margin-bottom: 5px;
+    z-index: 10;
+
+    @include respond(phone) {
+      font-size: 15px;
     }
+  }
 
-    &--text {
-        @include btnBase;
-        color: $primary-color;
-        margin-bottom: 5px;
-        z-index: 10;
-
-        @include respond(phone) {
-            font-size: 15px;
-        }
-    }
-
-    &--arrow {
-        width: 20px;
-        height: auto;
-    }
+  &--arrow {
+    width: 20px;
+    height: auto;
+  }
 }
