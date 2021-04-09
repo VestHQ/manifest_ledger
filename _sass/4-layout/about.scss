@@ -1,6 +1,11 @@
 // ABOUT PAGE
 .about-xp {
   margin-top: 50px;
+  margin-bottom: 80px;
+
+  @include respond(phone) {
+    margin-bottom: 100px;
+  }
 
   &--title {
     text-align: center;
