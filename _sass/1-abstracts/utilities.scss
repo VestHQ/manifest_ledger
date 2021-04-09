@@ -40,3 +40,42 @@
 .u-center {
   margin: 0 auto !important;
 }
+
+@mixin dottedLineBase {
+  position: absolute;
+  left: 150px;
+
+  @include respond(laptop) {
+    display: none;
+  }
+}
+
+.dotted-line {
+  @include dottedLineBase;
+
+  &--1 {
+    @extend .dotted-line;
+    top: 187px;
+  }
+
+  &--2 {
+    @extend .dotted-line;
+    top: 520px;
+  }
+  &--3 {
+    @extend .dotted-line;
+    top: 850px;
+  }
+  &--4 {
+    @extend .dotted-line;
+    top: 1180px;
+  }
+  &--5 {
+    @extend .dotted-line;
+    top: 1510px;
+  }
+  &--6 {
+    @extend .dotted-line;
+    top: 1840px;
+  }
+}

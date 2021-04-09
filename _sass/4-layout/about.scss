@@ -13,8 +13,8 @@
     max-width: 65vw;
     margin: 80px auto;
     margin-top: 80px;
-    position: relative;
     gap: 150px;
+    position: relative;
 
     @include respond(laptop) {
       gap: 100px;
@@ -58,16 +58,6 @@
         @include respond(phone) {
           padding: 0 20px;
         }
-      }
-    }
-
-    .dotted-line {
-      position: absolute;
-      top: 187px;
-      left: 150px;
-
-      @include respond(laptop) {
-        display: none;
       }
     }
   }
