@@ -45,15 +45,6 @@
     }
   }
 
-  &--return-home {
-    @extend .btn;
-    padding: 19.5px 71px;
-
-    @include respond(phone) {
-      padding: 15.5px 58px;
-    }
-  }
-
   &--calculate {
     @extend .btn;
     padding: 20px 59px;

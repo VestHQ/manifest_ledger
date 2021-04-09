@@ -1,69 +1,79 @@
 // CONTACT PAGE
 .contact {
   margin-top: 55px;
+  padding: 0 40px;
 
   @include respond(phone) {
     margin-top: 0;
+    padding: 0 20px;
   }
 
-  &--heading {
-    max-width: 1250px;
-    padding: 0 40px;
-    margin: 0 auto;
-    margin-bottom: 58px;
-
-    @include respond(phone) {
-      margin-bottom: 36px;
-      padding: 0 30px;
-    }
+  &--title {
+    color: var(--color-text-dark);
   }
 
   &__container {
     display: grid;
-    max-width: 1250px;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
     gap: 150px;
-    padding: 0 40px;
     margin-bottom: 100px;
+    max-width: 1200px;
 
-    @media (max-width: 1000px) {
+    @include respond(laptopSm) {
       grid-template-columns: 1fr;
-      max-width: max-content;
+      max-width: 90vw;
       gap: 60px;
+      justify-items: center;
     }
 
     @include respond(phone) {
-      padding: 0 30px;
       margin-bottom: 60px;
     }
 
     &__form {
-      width: 600px;
+      width: 518px;
 
-      @media (max-width: 1000px) {
-        width: auto;
+      @include respond(laptopSm) {
+        max-width: none;
+        width: 100%;
       }
 
-      .name {
+      .inputs {
         display: flex;
 
         input {
-          width: 50%;
+          height: 41px;
+          max-width: 311px;
+
+          @include respond(laptopSm) {
+            max-width: none;
+            width: 100%;
+          }
         }
       }
 
       .btn {
-        margin-top: 35px;
+        margin-top: 40px;
 
         @include respond(phone) {
-          margin-top: 25px;
+          margin-top: 80px;
         }
+      }
+
+      button {
+        margin: 0;
       }
     }
 
     &__info {
+      justify-self: right;
+
+      @include respond(laptopSm) {
+        justify-self: left;
+      }
+
       &--title {
         margin-bottom: 10px;
       }
@@ -80,26 +90,36 @@
   }
 
   input {
-    border: none;
-    margin: 5px 0 27px 0;
-    padding-bottom: 18px;
+    border: 1px solid var(--color-primary-shade);
+    background-color: var(--color-primary);
+    margin: 8px 0 30px 0;
+    border-radius: 6px;
+    padding-left: 16px;
 
     @include respond(phone) {
       margin: 11px 0 27px 0;
-      padding-bottom: 14px;
     }
 
     &:focus {
+      color: var(--color-text-dark);
+      background-color: var(--white);
+      border: 1px solid var(--color-secondary);
     }
   }
 
   textarea {
     margin-top: 20px;
-    background: #f0f0f0;
+    background: var(--color-primary);
     border: none;
     border-radius: 10px;
     min-height: 237px;
     padding: 20px;
     resize: none;
+    border-radius: 6px;
+
+    &:focus {
+      background-color: var(--white);
+      border: 1px solid var(--color-secondary);
+    }
   }
 }

@@ -1,25 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
-.heading {
-  margin-bottom: 20px;
-
-  @include respond(phone) {
-    margin-bottom: 18px;
-  }
-}
 
 html,
-body,
-textarea,
-input {
+body {
   font-family: $body;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
-
-  @include respond(phone) {
-    font-size: 14px;
-    line-height: 21px;
-  }
 }
 
 h1,
@@ -80,18 +64,21 @@ h4 {
   }
 }
 
-h5,
-form label {
-  font-family: $body;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
+h5 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
 
-  @media (max-width: 767px) {
-    font-size: 12px;
-    line-height: 16px;
-  }
+form,
+label,
+textarea,
+input {
+  font-family: $body;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-text-dark-4);
 }
 
 p {

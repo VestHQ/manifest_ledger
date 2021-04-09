@@ -1,23 +1,24 @@
 <section class="contact">
-    <h1 class="heading contact--heading">Get In Touch</h1>
+
+    <div class="u-max-w">
+    <h2 class="contact--title">Get In Touch</h2>
 
     <div class="contact__container">
         <form id="form-contact" class="contact__container__form" name="submit-to-google-sheet">
-
-            <label for="name">Full Name</label>
-            <div class="name">
-                <input type="text" placeholder="First" title="First" name="firstName" id="name" required>
-                <input type="text" placeholder="Last" title="Last" name="lastName" id="name" required>
+            <label for="name">First Name</label>
+            <div class="inputs">
+                <input type="text" placeholder="John Doe" title="First" name="firstName" id="name" required>
             </div>
 
             <label for="email">Email</label>
-            <input type="email" placeholder="johndoe@manifestledger.com" name="email" novalidate="" id="email" required>
+            <div class="inputs">
+                <input type="email" placeholder="johndoe@manifestledger.com" name="email" novalidate="" id="email" required>
+            </div>
 
             <label for="message">Message</label>
-            <textarea placeholder="Enter your message" title="message" name="message" id="message"></textarea>
+            <textarea placeholder="Optional" title="message" name="message" id="message"></textarea>
 
-            <button type="submit" id="submit-button" class="btn--submit-form">Submit</button>
-
+            <button type="submit" id="submit-button" class="btn--request-demo">Request Demo</button>
         </form>
 
         <div class="contact__container__info">
@@ -25,8 +26,9 @@
             <address>Polsky Exchange</br />1452 E 53rd St,</br />2nd FLOOR</br />Chicago, IL 60615</address>
 
             <h5 class="contact__container__info--title">Contact</h5>
-            <p>hello@manifestledger.com</br />(847) 220-4815</p>
+            <p>hello@usemanifest.com</br />(847) 220-4815</p>
         </div>
+    </div>
     </div>
 
 </section>
