@@ -135,3 +135,57 @@
     }
   }
 }
+
+.about-collab {
+  background-color: var(--color-tertiary);
+  padding: 100px 120px;
+
+  @include respond(phone) {
+    padding: 30px 0;
+  }
+
+  &__content {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(laptopSm) {
+      flex-direction: column-reverse;
+    }
+    @include respond(phone) {
+      padding: 0 20px;
+    }
+
+    &__text {
+      max-width: 550px;
+      margin-right: 50px;
+
+      @include respond(laptopSm) {
+        margin-right: 0;
+      }
+
+      &--title {
+        color: var(--color-secondary);
+      }
+    }
+
+    &--img {
+      max-width: 600px;
+      height: auto;
+
+      @include respond(laptopSm) {
+        max-width: 500px;
+      }
+
+      @include respond(laptopSm) {
+        margin-bottom: 30px;
+      }
+
+      @include respond(phone) {
+        max-width: 100%;
+      }
+    }
+  }
+}
