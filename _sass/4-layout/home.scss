@@ -1,4 +1,12 @@
 // HOME PAGE
+.home {
+  background-color: var(--color-primary);
+}
+
+.features {
+  background-color: var(--white);
+  padding: 100px 0;
+}
 .hero {
   padding-bottom: 32px;
   background-color: var(--color-primary);
@@ -127,6 +135,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left, right;
+  background-color: var(--white);
   height: 500px;
   display: flex;
   align-items: center;
