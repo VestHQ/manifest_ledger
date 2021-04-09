@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.u-mb {
+  margin-bottom: 20px;
+}
+
 .reverse-block {
   @include respond(laptop) {
     flex-direction: column !important;

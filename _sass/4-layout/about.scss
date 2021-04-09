@@ -1,76 +1,74 @@
 // ABOUT PAGE
-.about__hero {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 85px;
-  justify-items: center;
+.about-xp {
+  margin-top: 50px;
 
-  padding: 0 40px;
-  max-width: 1315px;
-  margin: 55px auto;
-
-  @include respond(tablet) {
-    grid-template-columns: 1fr;
-  }
-
-  @include respond(phone) {
+  &--title {
+    text-align: center;
+    max-width: 500px;
     margin: 0 auto;
-    padding: 0 30px;
-    gap: 55px;
   }
 
-  &__text {
-    max-width: 480px;
-    justify-self: start;
-
-    @media (max-width: 896px) {
-      justify-self: center;
-      max-width: 100%;
-    }
-
-    .job-board {
-      font-weight: 600;
-    }
-  }
-}
-
-.stories {
-  padding: 100px 100px 80px 100px;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-image: url(/assets/images/about/bg.png);
-
-  @include respond(tablet) {
-    background-image: none;
-    padding: 0;
-  }
-
-  @include respond(phone) {
-    margin: 40px auto;
-    margin-bottom: 25px;
-  }
-
-  &__wrapper {
+  .grid {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    gap: 80px;
-    align-items: center;
+    max-width: 65vw;
+    margin: 80px auto;
+    margin-top: 80px;
+    position: relative;
+    gap: 150px;
 
-    background-color: #f2f5ff;
-    padding: 50px;
-
-    @include respond(phone) {
-      gap: 0;
-      grid-template-columns: 1fr;
-      padding: 35px 30px;
+    @include respond(laptop) {
+      gap: 100px;
     }
-  }
-
-  &__text {
-    max-width: 816px;
 
     @include respond(phone) {
-      margin-bottom: 45px;
+      margin-top: 90px;
+      max-width: none;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include respond(laptop) {
+        flex-direction: column;
+      }
+
+      &--img {
+        background-color: var(--color-primary);
+        border-radius: 20px;
+        max-width: 300px;
+        height: auto;
+        margin-right: 40px;
+
+        @include respond(laptop) {
+          max-width: 100%;
+          margin-bottom: 35px;
+          margin-right: 0;
+        }
+
+        @include respond(phone) {
+          border-radius: 0;
+        }
+      }
+
+      &--text {
+        max-width: 550px;
+
+        @include respond(phone) {
+          padding: 0 20px;
+        }
+      }
+    }
+
+    .dotted-line {
+      position: absolute;
+      top: 187px;
+      left: 150px;
+
+      @include respond(laptop) {
+        display: none;
+      }
     }
   }
 }
