@@ -1,6 +1,6 @@
 @mixin btnBase {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
 
@@ -18,7 +18,6 @@
   display: flex;
   border: none;
   transition: all 0.3s;
-  background-color: var(--color-secondary);
 
   &:hover {
   }
@@ -27,7 +26,18 @@
     @extend .btn;
     padding: 8px 30px;
     color: var(--white);
-    font-weight: 400;
+    margin: 0 auto;
+    background-color: var(--color-secondary);
+
+    @include respond(phone) {
+      margin: 0;
+    }
+  }
+
+  &--stories {
+    @extend .btn;
+    padding: 8px 0;
+    color: var(--color-secondary);
     margin: 0 auto;
 
     @include respond(phone) {

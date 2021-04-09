@@ -11,6 +11,13 @@
   margin-bottom: 20px;
 }
 
+.u-center {
+  @include respond(phone) {
+    position: absolute;
+    top: 400px;
+  }
+}
+
 .reverse-block {
   @include respond(laptop) {
     flex-direction: column !important;
