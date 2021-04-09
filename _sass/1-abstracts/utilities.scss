@@ -11,6 +11,10 @@
   margin-bottom: 20px;
 }
 
+.u-mr {
+  margin-right: 30px;
+}
+
 .u-center {
   @include respond(phone) {
     position: absolute;
@@ -90,7 +94,7 @@
 .contact-graphic {
   background-image: url('../../assets/images/contact/top.svg'),
     url('../../assets/images/contact/bottom.svg');
-  background-position: top right, bottom left;
+  background-position: top right, left 78%;
   background-repeat: no-repeat;
 
   @include respond(laptopSm) {
