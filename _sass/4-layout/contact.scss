@@ -1,78 +1,69 @@
 // CONTACT PAGE
 .contact {
   margin-top: 55px;
-  padding: 0 40px;
 
   @include respond(phone) {
     margin-top: 0;
-    padding: 0 20px;
   }
 
-  &--title {
-    color: var(--color-text-dark);
+  &--heading {
+    max-width: 1250px;
+    padding: 0 40px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+
+    @include respond(phone) {
+      margin-bottom: 36px;
+      padding: 0 30px;
+    }
   }
 
   &__container {
     display: grid;
+    max-width: 1250px;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
     gap: 150px;
+    padding: 0 40px;
     margin-bottom: 100px;
-    max-width: 1200px;
 
-    @include respond(laptopSm) {
+    @media (max-width:1000px) {
       grid-template-columns: 1fr;
-      max-width: 90vw;
+      max-width: max-content;
       gap: 60px;
-      justify-items: center;
     }
 
     @include respond(phone) {
+      padding: 0 30px;
       margin-bottom: 60px;
     }
 
     &__form {
-      width: 518px;
+      width: 600px;
 
-      @include respond(laptopSm) {
-        max-width: none;
-        width: 100%;
+      @media (max-width:1000px) {
+        width: auto;
       }
 
-      .inputs {
+      .name {
         display: flex;
 
         input {
-          height: 41px;
-          max-width: 311px;
-
-          @include respond(laptopSm) {
-            max-width: none;
-            width: 100%;
-          }
+          width: 50%;
         }
       }
 
       .btn {
-        margin-top: 40px;
+        margin-top: 35px;
 
         @include respond(phone) {
-          margin-top: 80px;
+          margin-top: 25px;
         }
-      }
-
-      button {
-        margin: 0;
       }
     }
 
     &__info {
-      justify-self: right;
-
-      @include respond(laptopSm) {
-        justify-self: left;
-      }
 
       &--title {
         margin-bottom: 10px;
@@ -90,36 +81,28 @@
   }
 
   input {
-    border: 1px solid var(--color-primary-shade);
-    background-color: var(--color-primary);
-    margin: 8px 0 30px 0;
-    border-radius: 6px;
-    padding-left: 16px;
+    border: none;
+    border-bottom: 1px solid $grey2;
+    margin: 5px 0 27px 0;
+    padding-bottom: 18px;
 
     @include respond(phone) {
       margin: 11px 0 27px 0;
+      padding-bottom: 14px;
     }
 
     &:focus {
-      color: var(--color-text-dark);
-      background-color: var(--white);
-      border: 1px solid var(--color-secondary);
+      border-bottom: 2px solid $primary-color;
     }
   }
 
   textarea {
     margin-top: 20px;
-    border: 1px solid var(--color-primary-shade);
-    background: var(--color-primary);
+    background: #f0f0f0;
+    border: none;
     border-radius: 10px;
     min-height: 237px;
     padding: 20px;
     resize: none;
-    border-radius: 6px;
-
-    &:focus {
-      background-color: var(--white);
-      border: 1px solid var(--color-secondary);
-    }
   }
 }

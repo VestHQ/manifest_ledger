@@ -1,108 +1,107 @@
 @mixin btnBase {
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
 
-  @include respond(phone) {
-    font-size: 15px;
-    margin: 0 auto;
-  }
+    @include respond(phone) {
+        font-size: 15px;
+        margin: 0 auto;
+    }
 }
 
 // ACTION BUTTONS
 .btn {
-  @include btnBase;
-  border-radius: 4px;
-  width: max-content;
-  display: flex;
-  border: none;
-  transition: all 0.3s;
+    @include btnBase;
+    border-radius: 12px;
+    width: max-content;
+    color: $white;
+    background-color: $primary-color;
+    display: flex;
+    border: none;
+    transition: all .3s;
 
-  &:hover {
-  }
-
-  &--request-demo {
-    @extend .btn;
-    padding: 8px 30px;
-    color: var(--white);
-    margin: 0 auto;
-    background-color: var(--color-secondary);
-
-    @include respond(phone) {
-      margin: 0;
-    }
-  }
-
-  &--stories {
-    @extend .btn;
-    padding: 8px 0;
-    color: var(--color-secondary);
-    margin: 0 auto;
-
-    @include respond(phone) {
-      margin: 0;
-    }
-  }
-
-  &--calculate {
-    @extend .btn;
-    padding: 20px 59px;
-
-    @include respond(phone) {
-      padding: 15px 48px;
+    &:hover {
+        background-color: $light-hover;
     }
 
-    &:focus {
-    }
-  }
+    &--request-demo {
+        @extend .btn;
+        padding: 19px 36.5px;
 
-  &--submit-form {
-    @extend .btn;
-    padding: 21px 70px;
-
-    &:focus {
-      transform: translateY(-3px);
+        @include respond(phone) {
+            padding: 15.5px 29px;
+        }
     }
 
-    &:disabled {
-      cursor: not-allowed;
+    &--return-home {
+        @extend .btn;
+        padding: 19.5px 71px;
+
+        @include respond(phone) {
+            padding: 15.5px 58px;
+        }
     }
 
-    @include respond(phone) {
-      padding: 17px 57px;
+    &--calculate {
+        @extend .btn;
+        padding: 20px 59px;
+
+        @include respond(phone) {
+            padding: 15px 48px;
+        }
+
+        &:focus {
+            background-color: $light-hover;
+        }
     }
-  }
+
+    &--submit-form {
+        @extend .btn;
+        padding: 21px 70px;
+
+        &:focus {
+            transform: translateY(-3px);
+        }
+
+        &:disabled {
+            background-color: $gray;
+            color: $grey2;
+            cursor: not-allowed;
+        }
+
+        @include respond(phone) {
+            padding: 17px 57px;
+        }
+    }
 }
 
-// LEARN MORE
+// LEARN MORE 
 .learn-more {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: max-content;
-  margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-  @include respond(phone) {
-    margin-top: 25px;
-  }
+    margin-top: 10px;
 
-  &--text {
-    @include btnBase;
-    color: var(--color-secondary);
-    font-weight: 400;
-    margin-bottom: 8px;
-    z-index: 10;
-
-    @include respond(phone) {
-      font-size: 15px;
+    @include respond (phone) {
+        margin-top: 30px;
     }
-  }
 
-  &--arrow {
-    width: 20px;
-    height: auto;
-  }
+    &--text {
+        @include btnBase;
+        color: $primary-color;
+        margin-bottom: 5px;
+        z-index: 10;
+
+        @include respond(phone) {
+            font-size: 15px;
+        }
+    }
+
+    &--arrow {
+        width: 20px;
+        height: auto;
+    }
 }

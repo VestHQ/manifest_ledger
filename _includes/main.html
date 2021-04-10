@@ -1,154 +1,73 @@
 <div class="overlay">
-  <img src="/assets/images/logo.svg" alt="manifest" class="manifest" />
+    <img src="/assets/images/logo.svg" alt="manifest" class="manifest">
 </div>
 
-<section class="hero">
-  <div class="hero-container container">
-    <video
-      class="hero--video"
-      loop
-      muted
-      autoplay
-      playsinline
-      data-aos="fade-right"
-      data-aos-delay="1300"
-      data-aos-duration="1000"
-    >
-      <source src="/assets/videos/hero-gumball.mp4" type="video/mp4" />
+<div class="hero">
+    <video class="hero--video" loop muted autoplay playsinline data-aos="fade-right" data-aos-delay="1300"
+        data-aos-duration="1000">
+        <source src="/assets/videos/gumball.webm" type="video/webm">
+        <source src="/assets/videos/gumball.mp4" type="video/mp4">
     </video>
 
-    <div
-      class="hero__text"
-      data-aos="fade-left"
-      data-aos-delay="1300"
-      data-aos-duration="1000"
-    >
-      <h1>Maximize retirement outcomes</h1>
-      <p class="hero__text--para">
-        Manifest is the easiest way to consolidate retirement accounts. We're
-        digitizing retirement transfers.
-      </p>
+    <div class="hero__text" data-aos="fade-left" data-aos-delay="1300" data-aos-duration="1000">
+        <h1 class="heading title">When you’re on the move, we make transferring a breeze!</h1>
+        <p class="hero__text--para">Manifest engages participants through employers and retirement providers so they can
+            keep their accounts consolidated as they switch jobs.</p>
 
-      <a href="{% link contact.html %}" class="btn--request-demo"
-        >Request Demo</a
-      >
+        <a href="{% link contact.html %}" class="btn--request-demo">Request Demo</a>
     </div>
-  </div>
-  <a class="learn-more" href="#home">
-    <span class="learn-more--text">Learn More</span>
-    <img
-      class="learn-more--arrow"
-      src="/assets/images/shapes/down-arrow.svg"
-      alt="scroll down to learn more"
-  /></a>
-</section>
+</div>
 
-<section class="features">
-  {{/* Section 1: Consolidation*/}}
-  <div class="three-features">
-    <div class="three-features__block u-max-w">
-      <div class="text">
-        <h2>One-click consolidation</h2>
-        <p>
-          We help participants locate their retirement money, guide them through
-          their options, and track their savings into their destination — all in
-          less than 10 minutes.
-        </p>
-      </div>
-      <div class="graphic">
-        <video class="graphic--video" loop muted autoplay playsinline>
-          <source
-            src="/assets/images/home/consolidation.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
-    </div>
-  </div>
+<div class="learn-more">
+    <a class="learn-more--text" href="#home">Learn More</a>
+    <img class="learn-more--arrow" src="/assets/images/shapes/down-arrow.svg" alt="scroll down to learn more">
+</div>
 
-  {{/* Section 2: Connections */}}
-  <div class="bg-graphic">
-    <div class="three-features__block u-max-w reverse-block">
-      <div class="card">
-        <h3 class="card--header">Helped participants who have worked at:</h3>
-        <div class="card__grid">
-          <div class="card__grid--item">
-            <img src="../assets/images/home/logos/Google.svg" alt="Google" />
-          </div>
-          <div class="card__grid--item">
-            <img
-              src="../assets/images/home/logos/jpmorgan-vector-logo 1.svg"
-              alt="JP Morgan"
-            />
-          </div>
-          <div class="card__grid--item">
-            <img
-              src="../assets/images/home/logos/University-of-Chicago-01.svg"
-              alt="University of Chicago"
-            />
-          </div>
-          <div class="card__grid--item">
-            <img src="../assets/images/home/logos/Oracle-03.svg" alt="Oracle" />
-          </div>
-          <div class="card__grid--item">
-            <img
-              src="../assets/images/home/logos/United-Airlines-01.svg"
-              alt="United Airlines"
-            />
-          </div>
-          <div class="card__grid--item">
-            <img
-              src="../assets/images/home/logos/Interpublic-group-IPG-01.svg"
-              alt="IPG"
-            />
-          </div>
+<section class="three__containers container" id="home">
+
+    <div class="home__block" data-aos="fade-up">
+        <div class="home__block__text">
+            <hr class="yellow-line--home">
+            <h3 class="home__block__text--title">CONSOLIDATION</h3>
+            <h2 class="home__block__text--heading">The average American has 2.8 accounts left behind</h2>
+            <p>Manifest helps participants combine their old accounts into an active account, often resulting in a gain of
+                up to 36% over 10 years.</p>
         </div>
-        <h3 class="card--footer">and many more</h3>
-      </div>
-      <div class="text">
-        <h2>Deeper connections with participants</h2>
-        <p>
-          Switching jobs provides an opportunity to encourage participants to
-          make smart financial decisions. Manifest can be deployed in any
-          organization within hours and without integrations.
-        </p>
-      </div>
+        <div class="home__block__img">
+            <img class="home__block__img--img" src="/assets/images/home/Consolidation.svg"
+                alt="Consolidate Old Retirement Accounts to 401(k) Plan">
+        </div>
     </div>
-  </div>
 
-  {{/* Section 3: Industry Standard*/}}
-  <div class="three-features">
-    <div class="three-features__block u-max-w">
-      <div class="text">
-        <h2>The new industry standard</h2>
-        <p>
-          Switching jobs provides an opportunity to encourage participants to
-          make smart financial decisions. Manifest can be deployed in any
-          organization within hours and without integrations.
-        </p>
-      </div>
-      <div class="graphic">
-        <video class="graphic--video" loop muted autoplay playsinline>
-          <source
-            src="/assets/images/home/industry-standard.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
+    <div class="home__block reverse" data-aos="fade-up">
+        <div class="home__block__text reverse--text">
+            <hr class="yellow-line--home">
+            <h3 class="home__block__text--title">DIGITALIZATION</h3>
+            <h2 class="home__block__text--heading">Say goodbye to manual, time-intensive transfers</h2>
+            <p>Close to 9 out of 10 people who start a transfer today don’t finish. Manifest is the first independent,
+                digital platform making retirement transfers seamless.</p>
+        </div>
+
+        <div class="home__block__img">
+            <img class="home__block__img--img" src="/assets/images/home/Digitization.svg"
+                alt="Digitizing 401(k), 403(b), 457 Transfers">
+        </div>
     </div>
-  </div>
-</section>
 
-{{/* Slider */}} {{/* CTA */}}
-<section class="cta">
-  <div class="cta__text">
-    <h1 class="cta__text--title">
-      We’re excited to collaborate. Let’s schedule a demo.
-    </h1>
-    <a href="{% link contact.html %}" class="btn--request-demo u-center-btn"
-      >Request Demo</a
-    >
-  </div>
+    <div class="home__block" data-aos="fade-up">
+        <div class="home__block__text">
+            <hr class="yellow-line--home">
+            <h3 class="home__block__text--title">TRANSPARENCY</h3>
+            <h2 class="home__block__text--heading">Confidently consolidate your retirement accounts</h2>
+            <p>Manifest brings transparency throughout the transferring process so participants, employers, and
+                providers can easily track their accounts from start to finish.</p>
+        </div>
+
+        <div class="home__block__img">
+            <img class="home__block__img--img" src="/assets/images/home/Transparency.svg"
+                alt="Transparent Transfer Process for Participants, Providers, Employers">
+        </div>
+    </div>
 </section>
 
 <script src="/assets/js/home.js"></script>

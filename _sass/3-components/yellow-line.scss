@@ -1,29 +1,53 @@
 .yellow-line {
-  border: none;
-  margin-bottom: 10px;
-
-  @include respond(phone) {
-    margin-bottom: 5px;
-  }
-
-  &--home {
-    @extend .yellow-line;
-    width: 29px;
-    height: 3px;
+    background-color: $yellow;
+    border: none;
+    margin-bottom: 10px;
 
     @include respond(phone) {
-      width: 24px;
+        margin-bottom: 5px;
     }
-  }
 
-  &--about {
-    @extend .yellow-line;
-    width: 60px;
-    height: 5px;
+    &--home {
+        @extend .yellow-line;
+        width: 29px;
+        height: 3px;
 
-    @include respond(phone) {
-      width: 33px;
-      height: 3px;
+        @include respond(phone) {
+            width: 24px;
+        }
     }
-  }
+
+    &--about {
+        @extend .yellow-line;
+        width: 60px;
+        height: 5px;
+
+        @include respond(phone) {
+            width: 33px;
+            height: 3px;
+        }
+    }
 }
+
+// mixin version
+// @mixin yellow-line($width, $width-sm, $height) {
+//     background-color: $yellow;
+//     border: none;
+//     margin-bottom: 10px;
+//     width: $width;
+//     height: $height;
+    
+//     @include respond(phone){
+//       width: $width-sm;
+//       height: 3px;
+//       margin-bottom:5px;
+//     }
+//   }
+  
+//   .yellow-line--home {
+//     @include yellow-line(29px, 24px, 3px);
+//   }
+  
+//   .yellow-line--about {
+//     @include yellow-line(60px, 33px, 5px);
+//   }
