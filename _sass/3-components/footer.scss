@@ -1,54 +1,42 @@
 .footer {
-  padding: 40px 15px 15px 20px;
-  margin-bottom: 25px;
-  text-align: center;
+  background-color: var(--color-primary);
 
-  @include respond (phone) {
-    font-size: 10px;
-  }
+  &__content {
+    padding: 40px;
 
-  &__copyright {
-    display: flex;
-    font-size: 14px;
-    justify-content: center;
-    align-items: center;
-    max-width: 313px;
-    margin: 0 auto 14px auto;
+    @include respond(phone) {
+      padding: 60px 20px 100px 20px;
+    }
 
-    .socials {
+    &__top {
       display: flex;
-      margin-right: 20px;
+      justify-content: space-between;
+      margin-bottom: 20px;
 
-      .u-mr {
-        margin-right: 11px;
+      @include respond(phone) {
+        flex-direction: column;
+        margin-bottom: 50px;
+      }
+
+      .logo {
+        max-width: 100px;
+        height: auto;
+
+        @include respond(phone) {
+          margin-bottom: 50px;
+        }
+      }
+
+      .socials {
+        align-items: center;
+        display: flex;
       }
     }
 
-    @include respond (phone) {
-      margin: 0 auto 10px auto;
-      font-size: 12px;
+    &__legal {
+      max-width: 1050px;
+      display: block;
+      color: var(--color-text-dark-3);
     }
-  }
-
-  &__legal {
-    font-size: 12px;
-
-    @include respond (phone) {
-      font-size: 10px;
-      line-height: 14px;
-    }
-  }
-}
-
-body {
-  background: url('../images/manifest_footer_large.svg') no-repeat center bottom $white;
-  box-sizing: border-box;
-  font-family: $avenir;
-  max-width: 114rem;
-  min-height: 100vh;
-  overflow-x: hidden;
-
-  @include respond (phone) {
-    background-size: 430%;
   }
 }

@@ -1,146 +1,220 @@
 // ABOUT PAGE
-.about__hero {
+.about-xp {
+  margin-top: 50px;
+  margin-bottom: 80px;
+
+  @include respond(phone) {
+    margin-bottom: 100px;
+  }
+
+  &--title {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 85px;
-    justify-items: center;
+    max-width: 65vw;
+    margin: 80px auto;
+    margin-top: 80px;
+    gap: 150px;
+    position: relative;
 
-    padding: 0 40px;
-    max-width: 1315px;
-    margin: 55px auto;
-
-    @include respond (tab-port) {
-        grid-template-columns: 1fr;
+    @include respond(laptop) {
+      gap: 100px;
     }
 
     @include respond(phone) {
-        margin: 0 auto;
-        padding: 0 30px;
-        gap: 55px;
+      margin-top: 90px;
+      max-width: none;
     }
 
-    &__text {
-        max-width: 480px;
-        justify-self: start;
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-        @media (max-width:896px) {
-            justify-self: center;
-            max-width: 100%;
+      @include respond(laptop) {
+        flex-direction: column;
+      }
+
+      &--img {
+        background-color: var(--color-primary);
+        border-radius: 20px;
+        max-width: 300px;
+        height: auto;
+        margin-right: 40px;
+
+        @include respond(laptop) {
+          max-width: 100%;
+          margin-bottom: 35px;
+          margin-right: 0;
         }
-
-        .job-board {
-            color: $primary-color;
-            font-weight: 600;
-        }
-    }
-}
-
-.stories {
-    padding: 100px 100px 80px 100px;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-image: url(/assets/images/about/bg.png);
-
-    @include respond (tab-port) {
-        background-image: none;
-        padding: 0;
-    }
-
-    @include respond(phone) {
-        margin: 40px auto;
-        margin-bottom: 25px;
-    }
-
-    &__wrapper {
-        display: grid;
-        grid-template-columns: 4fr 1fr;
-        gap: 80px;
-        align-items: center;
-
-        background-color: #F2F5FF;
-        padding: 50px;
 
         @include respond(phone) {
-            gap: 0;
-            grid-template-columns: 1fr;
-            padding: 35px 30px;
+          border-radius: 0;
         }
-    }
+      }
 
-    &__text {
-        max-width: 816px;
+      &--text {
+        max-width: 550px;
 
         @include respond(phone) {
-            margin-bottom: 45px;
+          padding: 0 20px;
         }
+      }
     }
+  }
 }
 
 .brand-sec {
-    padding: 0 40px 70px 40px;
-    max-width: 1315px;
-    margin: 55px auto;
+  max-width: 1150px;
+  margin: 120px auto;
+
+  @include respond(phone) {
+    margin: 70px auto;
+    margin-bottom: 160px;
+  }
+
+  &--title {
+    text-align: center;
+    margin-bottom: 40px;
 
     @include respond(phone) {
-        margin: 40px auto;
-        margin-bottom: 25px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__investors {
+    display: grid;
+    gap: 55px 245px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    position: relative;
+
+    @media (max-width: 1120px) {
+      gap: 35px 180px;
+      max-width: 90vw;
+      margin: 0 auto;
     }
 
-    &--title {
-        margin: 0 auto;
-        max-width: 1250px;
-        position: relative;
-        margin-bottom: 60px;
+    img {
+      max-width: 175px;
+      opacity: 0.3;
 
-        @include respond (phone) {
-            margin-bottom: 50px;
-        }
+      @include respond(phone) {
+        width: 100%;
+      }
     }
 
-    &__investors {
-        display: grid;
-        gap: 35px 245px;
-        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-        align-items: center;
+    @include respond(laptopSm) {
+      gap: 45px 47px;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-        img {
-            max-width: 175px;
-
-            @include respond (phone) {
-                width: 100%;
-            }
-        }
-
-        @media (max-width:1120px) {
-            gap: 35px 180px;
-        }
+    .investor {
+      align-self: start;
+      & > * {
+        font-size: 20px;
+        line-height: 28px;
 
         @include respond(phone) {
-            gap: 45px 47px;
-            grid-template-columns: repeat(2, 1fr);
+          font-size: 14px;
+          line-height: 22px;
         }
+      }
 
-        .investor {
-            align-self: start;
+      &--name {
+        margin-bottom: 6px;
 
-            &--name {
-                margin-bottom: 6px;
-
-                @include respond (phone) {
-
-                    margin-bottom: 4px;
-                }
-            }
-
-            &--title {
-                font-size: 16px;
-                line-height: 24px;
-
-                @include respond(phone) {
-                    font-size: 12px;
-                    line-height: 18px;
-                }
-            }
+        @include respond(phone) {
+          margin-bottom: 4px;
         }
+      }
+
+      &--title {
+        display: block;
+      }
     }
+  }
+}
+
+.about-collab {
+  background-color: var(--color-tertiary);
+  padding: 100px 120px;
+
+  @include respond(phone) {
+    padding: 30px 0;
+  }
+
+  &__content {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(laptopSm) {
+      flex-direction: column-reverse;
+    }
+    @include respond(phone) {
+      padding: 0 20px;
+    }
+
+    &__text {
+      max-width: 550px;
+      margin-right: 50px;
+
+      @include respond(laptopSm) {
+        margin-right: 0;
+      }
+
+      &--title {
+        color: var(--color-secondary);
+        margin-bottom: 20px;
+
+        @include respond(phone) {
+          margin-bottom: 25px;
+        }
+      }
+
+      .collab-buttons {
+        display: flex;
+        margin-top: 58px;
+        justify-content: space-between;
+        max-width: 350px;
+
+        @include respond(phone) {
+          margin-top: 48px;
+        }
+
+        &--join {
+          margin: 0;
+        }
+
+        &--stories {
+          margin: 0;
+        }
+      }
+    }
+
+    &--img {
+      max-width: 600px;
+      height: auto;
+
+      @include respond(laptopSm) {
+        max-width: 500px;
+      }
+
+      @include respond(laptopSm) {
+        margin-bottom: 30px;
+      }
+
+      @include respond(phone) {
+        max-width: 100%;
+      }
+    }
+  }
 }

@@ -1,155 +1,166 @@
 // HOME PAGE
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-
-    @media (max-width:1213px) {
-        height: auto;
-    }
-
-    &--video {
-        max-width: 650px;
-        height: auto;
-
-        @media screen and (max-width: 820px) {
-            margin: 0 23px;
-            margin-bottom: 30px;
-            width: 100%;
-            padding: 25px;
-        }
-    }
-
-    &__text {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        max-width: 499px;
-        width: 45vw;
-        height: auto;
-
-        @media screen and (min-width: 690px) {
-            margin-left: 65px;
-        }
-
-        @media screen and (max-width: 820px) {
-            margin-right: 0;
-            width: 80vw;
-        }
-
-        @include respond(phone) {
-            width: 80vw;
-        }
-
-        &--para {
-            margin-bottom: 66px;
-            max-width: 502px;
-
-            @include respond(phone) {
-                margin-bottom: 47px;
-            }
-        }
-    }
+.home {
+  background-color: var(--color-primary);
 }
 
-// THREE BOXES
-.three__containers {
-    margin: 100px 0 200px 0;
-    display: grid;
-    gap: 50px;
+.features {
+  background-color: var(--white);
+  padding: 100px 0;
+}
+.hero {
+  padding-bottom: 32px;
+  background-color: var(--color-primary);
+
+  .hero-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1143px) {
+      justify-content: center;
+    }
+  }
+
+  &--video {
+    max-width: 500px;
+    height: auto;
+
+    @media (max-width: 1143px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 820px) {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 550px;
+    height: auto;
+
+    &--para {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.three-features {
+  margin-top: 100px;
+  margin-bottom: 83px;
+  padding: 0 40px;
+  display: grid;
+  gap: 150px;
+
+  @include respond(phone) {
+    padding: 0 20px;
+    gap: 100px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include respond(laptop) {
+      flex-direction: column-reverse;
+    }
+    .text {
+      max-width: 550px;
+    }
+
+    .graphic {
+      @include respond(laptop) {
+        margin-bottom: 50px;
+      }
+
+      &--video {
+        max-width: 260px;
+        height: auto;
+      }
+    }
+
+    .card {
+      max-width: 422px;
+      background: var(--white);
+      padding: 30px;
+      box-shadow: var(--shadow);
+      border-radius: 16.66px;
+
+      @include respond(laptop) {
+        margin-bottom: 50px;
+      }
+
+      @include respond(phone) {
+        border-radius: 16.66px;
+        width: 100%;
+        padding: 20px;
+        margin-top: 25px;
+      }
+
+      &--heading {
+        text-align: center;
+      }
+
+      &__grid {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        gap: 45px 60px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 0;
+
+        @include respond(phone) {
+          margin: 20px 0;
+        }
+      }
+
+      &--footer {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.cta {
+  background-image: url('../../assets/images/home/left.svg'),
+    url('../../assets/images/home/right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left, right;
+  background-color: var(--white);
+  height: 500px;
+  display: flex;
+  align-items: center;
+
+  @include respond(tablet) {
+    background-image: url('../../assets/images/home/right.svg');
+    background-position: right;
+  }
+
+  @include respond(phone) {
+    height: 400px;
+  }
+
+  &__text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
 
     @include respond(phone) {
-        margin: 70px 0 170px 0;
-        gap: 0;
-        margin-bottom: 25px;
+      padding: 0 20px;
     }
 
-    .home__block {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 30px;
-
-        @media screen and (max-width: 820px) {
-            display: grid;
-            grid-auto-flow: dense;
-            grid-template-columns: 1fr;
-            justify-items: center;
-            gap: 40px;
-        }
-
-        &__text {
-            width: 50%;
-            max-width: 500px;
-            margin-right: 200px;
-
-            @media screen and (max-width: 920px) {
-                margin-right: 100px;
-            }
-
-            @media screen and (max-width: 820px) {
-                justify-self: auto;
-                margin: 0;
-                margin-bottom: 65px;
-                grid-row: 2;
-                width: auto;
-            }
-
-            @include respond (phone) {
-                margin-bottom: 55px;
-            }
-
-            &--title {
-                color: $primary-color;
-                margin-bottom: 20px;
-
-                @include respond(phone) {
-                    margin-bottom: 15px;
-                }
-            }
-
-            &--heading {
-                margin-bottom: 12px;
-
-                @include respond(phone) {
-                    margin-bottom: 10px;
-                }
-            }
-        }
-
-        &__img {
-
-            @media screen and (max-width: 820px) {
-                width: 95%;
-                margin: 0;
-            }
-
-            &--img {
-                width: 500px;
-                height: auto;
-                display: flex;
-                justify-content: center;
-                margin: 0 auto;
-            }
-        }
+    &--title {
+      text-align: center;
+      margin-bottom: 50px;
     }
-
-    .reverse {
-        flex-direction: row-reverse;
-
-        &--text {
-            margin-left: 200px;
-            margin-right: 0 !important;
-
-            @media screen and (max-width: 920px) {
-                margin-left: 100px;
-            }
-
-            @media (max-width: 820px) {
-                margin-left: 0;
-            }
-        }
-    }
+  }
 }
