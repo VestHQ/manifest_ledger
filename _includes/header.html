@@ -1,31 +1,33 @@
 <!-- header -->
 <header class="header">
-    <div class="container">
-        <nav class="nav">
-            <div class="logo">
-                <a href="/"><img src="/assets/images/logo.svg" alt="Manifest-Logo-Retirement Transfer"></a>
-            </div>
-            <div class="navigation">
-                <button class="nav-toggle" id="manifest-nav-toggle" aria-label="Menu">
-                    <span></span>
-                </button>
+  <div class="container">
+    <nav class="nav">
+      <div class="logo">
+        <a href="/"
+          ><img
+            src="/assets/images/logo.svg"
+            alt="Manifest-Logo-Retirement Transfer"
+        /></a>
+      </div>
+      <div class="navigation">
+        <button class="nav-toggle" id="manifest-nav-toggle" aria-label="Menu">
+          <span><img src="../assets/images/menu-toggel.png" alt="" /></span>
+        </button>
 
-                {% assign current = page.url | downcase | split: '/' %}
+        {% assign current = page.url | downcase | split: '/' %}
 
-                <ul class="nav-link" id="manifest-nav">
-                    {% if page.active == "about" %}
-                        <li class="active"><a href="/about/">About Us</a></li>
-                    {% else %}
-                        <li><a href="/about/">About Us</a></li>
-                    {% endif %}
-
-                    {% if page.active == "contact" %}
-                        <li class="active"><a href="/contact/">Contact</a></li>
-                    {% else %}
-                        <li><a href="/contact/">Contact</a></li>
-                    {% endif %}
-                </ul>
-            </div>
-        </nav>
-    </div>
+        <ul class="nav-link" id="manifest-nav">
+          {% if page.active == "about" %}
+          <li><a class="active" href="/about/">About Us</a></li>
+          {% else %}
+          <li><a href="/about/">About Us</a></li>
+          {% endif %} {% if page.active == "contact" %}
+          <li><a class="active" href="/contact/">Contact</a></li>
+          {% else %}
+          <li><a href="/contact/">Contact</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>

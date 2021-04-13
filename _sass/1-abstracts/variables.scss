@@ -1,25 +1,17 @@
 // variables
-$avenir: 'Inter', sans-serif;
+:root {
+  --text: 'Work Sans', sans-serif;
+  --color-primary: #fff6ef;
+  --color-primary-shade: #eae2db;
+  --color-secondary: #3b968b;
+  --color-tertiary: #ffe8c8;
+  --color-text-dark: #2e2d29;
+  --color-text-dark-3: #aba6a0;
+  --color-text-dark-4: #827d78;
+  --color-text-light: #6d6964;
 
-$light-blue: #00b0f0;
-$mid-blue: #2a5669;
-$dark-blue: #102A5E;
+  --white: #fff;
 
-$footer-height: 5vh;
-
-$cold-blue: #3F5A9E;
-$light-blue-grey: #d4dcea;
-$light-blue:#E8EDFF;
-
-$primary-color: #0040ff;
-$secondary-color: #b7c5ff;
-$primary-color-dark: #1544d0;
-$light-hover: #4976FF;
-$gray: #e0e0e0;
-$grey2: #757985;
-$grey3: #c4c4c4;
-$light-white: #f9f9f9;
-$black: #000000;
-$white: #ffffff;
-$yellow: #FFDE03;
-$yellow-light:#FFF193;
+  --shadow: 0 4.17px 14.16px 0 rgba(0, 0, 0, 0.15);
+}
+$body: 'Work Sans', sans-serif;
