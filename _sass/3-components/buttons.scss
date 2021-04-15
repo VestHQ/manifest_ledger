@@ -19,9 +19,6 @@
   border: none;
   transition: all 0.3s;
 
-  &:hover {
-  }
-
   &--request-demo {
     @extend .btn;
     padding: 8px 30px;
@@ -42,6 +39,19 @@
 
     @include respond(phone) {
       margin: 0;
+    }
+  }
+
+  &--return-home {
+    @extend .btn;
+    padding: 8px 30px;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    border-radius: 5px;
+    max-width: 120px;
+
+    @include respond(tablet) {
+      margin: 50px 0;
     }
   }
 
