@@ -4,20 +4,23 @@ canvas {
   height: 100vh;
   width: 100vw;
   z-index: 9998;
-  background: #d4dcea;
-  animation: blobExpand 1s forwards 1.4s ease-out;
+  background: var(--color-primary);
+  animation: blobExpand 3s forwards 3s ease-out;
 }
 
-.manifest {
+#manifest-load {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  animation: disappear .4s ease-out 1s forwards;
+  animation: disappear 1.5s ease-out 1.5s forwards;
   width: 164px;
 }
 
+#white-logo {
+  fill: var(--white);
+}
 
 @keyframes blobExpand {
   0% {

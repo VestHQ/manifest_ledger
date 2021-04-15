@@ -1,33 +1,49 @@
 <section class="contact">
 
     <div class="u-max-w">
-    <h2 class="contact--title">Get In Touch</h2>
 
+    <h2 class="contact--title-mobile">Get In Touch</h2>
+    
     <div class="contact__container">
+        <img class='contact__container--img' src="../assets/images/contact/CEO.jpeg" alt="Anuraag & Meenakshi">
         <form id="form-contact" class="contact__container__form" name="submit-to-google-sheet">
-            <label for="name">First Name</label>
-            <div class="inputs">
-                <input type="text" placeholder="John Doe" title="First" name="firstName" id="name" required>
-            </div>
+            <h2 class="contact--title">Get In Touch</h2>
 
-            <label for="email">Email</label>
-            <div class="inputs">
-                <input type="email" placeholder="johndoe@manifestledger.com" name="email" novalidate="" id="email" required>
+            <div class="contact__container__form__inputs">
+                <div class="contact--name">
+                    <label for="name">First Name</label>
+                    <div class="inputs">
+                        <input type="text" placeholder="John Doe" title="First" name="firstName" id="name" required>
+                    </div>
+                </div>
+                
+                <div class='contact-email'>
+                    <label for="email">Email</label>
+                    <div class="inputs">
+                        <input type="email" placeholder="johndoe@manifestledger.com" name="email" novalidate="" id="email" required>
+                    </div>
+                </div>
             </div>
 
             <label for="message">Message</label>
             <textarea placeholder="Optional" title="message" name="message" id="message"></textarea>
 
-            <button type="submit" id="submit-button" class="btn--request-demo">Request Demo</button>
         </form>
 
         <div class="contact__container__info">
-            <h5 class="contact__container__info--title">Address</h5>
-            <address>Polsky Exchange</br />1452 E 53rd St,</br />2nd FLOOR</br />Chicago, IL 60615</address>
+            <div>
+                <h5 class="contact__container__info--title">Address</h5>
+                <address>Polsky Exchange</br />1452 E 53rd St,</br />2nd FLOOR</br />Chicago, IL 60615</address>
+            </div>
 
-            <h5 class="contact__container__info--title">Contact</h5>
-            <p>hello@usemanifest.com</br />(847) 220-4815</p>
+            <div>
+                <h5 class="contact__container__info--title">Contact</h5>
+                <p>hello@usemanifest.com</br />(847) 220-4815</p>
+            </div>
         </div>
+
+        <button type="submit" id="submit-button" class="btn--request-demo">Request Demo</button>
+
     </div>
     </div>
 

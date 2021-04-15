@@ -28,8 +28,20 @@
       }
 
       .socials {
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
-        display: flex;
+        display: grid;
+        width: max-content;
+
+        & > * {
+          width: 16px;
+          height: auto;
+
+          @include respond(tabletSm) {
+            width: 25px;
+          }
+        }
       }
     }
 
@@ -37,6 +49,8 @@
       max-width: 1050px;
       display: block;
       color: var(--color-text-dark-3);
+      font-size: 12px;
+      line-height: 18px;
     }
   }
 }
