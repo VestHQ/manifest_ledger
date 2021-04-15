@@ -11,6 +11,10 @@
   padding-bottom: 32px;
   background-color: var(--color-primary);
 
+  @include respond(phone) {
+    padding: 20px;
+  }
+
   .hero-container {
     margin: 0 auto;
     max-width: 1200px;
