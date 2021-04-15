@@ -6,6 +6,10 @@
 .features {
   background-color: var(--white);
   padding: 100px 0;
+
+  @include respond(tabletSm) {
+    padding: 40px 0;
+  }
 }
 .hero {
   padding-bottom: 32px;
@@ -29,7 +33,7 @@
   }
 
   &--video {
-    max-width: 500px;
+    width: 500px;
     height: auto;
 
     @media (max-width: 1143px) {
@@ -85,9 +89,18 @@
         margin-bottom: 50px;
       }
 
-      &--video {
+      &--video-consolidation {
         max-width: 260px;
         height: auto;
+      }
+
+      &--video-industry {
+        max-width: 350px;
+        height: auto;
+
+        @include respond(tabletSm) {
+          max-width: 100%;
+        }
       }
     }
 
