@@ -3,31 +3,35 @@
   background-color: var(--color-primary);
 }
 
-.features {
-  background-color: var(--white);
-  padding: 100px 0;
-
-  @include respond(tabletSm) {
-    padding: 40px 0;
-  }
-}
 .hero {
+  display: grid;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+
   padding-bottom: 32px;
   background-color: var(--color-primary);
+  min-height: 70vh;
+  max-width: 85vw;
+  margin: 0 auto;
+  margin-top: 70px;
 
   @include respond(phone) {
+    max-width: 90vw;
     padding: 20px;
+    margin-top: 25px;
+    max-width: none;
   }
 
   .hero-container {
-    margin: 0 auto;
-    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 1143px) {
+    @media (max-width: 1239px) {
       justify-content: center;
     }
   }
@@ -36,7 +40,7 @@
     width: 500px;
     height: auto;
 
-    @media (max-width: 1143px) {
+    @include respond(laptop) {
       margin-bottom: 30px;
     }
 
@@ -59,15 +63,24 @@
   }
 }
 
-.three-features {
+.features {
+  background-color: var(--white);
   margin-top: 100px;
-  margin-bottom: 83px;
+
+  @include respond(tabletSm) {
+    margin-top: 40px;
+  }
+}
+
+.three-features {
+  padding-top: 100px !important;
+  padding-bottom: 83px !important;
   padding: 0 40px;
   display: grid;
   gap: 150px;
 
   @include respond(phone) {
-    padding: 0 20px;
+    padding: 40px !important;
     gap: 100px;
   }
 

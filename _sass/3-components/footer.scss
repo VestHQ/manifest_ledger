@@ -54,3 +54,9 @@
     }
   }
 }
+
+.mb-logo {
+  @include respond(phone) {
+    margin-bottom: 50px;
+  }
+}

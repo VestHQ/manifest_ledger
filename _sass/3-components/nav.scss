@@ -22,26 +22,6 @@
       color: var(--color-text-dark);
       transition: all 0.3;
       position: relative;
-
-      &:hover {
-        &::after {
-          position: absolute;
-          content: '';
-          display: block;
-          height: 5px;
-          width: 100%;
-          background: var(--color-secondary);
-          bottom: -8px;
-        }
-      }
-
-      &:first-child {
-        margin-right: 80px;
-
-        @include respond(phone) {
-          margin-right: 20px;
-        }
-      }
     }
   }
 }
@@ -49,4 +29,12 @@
 .active {
   color: var(--color-secondary) !important;
   font-weight: 600;
+}
+
+.push-right {
+  margin-right: 80px;
+
+  @include respond(phone) {
+    margin-right: 20px;
+  }
 }

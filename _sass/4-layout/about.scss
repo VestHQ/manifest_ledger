@@ -11,6 +11,13 @@
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
+
+    & > h1 {
+      @include respond(phone) {
+        max-width: 289px;
+        margin: 0 auto;
+      }
+    }
   }
 
   .grid {
@@ -102,7 +109,7 @@
 
     img {
       max-width: 175px;
-      opacity: 0.3;
+      opacity: 0.6;
 
       @include respond(phone) {
         width: 100%;
@@ -128,6 +135,7 @@
 
       &--name {
         margin-bottom: 6px;
+        color: var(--color-text-dark);
 
         @include respond(phone) {
           margin-bottom: 4px;
