@@ -109,7 +109,7 @@
 
     img {
       max-width: 175px;
-      opacity: 0.3;
+      opacity: 0.6;
 
       @include respond(phone) {
         width: 100%;
