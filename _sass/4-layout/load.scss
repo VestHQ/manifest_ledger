@@ -9,7 +9,7 @@ canvas {
 }
 
 #manifest-load {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -19,7 +19,7 @@ canvas {
 }
 
 #white-logo {
-  fill: var(--white);
+  fill: var(--color-text-dark);
 }
 
 @keyframes blobExpand {
@@ -40,7 +40,7 @@ canvas {
   }
 
   100% {
-    opacity: 0.4;
+    opacity: 0;
     display: none;
     visibility: hidden;
   }

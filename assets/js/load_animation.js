@@ -10,7 +10,7 @@ document.addEventListener(
 let canvas, ctx
 let render, init
 let blob
-const blobColor = '#3b968b'
+const blobColor = 'rgba(59, 150, 139, 0.3)'
 
 class Blob {
   constructor() {
