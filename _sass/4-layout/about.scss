@@ -135,6 +135,7 @@
 
       &--name {
         margin-bottom: 6px;
+        color: var(--color-text-dark);
 
         @include respond(phone) {
           margin-bottom: 4px;
