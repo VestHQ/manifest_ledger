@@ -61,13 +61,17 @@
     {{/* Links */}} {% assign current = page.url | downcase | split: '/' %}
     <ul class="nav__links">
       {% if page.active == "about" %}
-      <li><a href="/about/" class="nav-link active">About Us</a></li>
+      <li class="push-right">
+        <a href="/about/" class="underline nav-link active">About us</a>
+      </li>
       {% else %}
-      <li><a href="/about/" class="nav-link">About Us</a></li>
+      <li class="push-right">
+        <a href="/about/" class="underline nav-link">About Us</a>
+      </li>
       {% endif %} {% if page.active == "contact" %}
-      <li><a href="/contact/" class="nav-link active">Contact</a></li>
+      <li><a href="/contact/" class="underline nav-link active">Contact</a></li>
       {% else %}
-      <li><a href="/contact/" class="nav-link">Contact</a></li>
+      <li><a href="/contact/" class="underline nav-link">Contact</a></li>
       {% endif %}
     </ul>
   </nav>
