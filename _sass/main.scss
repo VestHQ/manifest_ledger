@@ -28,26 +28,6 @@ header {
   }
 }
 
-input {
-  border: 1px solid var(--color-primary-shade);
-}
-input:valid {
-  border: 1px solid var(--color-primary-shade);
-}
-input:invalid {
-  box-shadow: none;
-//   border: 2px solid red;
-}
-
-input:required {
-  border: 1px solid var(--color-primary-shade);
-}
-
-input:required:valid {
-  border: 1px solid var(--color-primary-shade);
-}
-
-input:required:invalid {
-  box-shadow: none;
-//   border: 2px solid red;
+input:not(:placeholder-shown):invalid {
+  border: 2px solid red;
 }
