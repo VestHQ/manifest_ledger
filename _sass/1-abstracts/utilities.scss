@@ -98,7 +98,7 @@
 .contact-graphic {
   background-image: url('../../assets/images/contact/left.svg'),
     url('../../assets/images/contact/right.svg');
-  background-position: right top,left 78%;
+  background-position: left -46%, right top;
   background-repeat: no-repeat;
 
   @include respond(laptopSm) {
