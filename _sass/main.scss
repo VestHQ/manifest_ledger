@@ -30,4 +30,5 @@ header {
 
 input:not(:placeholder-shown):invalid {
   border: 2px solid red;
+  box-shadow: none;
 }
