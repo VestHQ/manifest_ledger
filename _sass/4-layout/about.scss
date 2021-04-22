@@ -198,12 +198,25 @@
           margin-top: 48px;
         }
 
+        @media (max-width: 400px) {
+          justify-content: flex-start;
+        }
+
         &--join {
           margin: 0;
+
+          @media (max-width: 400px) {
+            font-size: 12px;
+            margin-right: 20px;
+          }
         }
 
         &--stories {
           margin: 0;
+
+          @media (max-width: 400px) {
+            font-size: 12px;
+          }
         }
       }
     }
